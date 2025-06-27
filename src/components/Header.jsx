@@ -134,7 +134,7 @@ const Header = () => {
         />
         <nav className={isScrolled ? "moved nav-bar" : "nav-bar"}>
           <div className="logo">
-            <img src="e2a.png" alt="" className="e2a-logo" />
+            <img src="e2a25.png" alt="" className="e2a-logo " />
           </div>
           <div className="links">
             {navItems.map((item, i) =>

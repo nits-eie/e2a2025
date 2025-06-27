@@ -23,11 +23,11 @@ const Registration = () => {
               </span>
               <ul className="ml-3 mt-1">
                 <li className="mt-1">
-                All participants must fill the registration form to register themselves for the conference, after paying the registration fees.
+                  All participants must fill the registration form to register themselves for the conference, after paying the registration fees.
                 </li>
                 <li className="mt-1">
                   Participants are informed to pay the registration fee
-                  throughonline mode in the bank account given below. Please
+                  through online mode in the bank account given below. Please
                   start this process early since until your payment is received
                   and verified you will not be able to upload your papers.
                 </li>
@@ -39,28 +39,20 @@ const Registration = () => {
               </span>
               <ul className="ml-3 mt-1">
                 <li className="mt-1">
-                  During payment, please add  PAPERIdNumber_RegisteringAuthorName_2024 in the transaction/payment remarks/description column. 
-                  It will help us to track your payment easily.<br/>For e.g., if your paper id is 103, and your name is S Gangully then you need to write 103_S Gangully_2024 in the remarks/description column during the payment.
+                  During payment, please add PAPERIdNumber_RegisteringAuthorName_2024 in the transaction/payment remarks/description column. 
+                  It will help us to track your payment easily.<br />For e.g., if your paper id is 103, and your name is S Gangully then you need to write 103_S Gangully_2024 in the remarks/description column during the payment.
                 </li>
                 <li className="mt-1">
                   Check the table (“Registration category”) given below for
                   registration fee details of different categories. Deposit your
-                  respective category fee in the conference bank account -
-                  please note down the transaction reference number and take a
-                  screenshot of the payment receipt.
+                  respective category fee in the conference bank account - please note down the transaction reference number and take a screenshot of the payment receipt.
                 </li>
                 <li className="mt-1">
                   Fill out the registration form with all the required details.
                   Please click{" "}
-                  <a
-                    className="paperSubmissionLink"
-                    href="https://forms.gle/Lf7FRsaHUjsaqvPY8"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    here
-                  </a>{" "}
-                  for the registration form.
+                  <span className="paperSubmissionLink">
+                    Registration Form Link: ……………….
+                  </span>
                 </li>
                 <li className="mt-1">
                   Please keep ready the following before you start filling the
@@ -147,15 +139,7 @@ const Registration = () => {
                 </li>
                 <li className="mt-1 bold">
                   <span className="highlightText">
-                    Registration Form Link:{" "}
-                    <a
-                      className="paperSubmissionLink"
-                      href="https://forms.gle/Lf7FRsaHUjsaqvPY8"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      https://forms.gle/Lf7FRsaHUjsaqvPY8
-                    </a>
+                    Registration Form Link: ……………….
                   </span>
                 </li>
               </ul>

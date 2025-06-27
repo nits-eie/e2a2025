@@ -21,20 +21,42 @@ const Home = () => {
             <u>About The Conference</u>
           </h2>
           <div className="home-about-content">
+
             <p className="text1 mb-1">
+  Emerging Electronics and Automation (E2A) 2025 is the 5<sup>th</sup> Annual
+  International Conference organized by the Department of Electronics and
+  Instrumentation Engineering at NIT Silchar, Assam. E2A 2025 is scheduled to be
+  in hybrid mode between 17th and 19th December 2025.
+</p>
+<p className="text1">
+  We are happy to share that till now, Department of EIE has successfully
+  organized four editions of E2A. The proceedings of the previous three editions
+  are indexed in Springer LNEE. The same for the fourth edition is in progress
+  and will be indexed soon.{" "}
+  <a
+    href="https://www.springer.com/series/7818"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Springer LNEE
+  </a>
+  .
+</p>
+
+            {/* <p className="text1 mb-1">
               Emerging Electronics and Automation
               (E2A) 2025 is the 5<sup>th</sup> Annual International Conference organized by
               the Department of Electronics and Instrumentation Engineering at
               NIT Silchar, Assam. E2A 2025 is scheduled to be in hybrid mode
-              between 17th and 19th December 2025. 
+              between 17th and 19th December 2025. xxxxxxxxxxxxxxx
             </p>
             <p className="text1">
             We are happy to share that
               till now, Department of EIE has successfully organized three
               editions of E2A. The proceedings of the First & Second Edition are
-              indexed in Springer LNEE. The same for the Third edition is in  progress and will be indexed soon.
+              indexed in Springer LNEE. The same for the Third edition is in  progress and will be indexed soon. */}
               {/* {" "} */}
-              <a
+              {/* <a
                 href="https://www.springer.com/series/7818"
                 target="_blank"
                 rel="noreferrer"
@@ -42,7 +64,7 @@ const Home = () => {
                 Springer LNEE
               </a>
               .
-            </p>
+            </p> */}
             <div className="mtb-4 book-list">
               <img
                 src="/images/book2024.jpg"

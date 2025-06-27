@@ -9,68 +9,48 @@ const OfflinePresentation = () => {
   };
 
   React.useEffect(scrollToBottom, []);
+
   return (
     <>
       <Header />
-      <div className="bg-white ptb-4" ref={container}>
-        <div className="registration mt-4">
-          <h3 className="bold">
+      <div className="bg-white ptb-5 container" ref={container}>
+        <div className="registration">
+          <h2 className="bold mtb-2 text-center">
             Instructions for Physical (Offline) Presentation
-          </h3>
-          The participants who have opted for offline presentation* in the
-          session at E2A-2024 are requested to follow the below given
-          guidelines.
-          <ol className="ml-4 mt-2">
-            <li className="bold">
-              Prepare your <span className="boldText">slides in .pptx</span>{" "}
-              format for the presentation of 8-10 minutes.
+          </h2>
+          <p className="text1 mb-2">
+            We eagerly await to warmly welcome you to the green campus of NIT Silchar.
+          </p>
+          <p className="text1 mb-3">
+            Below are the detailed instructions for registered participants who have opted to present <strong>offline</strong> during the E2A 2024 conference:
+          </p>
+          <ol className="ml-3 mb-4 text1">
+            <li className="mb-2">
+              <strong>Upload:</strong> Your PPT slide file (in PDF format) to the following Google Drive link – <em>to be updated</em>.
             </li>
-            <li className="bold mt-1">
-              <span className="boldText">Save your file</span> in the name
-              &lt;track no_paper_id_name.pptx&gt;.
+            <li className="mb-2">
+              <strong>Filename:</strong> Use &lt;PPT_YourPaperID_SessionName&gt;. Example: <code>PPT_125_2A</code> for Paper ID 125 in Session 2A.
             </li>
-            <li className="bold mt-1">
-              <span className="boldText">Send your presentation</span> file to{" "}
-              <a
-                className="paperSubmissionLink"
-                href="mailto:e2a@ei.nits.ac.in"
-              >
-                e2a@ei.nits.ac.in
-              </a>{" "}
-              {/* on or before 11.12.2024. */}
+            <li className="mb-2">
+              <strong>Deadline:</strong> Last date for uploading is <strong>to be updated</strong>.
             </li>
-            <li className="bold mt-1">
-              Keep the{" "}
-              <span className="boldText">subject line in the mail</span> as
-              &lt;Presentation Slides-Track No.-Paper ID&gt;.
+            <li className="mb-2">
+              <strong>Attendance:</strong> Mandatory. Failure to present in your allotted slot will exclude your paper from proceedings.
             </li>
-            <li className="bold mt-1">
-              <span className="boldText">Attendance</span>of the presenter is{" "}
-              <span className="boldText">compulsory</span> during the scheduled
-              presentation else the paper will not be considered for
-              publication.
+            <li className="mb-2">
+              <strong>Duration:</strong> Each paper gets <strong>10 minutes</strong> (<strong>8</strong> minutes presentation + <strong>2</strong> minutes Q&A).
             </li>
-            <li className="bold mt-1">
-              For each paper, 15 minutes will be devoted which includes{" "}
-              <span className="boldText">8-10 minutes</span> of power point{" "}
-              <span className="boldText">presentation</span> followed by{" "}
-              <span className="boldText">5-7</span> minutes of live{" "}
-              <span className="boldText">interaction</span> during Q&amp;A.
+            <li className="mb-2">
+              After presentation, the session chair will lead the interaction with the presenter.
             </li>
-            <li className="bold mt-1">
-              Please <span className="boldText">follow the instructions</span>{" "}
-              from time to time given by the Chairs, Co-chairs and moderators
-              for the{" "}
-              <span className="boldText">smooth conduction of the session</span>
-              .
+            <li className="mb-2">
+              Keep your slides handy to address audience and chair questions during the session.
+            </li>
+            <li className="mb-2">
+              Follow any additional instructions from chairs, co-chairs, and moderators for smooth session conduct.
             </li>
           </ol>
-          <br />
-          <span className="grayText">
-            *The schedule of the presentation session will be intimated soon.
-          </span>
         </div>
-        <br />
       </div>
     </>
   );

@@ -9,66 +9,57 @@ const OnlinePresentation = () => {
   };
 
   React.useEffect(scrollToBottom, []);
+
   return (
     <>
       <Header />
-      <div className="bg-white ptb-4" ref={container}>
-        <div className="registration mt-4">
-          <h3 className="bold">Instructions for Online Presentation</h3>
-          You may find the following points useful for presenting your paper
-          online in the session at E2A-2024:
-          <ol className="ml-4 mt-2">
-            <li className="bold">
-              For the participants who opted for online presentation, it is
-              mandatory to prepare a video (.mp4 format) of their presentation
-              for 8-10 minutes and send the same along with the ppt file of the
-              presentation to{" "}
-              <a
-                className="paperSubmissionLink"
-                href="mailto:e2a@ei.nits.ac.in"
-              >
-                e2a@ei.nits.ac.in
-              </a>{" "}
-              {/* on or before 11 th December 2024. */}
+      <div className="bg-white ptb-5 container" ref={container}>
+        <div className="registration">
+          <h2 className="bold mtb-2 text-center">
+            Instructions for Online Presentation
+          </h2>
+          <p className="text1 mb-2">
+            Below are the detailed instructions for registered participants who have opted to present <strong>ONLINE</strong> during the E2A 2025 conference:
+          </p>
+          <ol className="ml-3 mb-4 text1">
+            <li className="mb-2">
+              <strong>Upload:</strong> Prepare a video (.mp4 format) of your presentation (strictly 8 minutes) and upload it <em>along with</em> your PPT slides (pdf format) to the designated Google Drive folder for your session – <em>link to be updated</em>.
             </li>
-            <li className="bold mt-1">
-              For online participants, it is compulsory to share your screen
-              with your camera ON and present the paper during the allotted time
-              as per the conference schedule*.
+            <li className="mb-2">
+              <strong>Folder:</strong> Ensure both files are placed in the correct session folder.
             </li>
-            <li className="bold mt-1">
-              Each paper will be allotted only 15 minutes including 8-10 minutes
-              for presentation and 5- 7 mins for Q&amp;A.
+            <li className="mb-2">
+              <strong>Filename:</strong> Name your files as <code>&lt;Video_YourPaperID_SessionName&gt;</code> and <code>&lt;PPT_YourPaperID_SessionName&gt;</code>. Example: <code>Video_179_2B</code> and <code>PPT_179_2B</code> for Paper ID 179 in Session 2B.
             </li>
-            <li className="bold mt-1">
-              After the completion of the presentation, the chair of the session
-              takes charge of interaction with the presenter.
+            <li className="mb-2">
+              <strong>Deadline:</strong> Last date for uploading is <strong>to be updated</strong>.
             </li>
-            <li className="bold mt-1">
-              The presenter is advised to use the presentation slides to answer
-              the questions raised by the audience and session chairs. So,
-              please keep your presentation slides ready during the entire
-              presentation.
+            <li className="mb-2">
+              <strong>Live Presentation:</strong> During your slot, share your screen with camera ON and present using the slides. If any technical glitch occurs, the pre-recorded video will be played.
             </li>
-            <li className="bold mt-1">
-              Except for the presenter, the other attendees will remain muted
-              during the session to avoid disruption. They may raise hand, if
-              they have any questions to ask the presenter. The attendees upon
-              raising their hand will be sequentially taken up by the
-              moderator(s) to enable their mic to ask the question.
+            <li className="mb-2">
+              <strong>Attendance:</strong> Mandatory. Failure to present at your allotted time will exclude your paper from proceedings.
             </li>
-            <li className="bold mt-1">
-              Please follow the given instructions from time to time from the
-              Chairs, Co- chairs and moderators for the smooth conduction of the
-              session.
+            <li className="mb-2">
+              <strong>Duration:</strong> Each paper gets <strong>10 minutes</strong> (8 minutes presentation + 2 minutes Q&A).
+            </li>
+            <li className="mb-2">
+              After the presentation, the session chair will lead the interaction with the presenter.
+            </li>
+            <li className="mb-2">
+              Keep your slides handy to answer questions from the audience and chair.
+            </li>
+            <li className="mb-2">
+              Other attendees will remain muted but may raise hands; the moderator will enable microphones in sequence.
+            </li>
+            <li className="mb-2">
+              Follow any additional instructions from chairs, co-chairs, and moderators for smooth session conduct.
+            </li>
+            <li className="mb-2">
+              Google Drive session links will be updated soon.
             </li>
           </ol>
-          <br />
-          <span className="grayText">
-            *The schedule of the presentation session will be intimated soon.
-          </span>
         </div>
-        <br />
       </div>
     </>
   );
