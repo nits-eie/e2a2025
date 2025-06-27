@@ -23,10 +23,10 @@ const Home = () => {
           <div className="home-about-content">
             <p className="text1 mb-1">
               Emerging Electronics and Automation
-              (E2A) 2024 is the 4<sup>th</sup> Annual International Conference organized by
+              (E2A) 2025 is the 5<sup>th</sup> Annual International Conference organized by
               the Department of Electronics and Instrumentation Engineering at
-              NIT Silchar, Assam. E2A 2024 is scheduled to be in hybrid mode
-              between 9th and 11th December 2024. 
+              NIT Silchar, Assam. E2A 2025 is scheduled to be in hybrid mode
+              between 17th and 19th December 2025. 
             </p>
             <p className="text1">
             We are happy to share that

@@ -233,14 +233,14 @@ const Header = () => {
         <div className="headerContent">
           <div className="content-container">
             <div className="heading">
-              4<sup>th</sup> INTERNATIONAL CONFERENCE ON{" "}
+              5<sup>th</sup> INTERNATIONAL CONFERENCE ON{" "}
               <span className="red-text">
                 EMERGING ELECTRONICS AND AUTOMATION
               </span>
             </div>
             <div className="date">
-              9<sup>th</sup> - 11<sup>th</sup> Dec,{" "}
-              <span className="red-text">2024</span>
+              17<sup>th</sup> - 19<sup>th</sup> Dec,{" "}
+              <span className="red-text">2025</span>
             </div>
             <div className="hybridText">[HYBRID]</div>
             <div className="organised-by">
