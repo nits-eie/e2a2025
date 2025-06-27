@@ -1,0 +1,60 @@
+.registration {
+  width: 80%;
+  background-color: #fff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main-content h3 {
+  text-align: left;
+}
+.table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+.table td, .table th {
+  border: 1px solid rgb(139, 138, 138);
+  padding: 8px;
+  text-align: center;
+}
+
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color:rgb(78, 78, 78);
+  color: white;
+}
+
+.list3, ul li {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+}
+.list3 {
+  list-style-type: lower-roman;
+}
+
+.highlightText{
+  background-color: yellow;
+}
+
+.question{
+  color: blue;
+}
+
+.redText{
+  color: red;
+}
+
+.grayText{
+  color:gray
+}
+
+.boldText{
+  font-weight: 700;
+}

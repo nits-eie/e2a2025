@@ -1,0 +1,137 @@
+.line {
+  position: relative;
+  top: 0.8rem;
+  width: 20rem;
+  border-bottom: 0.25rem solid black;
+}
+.list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 2rem;
+  background-color: white;
+  margin: 1rem;
+}
+.list > h3 {
+  margin: 0.6rem;
+}
+
+.committeeTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+}
+
+.committeeTable td,
+.committeeTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.committeeTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(78, 78, 78);
+  color: white;
+}
+
+.main-content {
+  text-align: center;
+}
+
+td {
+  text-align: start;
+}
+
+.card-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 17rem;
+  height: 18rem;
+  background: #fff;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 0px 1px 10px 1px #000;
+  overflow: hidden;
+}
+.upper-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  background: #e8b563;
+  /* background-image: linear-gradient(to right,#D85B6D,#F48B6B); */
+}
+.speaker-upper-container .image-container {
+  background: white;
+  position: absolute;
+  width: 50%;
+  top: 1.8rem;
+  z-index: 2;
+  border-radius: 10px;
+  padding: 5px;
+}
+.image-container img {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+}
+.lower-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background: #fff;
+  text-align: center;
+}
+.committeeName {
+  position: relative;
+  width: 100%;
+  top: 8rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.designation {
+  position: relative;
+  top: 0.7rem;
+  color: #3a3a3a;
+  font-size: 1rem;
+  opacity: 0.6;
+}
+.speaker-designation{
+  position: relative;
+  top: 0.7rem;
+  color: black;
+  font-size: 1rem;
+}
+.speaker-college{
+  position: relative;
+  top: 0.7rem;
+  color: black;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width:480px) {
+  .speaker-card-container .committeeName{
+    top: 5rem;
+  }
+  .speaker-card-container .speaker-name{
+    padding: 0 0.5rem;
+  }
+  .mt-2{
+    gap: 2rem;
+  }
+  .list.textNames h1{
+    font-size: 1.7rem;
+  }
+  .list.textNames h3{
+    font-size: 1rem;
+  }
+}

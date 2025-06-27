@@ -1,0 +1,33 @@
+.flexCenter{
+    display: flex; justify-content: center;
+}
+.timeBox{
+    text-align: center; min-width: 120px;
+}
+.center{
+    text-align: center;
+}
+.blueText{
+    color: blue;
+}
+.boldText{
+    font-weight: bold;
+}
+.boldCenter{
+    font-weight: bold; text-align: center;
+}
+.boldCenterGreen{
+    font-weight: bold; text-align: center; color: green;
+}
+.boldCenterRed{
+    font-weight: bold; text-align: center; color: red;
+}
+.boldCenterBlue{
+    font-weight: bold; text-align: center; color: rgb(0, 176, 240);
+}
+.boldCenterPurple{
+    font-weight: bold; text-align: center; color: rgb(112, 48, 160);
+}
+.writingStyle{
+    writing-mode: vertical-lr; transform: rotate(180deg); text-align: center;
+}

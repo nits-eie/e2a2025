@@ -1,0 +1,89 @@
+
+
+.main-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  width: 100%;
+  background-color: white;
+}
+.paper-heading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color: black;
+  padding: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.line {
+  position: relative;
+  top: 0.8rem;
+  width: 20rem;
+  border-bottom: 0.25rem solid black;
+}
+.call-des {
+  font-family: OpenSans, sans-serif;
+  position: relative;
+  color: #111;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+.paper-list {
+  padding: 5%;
+  border-radius: 15px;
+  width: 80%;
+  position: relative;
+  color: black;
+  box-shadow: 3px 3px 30px black;
+}
+.list-accordion{
+  position: relative;
+  margin-top:5% ;
+  width: 97%;
+}
+.list-heading {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-heading > span {
+  font-size: 24px;
+}
+.active,
+.list-heading:hover {
+  background-color: #ccc;
+}
+.active:after {
+  content: "\2212";
+}
+.list-items {
+  padding: 0 18px;
+}
+.list-accordion-item {
+  border: 1px solid #eee;
+  border-bottom: none;
+  border-top: none
+}
+.list-accordion-item:last-child {
+  border-bottom: 1px solid #eee;
+}
+li {
+  text-align: left;
+}
