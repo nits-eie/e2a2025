@@ -1,0 +1,10 @@
+.brochureCont{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.brochureImg{
+    position: relative;
+    width: 100%;
+}
