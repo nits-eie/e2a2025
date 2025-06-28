@@ -182,7 +182,7 @@ const Home = () => {
               <h4 className="ml-1">Date</h4>
             </div>
             <p>
-              9<sup>th</sup> - 11<sup>th</sup> December 2024
+              17<sup>th</sup> - 19<sup>th</sup> December 2025
             </p>
           </div>
           <div className="mb-3">
@@ -233,6 +233,19 @@ const Home = () => {
                 E2A2023
               </a>
             </p>
+
+            <p>
+              <a
+                style={{ color: "#127CCC" }}
+                className="e2a-link"
+                target="__blank"
+                href="https://e2a.nits.ac.in/"
+              >
+                E2A2024
+              </a>
+            </p>
+
+
           </div>
           <CustomHR color="#626E75" large={true} />
           <div className="mtb-2 book-sidebar">
