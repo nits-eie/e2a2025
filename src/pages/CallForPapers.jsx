@@ -39,7 +39,7 @@ const CallForPapers = () => {
           </p>
 
           {/* Important Dates Section */}
-          <div className="important-dates mb-4 m-4">
+          {/* <div className="important-dates mb-4 m-4">
             <h2>Important Dates:</h2>
             <ul className="dates-list pl-3">
               <li>Conference dates: 17–19 December 2025</li>
@@ -49,7 +49,7 @@ const CallForPapers = () => {
               <li>Last date for conference registration: 7 November 2025</li>
               <li>Last date for camera-ready paper submission: 15 November 2025</li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="list-accordion">
             {data.map((el, i) => (
