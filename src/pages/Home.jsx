@@ -87,7 +87,7 @@ const Home = () => {
                   className="mt-1"
                   style={{ fontSize: "24px", fontWeight: 400, color: "#444" }}
                 >
-                  Select Proceedings of E2A 2022
+                  Select Proceedings of E2A 2025
                 </p>
                 <ul className="ml-2 mt-2">
                   <li style={{ color: "#127ccc" }}>
@@ -106,7 +106,7 @@ const Home = () => {
                 <p className="mt-2">
                   This book constitutes peer-reviewed proceedings of the
                   International Conference on Emerging Electronics and
-                  Automation (E2A) 2024. The book presents new ideas, research
+                  Automation (E2A) 2025. The book presents new ideas, research
                   findings, and novel techniques in the fields of sensors and
                   instrumentation, automation and control, artificial
                   intelligence, MEMS sensors, soft computing, signal processing,
@@ -121,8 +121,8 @@ const Home = () => {
               This conference focuses on trending research and product outcomes
               in the domain of control and robotics, signal processing,
               communication systems, sensors and instrumentation, MEMS and VLSI,
-              AI and soft computing. Tracing the path of the 3rd Edition, E2A
-              2024 will pave a common platform for the academicians,
+              AI and soft computing. Tracing the path of the 5th Edition, E2A
+              2025 will pave a common platform for the academicians,
               researchers, industrial players and budding research scholars to
               discuss their results, innovations, challenges encountered during
               research and concerns with peers and update their knowledge by
