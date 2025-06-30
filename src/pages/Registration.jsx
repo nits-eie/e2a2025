@@ -39,8 +39,8 @@ const Registration = () => {
               </span>
               <ul className="ml-3 mt-1">
                 <li className="mt-1">
-                  During payment, please add PAPERIdNumber_RegisteringAuthorName_2024 in the transaction/payment remarks/description column. 
-                  It will help us to track your payment easily.<br />For e.g., if your paper id is 103, and your name is S Gangully then you need to write 103_S Gangully_2024 in the remarks/description column during the payment.
+                  During payment, please add PAPERIdNumber_RegisteringAuthorName_2025 in the transaction/payment remarks/description column. 
+                  It will help us to track your payment easily.<br />For e.g., if your paper id is 103, and your name is S Gangully then you need to write 103_S Gangully_2025 in the remarks/description column during the payment.
                 </li>
                 <li className="mt-1">
                   Check the table (“Registration category”) given below for

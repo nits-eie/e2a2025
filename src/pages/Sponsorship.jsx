@@ -16,9 +16,9 @@ const Sponsorship = () => {
         <div className="sponsorship">
           <h3>How to become a Sponsor?</h3>
           <p className="mtb-2">
-            E2A 2024 welcomes sponsors and exhibitors interested in promoting
+            E2A 2025 welcomes sponsors and exhibitors interested in promoting
             their activities and products during the online conference event.
-            With more than 100 expected conference attendees, the E2A 2023
+            With more than 100 expected conference attendees, the E2A 2025
             offers a great opportunity to advertise electronics/ automation/ any
             other-related products and increase the visibility of your
             organization.
@@ -43,8 +43,8 @@ const Sponsorship = () => {
             level of exposure.
           </p>
           <p>
-            Please contact General Chair: Dr. Pravin P.S. & Dr. Sudipta
-            Chakraborty (email:{" "}
+            Please contact General Chair: Dr. Sudarsan Sahoo  & Dr. Arun Kumar Sharma
+            (email:{" "}
             <a href="mailto: e2a@ei.nits.ac.in">e2a@ei.nits.ac.in</a>) for more
             details.
           </p>

@@ -31,12 +31,12 @@ const ContactUs = () => {
             <p className="mt-1 mb-4">Contact or send your query</p>
             <ul className="ml-3">
               <li className="member mt-3">
-                <p>Dr. Lalu Seban</p>
+                <p>Dr. Shankar K </p>
                 <p className="mt-1">
                   Assistant Professor, Department of E&I Engineering, NIT
                   Silchar
                 </p>
-                <p className="mt-1">Phone: +91-8011886745 </p>
+                <p className="mt-1">Phone: +91-8870525684 </p>
                 {/* <p className="mt-1">Email:  <a href="mailto:skpandey@ei.nits.ac.in" rel="noreferrer">skpandey@ei.nits.ac.in</a></p> */}
               </li>
               <li className="member mt-4">

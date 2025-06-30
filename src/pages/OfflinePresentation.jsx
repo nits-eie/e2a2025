@@ -22,7 +22,7 @@ const OfflinePresentation = () => {
             We eagerly await to warmly welcome you to the green campus of NIT Silchar.
           </p>
           <p className="text1 mb-3">
-            Below are the detailed instructions for registered participants who have opted to present <strong>offline</strong> during the E2A 2024 conference:
+            Below are the detailed instructions for registered participants who have opted to present <strong>offline</strong> during the E2A 2025 conference:
           </p>
           <ol className="ml-3 mb-4 text1">
             <li className="mb-2">

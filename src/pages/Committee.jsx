@@ -43,23 +43,43 @@ const Committee = () => {
         </div>
 
         {/* General Chair */}
-        <div className="list">
-          <h1 style={{ marginBottom: "10px" }}>General Chair</h1>
-          <div className="mt-2" style={{ display: 'flex', justifyContent: 'space-evenly', flexWrap: 'wrap', width: '100%' }}>
-            <ProfileCard
-              style={{ maxWidth: '300px' }}
-              img={'/images/Sudarsan_Sahoo.png'}
-              name="Dr. Sudarsan Sahoo"
-              aff="NIT Silchar"
-            />
-            <ProfileCard
-              style={{ maxWidth: '300px' }}
-              img={'https://res.cloudinary.com/dprjiwgfo/image/upload/v1751048779/anup_jagha4.jpg'}
-              name="Dr. Anup Kumar Sharma"
-              aff="NIT Silchar"
-            />
-          </div>
-        </div>
+        {/* General Chair */}
+<div className="list">
+  <h1 style={{ marginBottom: "10px" }}>General Chair</h1>
+  <div className="mt-2" style={{ display: 'flex', justifyContent: 'space-evenly', flexWrap: 'wrap', width: '100%' }}>
+    <ProfileCard
+      style={{ maxWidth: '300px' }}
+      img={'/images/Sudarsan_Sahoo.png'}
+      name="Dr. Sudarsan Sahoo"
+      aff="NIT Silchar"
+    />
+    <ProfileCard
+      style={{ maxWidth: '300px' }}
+      img={'https://res.cloudinary.com/dprjiwgfo/image/upload/v1751048779/anup_jagha4.jpg'}
+      name="Dr. Anup Kumar Sharma"
+      aff="NIT Silchar"
+    />
+    <ProfileCard
+      style={{ maxWidth: '300px' }}
+      img={'/images/placeholder.png'} // Use a placeholder image
+      name="To be updated soon"
+      aff=""
+    />
+    <ProfileCard
+      style={{ maxWidth: '300px' }}
+      img={'/images/placeholder.png'}
+      name="To be updated soon"
+      aff=""
+    />
+    <ProfileCard
+      style={{ maxWidth: '300px' }}
+      img={'/images/placeholder.png'}
+      name="To be updated soon"
+      aff=""
+    />
+  </div>
+</div>
+
 
         {/* Convenor */}
         <div className="list">
