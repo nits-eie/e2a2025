@@ -1,38 +1,28 @@
-/* eslint-disable react/prop-types */
-import React from 'react'
+import React from 'react';
 
-const ProfileCard = (props) => {
+const ProfileCard = ({ img, name, aff, link, designation }) => {
   return (
-
-    <div className="card-container">
-         <div className="upper-container">
-            <div className="image-container">
-               <img src={props.img} />
-            </div>
-         </div>
-         <div className="lower-container">
-            <div className="committeeName">
-               <div>{props.name}</div>
-               <div className="designation">{props.aff}</div>
-            </div>
-         </div>
+    <div className="profile-card">
+      <div className="profile-image-container">
+        <img src={img} alt={name} className="profile-image" />
       </div>
+      <div className="profile-info">
+        <h3 className="profile-name">{name}</h3>
+        {designation && <p className="profile-designation">{designation}</p>}
+        <p className="profile-affiliation">{aff}</p>
+        {/* {link && (
+          <a
+            className="profile-link"
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Profile
+          </a>
+        )} */}
+      </div>
+    </div>
+  );
+};
 
-    // {/* <figure className="fig-container m-4" {...props}>
-    //   <div className="profile-image">
-    //     <img style={{height: "200px"}} src={props.img} alt={props.name} />
-    //   </div>
-    //   <figcaption>
-    //     <h3 style={{textAlign: "center"}}>
-    //         <a style={{color:props.link &&  "#5e7ae2"}} href={props.link} target="__blank">
-    //             {props.name}
-    //         </a>
-    //     </h3>
-    //     <h4>{props.designation}</h4>
-    //     <h3 style={{textAlign: "center"}}>{props.aff}</h3>
-    //   </figcaption>
-    // </figure> */}
-  )
-}
-
-export default ProfileCard
+export default ProfileCard;

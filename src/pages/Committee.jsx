@@ -15,7 +15,7 @@ const Committee = () => {
   return (
     <>
       <Header />
-      <div className="main-content" ref={container}>
+      <div className="main-content" ref={container} >
         <div className="paper-heading">
           <span className="red-text">COMMITTEE MEMBERS</span>
           <div className="line"></div>
@@ -225,9 +225,9 @@ const Committee = () => {
 
         <div className="list textNames">
           <h1>Web Team</h1>
-          <h3>Rupantar Borphukan, NIT Silchar</h3>
-          <h3>Shabnam Haque, NIT Silchar</h3>
-          <h3>Vinayak Das, NIT Silchar</h3>
+          <h3>Dhananjay Das, NIT Silchar</h3>
+          <h3>Vivek Sharma, NIT Silchar</h3>
+          
         </div>
 
         <div className="list textNames">
@@ -263,4 +263,4 @@ const Committee = () => {
   );
 };
 
-export default Committee;
+export default Committee; 

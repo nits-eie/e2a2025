@@ -57,6 +57,8 @@ const App = () => {
           <Route path="/program-schedule" exact element={<DownloadDocument/>} />
           <Route path="/program-brochure" exact element={<Brochure />} />
           <Route path="/gallary" exact element={<PhotoGallary />} />
+          <Route path="/schedule" exact element={<Schedule />} />
+          {/* <Route path="/about" exact element={<Home />} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -1,0 +1,186 @@
+/* registration.css */
+
+/* Base Styles */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --light-text-color: #777;
+  --background-color: #f9f9f9;
+  --border-color: #ddd;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Presentation Container */
+.presentation-container {
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  margin: 2rem auto;
+  max-width: 900px;
+  transition: all 0.3s ease;
+}
+
+.presentation-container:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Presentation Content */
+.presentation-content {
+  margin-top: 1rem;
+}
+
+/* Presentation Heading */
+.presentation-heading {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.presentation-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+/* Presentation Text */
+.presentation-text {
+  color: var(--light-text-color);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Presentation List */
+.presentation-list {
+  margin-top: 1.5rem;
+  
+  padding-left: 1.2rem;
+  list-style-type: none;
+  counter-reset: presentation-counter;
+}
+
+.presentation-list-item {
+  font-weight: 500;
+  margin-top: 1rem;
+  color: var(--text-color);
+  line-height: 1.8;
+  position: relative;
+  padding-left: 2.7rem;
+  transition: all 0.2s ease;
+}
+
+.presentation-list-item:hover {
+  color: var(--primary-color);
+}
+
+.presentation-list-item::before {
+  counter-increment: presentation-counter;
+  content: counter(presentation-counter);
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.2s ease;
+}
+
+.presentation-list-item:hover::before {
+  background-color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+/* Presentation Link */
+.presentation-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.presentation-link:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* Presentation Note */
+.presentation-note {
+  color: var(--light-text-color);
+  font-style: italic;
+  display: block;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .presentation-container {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  .presentation-heading {
+    font-size: 1.5rem;
+  }
+
+  .presentation-text {
+    font-size: 1rem;
+  }
+
+  .presentation-list-item {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .presentation-container {
+    padding: 1rem;
+  }
+
+  .presentation-heading {
+    font-size: 1.2rem;
+  }
+}
+
+/* Animation for list items */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.presentation-list-item {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.presentation-list-item:nth-child(1) { animation-delay: 0.1s; }
+.presentation-list-item:nth-child(2) { animation-delay: 0.2s; }
+.presentation-list-item:nth-child(3) { animation-delay: 0.3s; }
+.presentation-list-item:nth-child(4) { animation-delay: 0.4s; }
+.presentation-list-item:nth-child(5) { animation-delay: 0.5s; }
+.presentation-list-item:nth-child(6) { animation-delay: 0.6s; }
+.presentation-list-item:nth-child(7) { animation-delay: 0.7s; }
