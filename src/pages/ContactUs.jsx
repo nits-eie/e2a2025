@@ -94,11 +94,11 @@ const ContactUs = () => {
 
   const contactPersons = [
     {
-      name: "Dr. Lalu Seban",
+      name: "Dr. Shankar K ",
       position: "Assistant Professor",
       department: "Dept. of E&I Engineering",
-      phone: "+91-8011886745",
-      email: "seban@ei.nits.ac.in"
+      phone: "+91-8870525684",
+      email: "shankar@ei.nits.ac.in"
     },
     {
       name: "Dr. Jupitara Hazarika",

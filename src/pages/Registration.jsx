@@ -22,23 +22,34 @@ const Registration = () => {
               <div className="guideline-item">
                 <h3 className="guideline-title">Important Points</h3>
                 <ul className="guideline-list">
-                  <li>All participants must fill the registration form to register themselves for the conference, after paying the registration fees.</li>
-                  <li>Participants are informed to pay the registration fee through online mode in the bank account provided below. Please start this process early since until your payment is received and verified you will not be able to upload your papers.</li>
+                  <li>
+                    All participants must fill the registration form to register themselves for the conference, after paying the registration fees.
+                  </li>
+                  <li>
+                    Participants are informed to pay the registration fee through online mode in the bank account provided below. Please start this process early since until your payment is received and verified you will not be able to upload your papers.
+                  </li>
                 </ul>
               </div>
 
               <div className="guideline-item">
                 <h3 className="guideline-title">Procedure for Registration</h3>
                 <ul className="guideline-list">
-                  <li>During payment, please add PAPERIdNumber_RegisteringAuthorName_2025 in the transaction/payment remarks/description column. For example, if your paper ID is 103 and your name is S Gangully, you should write 103_S Gangully_2025 in the remarks/description column during the payment.</li>
-                  <li>Check the table below for registration fee details of different categories. Deposit your respective category fee in the conference bank account - please note down the transaction reference number and take a screenshot of the payment receipt.</li>
-                  <li>Fill out the registration form with all the required details. <a href="https://forms.gle/Lf7FRsaHUjsaqvPY8" target="_blank" rel="noreferrer" className="registration-link">Click here</a> for the registration form.</li>
-                  <li>Please have the following ready before you start filling the registration form:
+                  <li>
+                    During payment, please add <code>PAPERIdNumber_RegisteringAuthorName_2025</code> in the transaction/payment remarks/description column. For example, if your paper ID is 103 and your name is S Ganguly, you should write <code>103_S Ganguly_2025</code> in the remarks/description column during the payment.
+                  </li>
+                  <li>
+                    Check the table below for registration fee details of different categories. Deposit your respective category fee in the conference bank account – please note down the transaction reference number and take a screenshot of the payment receipt.
+                  </li>
+                  <li>
+                    Fill out the registration form with all the required details. Registration Form Link: <span className="highlight-text">………………</span>
+                  </li>
+                  <li>
+                    Please have the following ready before you start filling the registration form:
                     <ol className="sublist">
                       <li>Your paper details (paper ID, title), and author(s) details (name(s) and affiliation)</li>
                       <li>Online transaction reference number</li>
-                      <li>Student identity proof in PDF format of size not more than 10 MB (if you are a student registrant)</li>
-                      <li>Scanned copy of online payment receipt in PDF format of size not more than 10 MB</li>
+                      <li>Student identity proof in PDF format of size not more than 10 MB (if you are a student registrant)</li>
+                      <li>Scanned copy of online payment receipt in PDF format of size not more than 10 MB</li>
                     </ol>
                   </li>
                 </ul>
@@ -46,7 +57,9 @@ const Registration = () => {
 
               <div className="guideline-item">
                 <h3 className="guideline-title">Payment Information</h3>
-                <p>You can pay through online/internet banking of your account or through your UPI (PhonePe, Google Pay, etc.) - Bank transfer</p>
+                <p>
+                  You can pay through online/internet banking of your account or through your UPI (PhonePe, Google Pay, etc.) – Bank transfer
+                </p>
                 <div className="bank-details">
                   <table className="bank-table">
                     <tbody>
@@ -79,11 +92,11 @@ const Registration = () => {
                 <h3 className="guideline-title">Additional Information</h3>
                 <ul className="guideline-list">
                   <li>At least one of the authors of the accepted paper has to register for the conference.</li>
-                  <li>The authors can register for a maximum of 3 accepted papers. For each extra paper, an additional fee of INR 3000 (USD 100) is to be paid.</li>
+                  <li>The authors can register for a maximum of 3 accepted papers. For each extra paper, an additional fee of INR 3000 (USD 100) is to be paid.</li>
                   <li>Students can upload a maximum of 1 paper with a single registration.</li>
                   <li>The final camera-ready paper should have a minimum of 6 pages and a maximum of 12 pages.</li>
                   <li className="highlight">
-                    Registration Form Link: <a href="https://forms.gle/Lf7FRsaHUjsaqvPY8" target="_blank" rel="noreferrer" className="registration-link">https://forms.gle/Lf7FRsaHUjsaqvPY8</a>
+                    Registration Form Link: <span className="highlight-text">………………</span>
                   </li>
                 </ul>
               </div>
@@ -167,7 +180,9 @@ const Registration = () => {
 
               <div className="faq-item">
                 <div className="faq-question">Whom to contact for clarifications on payment of fees and the registration process?</div>
-                <div className="faq-answer">You can send an email to <a href="mailto:e2a@ei.nits.ac.in" className="contact-email">e2a@ei.nits.ac.in</a> with the subject line: &lt;CLARIFICATION&gt; - &lt;REGISTRATION FEE&gt; - &lt;YOUR PAPER ID&gt;</div>
+                <div className="faq-answer">
+                  You can send an email to <a href="mailto:e2a@ei.nits.ac.in" className="contact-email">e2a@ei.nits.ac.in</a> with the subject line: &lt;CLARIFICATION&gt; - &lt;REGISTRATION FEE&gt; - &lt;YOUR PAPER ID&gt;
+                </div>
               </div>
             </div>
           </div>

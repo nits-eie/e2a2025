@@ -20,37 +20,48 @@ const OfflinePresentation = () => {
             Instructions for Physical (Offline) Presentation
           </h3>
           <p className="offline-presentation-text">
-            The participants who have opted for offline presentation* in the session at E2A-2024 are requested to follow the below given guidelines.
+            We eagerly await to warmly welcome you to the green campus of NIT Silchar.<br />
+            The detailed instructions for registered participants who have opted to present OFFLINE during the E2A 2025 conference are as follows:
           </p>
           <ol className="offline-presentation-list">
             <li className="offline-presentation-list-item">
-              Prepare your <span className="highlight-text">slides in .pptx</span> format for the presentation of 8-10 minutes.
-            </li>
-            <li className="offline-presentation-list-item">
-              <span className="highlight-text">Save your file</span> in the name &lt;track no_paper_id_name.pptx&gt;.
-            </li>
-            <li className="offline-presentation-list-item">
-              <span className="highlight-text">Send your presentation</span> file to{" "}
-              <a className="offline-presentation-link" href="mailto:e2a@ei.nits.ac.in">
-                e2a@ei.nits.ac.in
+              You are requested to upload your <span className="highlight-text">PPT slide file (in PDF format)</span> to the following Google Drive link –{" "}
+              <a
+                className="offline-presentation-link"
+                href="#"
+                title="Link will be updated soon"
+              >
+                [Drive Upload Link]
               </a>
             </li>
             <li className="offline-presentation-list-item">
-              Keep the <span className="highlight-text">subject line in the mail</span> as &lt;Presentation Slides-Track No.-Paper ID&gt;.
+              You are required to name your PPT file as{" "}
+              <span className="highlight-text">&lt;PPT_YourPaperID_SessionName&gt;</span>. For example, if your paper ID is 125 and your session is 2A, name it{" "}
+              <span className="highlight-text">PPT_125_2A.pdf</span>.
             </li>
             <li className="offline-presentation-list-item">
-              <span className="highlight-text">Attendance</span> of the presenter is <span className="highlight-text">compulsory</span> during the scheduled presentation else the paper will not be considered for publication.
+              The last date for uploading these files is{" "}
+              <span className="highlight-text">(date will be updated)</span>.
             </li>
             <li className="offline-presentation-list-item">
-              For each paper, 15 minutes will be devoted which includes <span className="highlight-text">8-10 minutes</span> of PowerPoint <span className="highlight-text">presentation</span> followed by <span className="highlight-text">5-7</span> minutes of live <span className="highlight-text">interaction</span> during Q&A.
+              Please be aware that failing to present your work during your assigned slot will result in your paper being <span className="highlight-text">excluded</span> from further processing and the conference proceedings.
             </li>
             <li className="offline-presentation-list-item">
-              Please <span className="highlight-text">follow the instructions</span> from time to time given by the Chairs, Co-chairs and moderators for the <span className="highlight-text">smooth conduction of the session</span>.
+              Each paper is allotted <span className="highlight-text">10 minutes total</span>: 8 minutes for presentation and 2 minutes for Q&A.
+            </li>
+            <li className="offline-presentation-list-item">
+              After your 10‑minute slot, the session chair will take over for live interaction with the presenter.
+            </li>
+            <li className="offline-presentation-list-item">
+              Keep your slides open throughout the session to <span className="highlight-text">answer audience and chair questions</span>.
+            </li>
+            <li className="offline-presentation-list-item">
+              Please follow any further instructions from the chairs, co‑chairs, and moderators for the <span className="highlight-text">smooth conduct</span> of your session.
             </li>
           </ol>
-          <span className="offline-presentation-note">
-            *The schedule of the presentation session will be intimated soon.
-          </span>
+          <p className="offline-presentation-note">
+            *Detailed session timings will be communicated soon.
+          </p>
         </div>
       </div>
     </>

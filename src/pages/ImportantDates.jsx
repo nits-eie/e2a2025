@@ -19,24 +19,28 @@ const ImportantDates = () => {
           <div className="divider"></div>
           <ul className="dates-list">
             <li className="date-item">
+              <span className="date-label">Conference Dates:</span>
+              <span className="date-value">17–19 December 2025</span>
+            </li>
+            <li className="date-item">
               <span className="date-label">Paper Submission Opens:</span>
-              <span className="date-value">15.07.2024</span>
+              <span className="date-value">15.07.2025</span>
             </li>
             <li className="date-item">
               <span className="date-label">Paper Submission Deadline:</span>
-              <span className="date-value">03.11.2024</span>
+              <span className="date-value">08.09.2025</span>
             </li>
             <li className="date-item">
               <span className="date-label">Acceptance Notification:</span>
-              <span className="date-value">25.10.2024 onwards</span>
+              <span className="date-value">08.10.2025</span>
             </li>
             <li className="date-item">
               <span className="date-label">Last Date for Conference Registration:</span>
-              <span className="date-value">20.11.2024</span>
+              <span className="date-value">07.11.2025</span>
             </li>
             <li className="date-item">
               <span className="date-label">Deadline for Camera Ready Paper:</span>
-              <span className="date-value">25.11.2024</span>
+              <span className="date-value">15.11.2025</span>
             </li>
           </ul>
         </div>
@@ -134,7 +138,8 @@ const ImportantDates = () => {
             align-items: flex-start;
           }
 
-          .date-label, .date-value {
+          .date-label,
+          .date-value {
             font-size: 1rem;
             margin-bottom: 0.5rem;
           }

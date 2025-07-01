@@ -352,7 +352,7 @@ const Header = () => {
         }}>
           {/* Logo - Visible on desktop */}
           <div className="logo" style={{ display: windowWidth > 768 ? 'block' : 'none' }}>
-            <img src="e2a.png" alt="Logo" style={{ height: '40px', objectFit: 'contain' }} />
+            <img src="e2a25.png" alt="Logo" style={{ height: '60px', objectFit: 'contain' }} />
           </div>
 
           {/* Navigation Links - Desktop */}
@@ -415,7 +415,7 @@ const Header = () => {
           {windowWidth <= 768 && (
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
               <div className="logo" style={{ display: 'block' }}>
-                <img src="e2a.png" alt="Logo" style={{ height: '40px', objectFit: 'contain' }} />
+                <img src="e2a25.png" alt="Logo" style={{ height: '52px', objectFit: 'contain' }} />
               </div>
               <button
                 onClick={toggleMobileMenu}
