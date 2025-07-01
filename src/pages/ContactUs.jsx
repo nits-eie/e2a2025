@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import "../assets/css/contactUs.css";
 import Header from '../components/Header';
+import '../assets/css/contactUs.css';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -94,7 +94,7 @@ const ContactUs = () => {
 
   const contactPersons = [
     {
-      name: "Dr. Shankar K ",
+      name: "Dr. Shankar K",
       position: "Assistant Professor",
       department: "Dept. of E&I Engineering",
       phone: "+91-8870525684",
@@ -112,103 +112,125 @@ const ContactUs = () => {
   return (
     <>
       <Header />
-      <div className="container" ref={containerRef}>
-        <div className="contact-container">
-          <div className="contact-info">
-            <h3>Contact Us</h3>
-            <p>For any queries or assistance, please reach out to our team.</p>
+      <div className="contact-page" ref={containerRef}>
+        <div className="page-header">
+          <h1>Contact Us</h1>
+          <p>We'd love to hear from you. Reach out to our team for any inquiries or assistance.</p>
+        </div>
 
-            <div className="contact-persons">
-              {contactPersons.map((person, index) => (
-                <div className="contact-person" key={index}>
-                  <p>{person.name}</p>
-                  <p>{person.position}</p>
-                  <p>{person.department}</p>
-                  <p>Phone: {person.phone}</p>
-                  <p>
-                    <a href={`mailto:${person.email}`}>{person.email}</a>
-                  </p>
-                </div>
-              ))}
-
-              <div className="contact-person">
-                <p>General Inquiries</p>
-                <p>
-                  <a href="mailto:e2a@ei.nits.ac.in">e2a@ei.nits.ac.in</a>
-                </p>
+        <div className="contact-wrapper">
+          <div className="contact-grid">
+            <div className="contact-card">
+              <div className="card-header">
+                <h2>Contact Information</h2>
+                <p className="card-subtitle">Our team is here to help you</p>
               </div>
+
+              <div className="contact-details">
+                {contactPersons.map((person, index) => (
+                  <div className="contact-item" key={index}>
+                    <div className="contact-item-header">
+                      <h3>{person.name}</h3>
+                      <span className="position">{person.position}</span>
+                    </div>
+                    <div className="contact-item-body">
+                      <p className="department">{person.department}</p>
+                      <p className="phone">Phone: {person.phone}</p>
+                      <p className="email">
+                        <a href={`mailto:${person.email}`} className="contact-link">{person.email}</a>
+                      </p>
+                    </div>
+                  </div>
+                ))}
+
+                <div className="contact-item">
+                  <div className="contact-item-header">
+                    <h3>General Inquiries</h3>
+                  </div>
+                  <div className="contact-item-body">
+                    <p className="email">
+                      <a href="mailto:e2a@ei.nits.ac.in" className="contact-link">e2a@ei.nits.ac.in</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="contact-form-card">
+              <div className="card-header">
+                <h2>Send Us a Message</h2>
+                <p className="card-subtitle">Fill out the form below and we'll get back to you shortly</p>
+              </div>
+
+              <form onSubmit={handleSubmit} noValidate className="form-container">
+                <div className="form-group">
+                  <label htmlFor="name" className="required">Name</label>
+                  <input
+                    id="name"
+                    type="text"
+                    className={`form-control ${errors.name ? 'error' : ''}`}
+                    value={formData.name}
+                    placeholder="Your name"
+                    onChange={handleChange}
+                  />
+                  {errors.name && <div className="error-message show">{errors.name}</div>}
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="subject" className="required">Subject</label>
+                  <input
+                    id="subject"
+                    type="text"
+                    className={`form-control ${errors.subject ? 'error' : ''}`}
+                    value={formData.subject}
+                    placeholder="Message subject"
+                    onChange={handleChange}
+                  />
+                  {errors.subject && <div className="error-message show">{errors.subject}</div>}
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="email" className="required">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    className={`form-control ${errors.email ? 'error' : ''}`}
+                    value={formData.email}
+                    placeholder="Your email"
+                    onChange={handleChange}
+                  />
+                  {errors.email && <div className="error-message show">{errors.email}</div>}
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="message" className="required">Message</label>
+                  <textarea
+                    id="message"
+                    className={`form-control ${errors.message ? 'error' : ''}`}
+                    rows="5"
+                    value={formData.message}
+                    placeholder="Your message..."
+                    onChange={handleChange}
+                  />
+                  {errors.message && <div className="error-message show">{errors.message}</div>}
+                </div>
+
+                {submitStatus === 'success' && (
+                  <div className="success-message show">
+                    Thank you! We'll get back to you soon.
+                  </div>
+                )}
+
+                <button
+                  type="submit"
+                  className="submit-btn"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                </button>
+              </form>
             </div>
           </div>
-
-          <form className="contact-form" onSubmit={handleSubmit} noValidate>
-            <h3>Send Message</h3>
-
-            <div className="form-group">
-              <label htmlFor="name" className="required">Name</label>
-              <input
-                id="name"
-                type="text"
-                className={`form-control ${errors.name ? 'error' : ''}`}
-                value={formData.name}
-                placeholder="Your name"
-                onChange={handleChange}
-              />
-              {errors.name && <div className="error-message show">{errors.name}</div>}
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="subject" className="required">Subject</label>
-              <input
-                id="subject"
-                type="text"
-                className={`form-control ${errors.subject ? 'error' : ''}`}
-                value={formData.subject}
-                placeholder="Message subject"
-                onChange={handleChange}
-              />
-              {errors.subject && <div className="error-message show">{errors.subject}</div>}
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="email" className="required">Email</label>
-              <input
-                id="email"
-                type="email"
-                className={`form-control ${errors.email ? 'error' : ''}`}
-                value={formData.email}
-                placeholder="Your email"
-                onChange={handleChange}
-              />
-              {errors.email && <div className="error-message show">{errors.email}</div>}
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="message" className="required">Message</label>
-              <textarea
-                id="message"
-                className={`form-control ${errors.message ? 'error' : ''}`}
-                rows="4"
-                value={formData.message}
-                placeholder="Your message..."
-                onChange={handleChange}
-              />
-              {errors.message && <div className="error-message show">{errors.message}</div>}
-            </div>
-
-            {submitStatus === 'success' && (
-              <div className="success-message show">
-                Thank you! We'll get back to you soon.
-              </div>
-            )}
-
-            <button
-              type="submit"
-              className="submit-btn"
-              disabled={isSubmitting}
-            >
-              {isSubmitting ? 'Sending...' : 'Send Message'}
-            </button>
-          </form>
         </div>
       </div>
     </>

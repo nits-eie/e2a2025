@@ -33,10 +33,10 @@ const Committee = () => {
         <div className="list">
           <h1 style={{ marginBottom: "10px" }}>Honorary Chair</h1>
           <ProfileCard
-            img="/images/ramjee-prasad.jpg"
+            img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751045933/Ramjee-_Prasad_cvsxhd.jpg"
             name="Prof. Ramjee Prasad"
-            aff="Founder, CTIF Global Capsule"  
-            link="https://ctifglobalcapsule.org/cgc-member/ramjee-prasad/"
+            aff="Founder, CTIF Global Capsule"
+            // link="https://ctifglobalcapsule.org/cgc-member/ramjee-prasad/"
           />
         </div>
 
@@ -59,35 +59,37 @@ const Committee = () => {
             />
             <ProfileCard
               style={{ maxWidth: "300px" }}
-              img="/images/Anup_Kumar_Sharma.jpg"
+              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751048779/anup_jagha4.jpg"
               name="Dr. Anup Kumar Sharma"
               aff="NIT Silchar"
             />
             <ProfileCard
               style={{ maxWidth: "300px" }}
-              img="/images/Anup_Kumar_Sharma.jpg"
-              name="Dr. Anup Kumar Sharma"
-              aff="NIT Silchar"
+              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png"
+              name="To be updated soon "
+              aff=""
             />
             <ProfileCard
               style={{ maxWidth: "300px" }}
-              img="/images/Anup_Kumar_Sharma.jpg"
-              name="Dr. Anup Kumar Sharma"
-              aff="NIT Silchar"
+              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png"
+              name="To be updated soon "
+              aff=""
             />
             <ProfileCard
               style={{ maxWidth: "300px" }}
-              img="/images/Anup_Kumar_Sharma.jpg"
-              name="Dr. Anup Kumar Sharma"
-              aff="NIT Silchar"
+              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png"
+              name="To be updated soon "
+              aff=""
             />
+           
+          
           </div>
         </div>
 
         <div className="list">
           <h1 style={{ marginBottom: "10px" }}>Convenor</h1>
           <ProfileCard
-            img="/images/Munmun_Khanra.jpg"
+            img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751048772/munmun_y0v4n2.jpg"
             name="Dr. Munmun Khanra"
             aff="NIT Silchar"
           />
@@ -106,25 +108,25 @@ const Committee = () => {
           >
             <ProfileCard
               style={{ maxWidth: "300px" }}
-              img="/images/Rajdeep_Dasgupta.jpg"
+              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401651/rajdeep_mr71fm.jpg"
               name="Dr. Rajdeep Dasgupta"
               aff="NIT Silchar"
             />
             <ProfileCard
               style={{ maxWidth: "300px" }}
-              img="/images/Jupitara_Hazarika.jpg"
+              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401688/jupitara_zwvtau.jpg"
               name="Dr. Jupitara Hazarika"
               aff="NIT Silchar"
             />
             <ProfileCard
               style={{ maxWidth: "300px" }}
-              img="/images/Shankar_K.jpg"
-              name="Dr. Shankar K."
+              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751048765/shankar_zfkwbo.jpg"
+              name="Dr. Shankar K.                                                                        "
               aff="NIT Silchar"
             />
             <ProfileCard
               style={{ maxWidth: "300px" }}
-              img="/images/Vipin_Chandra_Pal.jpg"
+              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751048759/vipin_abnmht.jpg"
               name="Dr. Vipin Chandra Pal"
               aff="NIT Silchar"
             />

@@ -8,8 +8,9 @@
 
 /* Global CSS Here */
 .container {
-  width: 80%;
-  margin: 0 auto;
+  width: 99%;
+  margin: 0 1rem;
+  padding-left:2rem ;
   color: #eee;
 }
 

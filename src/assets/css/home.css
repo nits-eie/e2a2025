@@ -6,17 +6,19 @@
 .container {
   max-width: 1800px; /* Increased from 1600px for more overall width */
   margin: 0 auto;
-  padding: 0 2rem; /* Reduced padding for more content space */
+  padding: 0 0rem; /* Reduced padding for more content space */
+  
 }
 
 /* Hero Section */
-.hero-section {
+/* .hero-section {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 8rem 0 6rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  
 }
 
 .hero-section::before {
@@ -96,7 +98,7 @@
   justify-content: center;
   margin-top: 3rem;
   flex-wrap: wrap;
-}
+} */
 
 .btn-primary, .btn-secondary {
   padding: 1rem 2rem;
@@ -133,12 +135,13 @@
 
 /* Main Content */
 .main-content {
-  background: #f8fafc;
+  background: #fdfeff;
+  
 }
 
 /* Section Styles */
 .about-section {
-  padding: 8rem 0;
+  padding: 2rem 0;
   background: white;
 }
 
@@ -147,6 +150,7 @@
   display: grid;
   grid-template-columns: 4fr 1fr; /* Changed from 3fr 1fr to 4fr 1fr for wider main content */
   gap: 4rem; /* Increased gap for better spacing */
+  /* background-color: #f7f9f8; */
 }
 
 .section-header {
@@ -183,7 +187,7 @@
 
 /* Content Cards */
 .content-card {
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 3rem;
   border-radius: 12px;
   margin-bottom: 2rem;
@@ -500,15 +504,17 @@
 
 /* Speakers Section */
 .speakers-section {
-  padding: 8rem 0;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 1rem 0;
+  /* background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); */
+  background-color: rgb(252, 252, 252);
 }
 
 .speakers-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 3rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
+  /* background-color: red; */
 }
 
 /* Enhanced Speaker Cards */
