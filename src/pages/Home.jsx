@@ -197,12 +197,13 @@ const Home = () => {
                     <div>
                       <h4>Submit Your Paper</h4>
                       <a
-                        href="https://cmt3.research.microsoft.com/E2A2024/Submission/Index"
+                        // href="https://cmt3.research.microsoft.com/E2A2024/Submission/Index"
+                        href="."
                         target="_blank"
                         rel="noreferrer"
                         className="submission-link"
                       >
-                        CMT Portal
+                        Updated Soon
                       </a>
                     </div>
                   </div>
