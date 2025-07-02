@@ -1,89 +1,170 @@
+/* callForPapers.css */
 
+/* Base Styles */
+:root {
+  --primary-color: #4a6fa5;
+  --secondary-color: #166088;
+  --accent-color: #4fc3f7;
+  --text-color: #333;
+  --light-text-color: #666;
+  --background-color: #f8f9fa;
+  --border-color: #e1e4e8;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
 
-.main-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center !important;
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  
+  padding: 0;
+}
+
+/* Call for Papers Container */
+.call-for-papers-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Call for Papers Header */
+.call-for-papers-header {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom:2rem ;
+
+}
+
+.call-for-papers-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: var(--accent-color);
+}
+
+.underline {
+  height: 4px;
+  width: 80px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+}
+
+/* Call for Papers Description */
+.call-for-papers-description {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: var(--light-text-color);
+  text-align: justify;
+}
+
+/* Accordion Container */
+.accordion-container {
   width: 100%;
+}
+
+/* Accordion Item */
+.accordion-item {
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px var(--shadow-color);
   background-color: white;
 }
-.paper-heading {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 3rem;
-  font-weight: 600;
-  color: black;
-  padding: 3%;
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
-.line {
-  position: relative;
-  top: 0.8rem;
-  width: 20rem;
-  border-bottom: 0.25rem solid black;
-}
-.call-des {
-  font-family: OpenSans, sans-serif;
-  position: relative;
-  color: #111;
-  text-align: justify;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: justify;
-}
-.paper-list {
-  padding: 5%;
-  border-radius: 15px;
-  width: 80%;
-  position: relative;
-  color: black;
-  box-shadow: 3px 3px 30px black;
-}
-.list-accordion{
-  position: relative;
-  margin-top:5% ;
-  width: 97%;
-}
-.list-heading {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
+
+/* Accordion Header */
+.accordion-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--background-color);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
 }
-.list-heading > span {
-  font-size: 24px;
+
+.accordion-header:hover {
+  background-color: #f0f2f5;
 }
-.active,
-.list-heading:hover {
-  background-color: #ccc;
+
+.accordion-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
 }
-.active:after {
-  content: "\2212";
+
+.accordion-header span {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
 }
-.list-items {
-  padding: 0 18px;
+
+/* Accordion Content */
+.accordion-content {
+  padding: 0;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
 }
-.list-accordion-item {
-  border: 1px solid #eee;
-  border-bottom: none;
-  border-top: none
+
+.accordion-content.active {
+  padding: 1rem 2rem;
+  max-height: 1000px; /* Adjust based on content length */
 }
-.list-accordion-item:last-child {
-  border-bottom: 1px solid #eee;
+
+.accordion-content ol {
+  padding-left: 1.5rem;
+  margin: 0;
 }
-li {
-  text-align: left;
+
+.accordion-content li {
+  margin: 0.5rem 0;
+  color: var(--text-color);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .call-for-papers-title {
+    font-size: 2rem;
+  }
+
+  .call-for-papers-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .call-for-papers-title {
+    font-size: 1.5rem;
+  }
+
+  .call-for-papers-description {
+    font-size: 0.9rem;
+  }
+
+  .accordion-header {
+    padding: 0.8rem 1rem;
+  }
+
+  .accordion-header h3 {
+    font-size: 1rem;
+  }
 }

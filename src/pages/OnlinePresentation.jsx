@@ -1,9 +1,10 @@
 import React from "react";
-import "../assets/css/registration.css";
+import "../assets/css/online.css";
 import Header from "../components/Header";
 
 const OnlinePresentation = () => {
   const container = React.useRef(null);
+
   const scrollToBottom = () => {
     container.current.scrollIntoView({ behavior: "smooth" });
   };
@@ -13,52 +14,69 @@ const OnlinePresentation = () => {
   return (
     <>
       <Header />
-      <div className="bg-white ptb-5 container" ref={container}>
-        <div className="registration">
-          <h2 className="bold mtb-2 text-center">
+      <div className="presentation-container" ref={container}>
+        <div className="presentation-content">
+          <h3 className="presentation-heading">
             Instructions for Online Presentation
-          </h2>
-          <p className="text1 mb-2">
-            Below are the detailed instructions for registered participants who have opted to present <strong>ONLINE</strong> during the E2A 2025 conference:
+          </h3>
+          <p className="presentation-text">
+            The detailed instructions for registered participants who have opted to present ONLINE during the E2A 2025 conference are as follows:
           </p>
-          <ol className="ml-3 mb-4 text1">
-            <li className="mb-2">
-              <strong>Upload:</strong> Prepare a video (.mp4 format) of your presentation (strictly 8 minutes) and upload it <em>along with</em> your PPT slides (pdf format) to the designated Google Drive folder for your session – <em>link to be updated</em>.
+          <ol className="presentation-list">
+            <li className="presentation-list-item">
+              You are required to prepare a video (<span className="highlight-text">.mp4 format</span>) of your presentation strictly for 8 minutes and upload it <strong>along with</strong> your PPT slides (PDF format) to the Google Drive folder for your session:
+              <br />
+              <a
+                className="presentation-link"
+                href="#"
+                title="Link will be updated soon"
+              >
+                [Session Drive Folder Link]
+              </a>
             </li>
-            <li className="mb-2">
-              <strong>Folder:</strong> Ensure both files are placed in the correct session folder.
+            <li className="presentation-list-item">
+              Make sure you upload both your <span className="highlight-text">video file</span> AND your <span className="highlight-text">presentation slides</span> into the correct session folder.
             </li>
-            <li className="mb-2">
-              <strong>Filename:</strong> Name your files as <code>&lt;Video_YourPaperID_SessionName&gt;</code> and <code>&lt;PPT_YourPaperID_SessionName&gt;</code>. Example: <code>Video_179_2B</code> and <code>PPT_179_2B</code> for Paper ID 179 in Session 2B.
+            <li className="presentation-list-item">
+              Name your files as follows:
+              <br />
+              <span className="highlight-text">
+                &lt;Video_YourPaperID_SessionName&gt; and &lt;PPT_YourPaperID_SessionName&gt;
+              </span>
+              .<br />
+              e.g. for paper ID 179 in session 2B: <code>Video_179_2B.mp4</code> and <code>PPT_179_2B.pdf</code>.
             </li>
-            <li className="mb-2">
-              <strong>Deadline:</strong> Last date for uploading is <strong>to be updated</strong>.
+            <li className="presentation-list-item">
+              The last date for uploading these files will be <span className="highlight-text">(date will be updated)</span>.
             </li>
-            <li className="mb-2">
-              <strong>Live Presentation:</strong> During your slot, share your screen with camera ON and present using the slides. If any technical glitch occurs, the pre-recorded video will be played.
+            <li className="presentation-list-item">
+              During your allotted time slot, you must share your screen with your camera <span className="highlight-text">ON</span> and present live using your slides. In case of any technical issue, we will play your pre‑recorded video.
             </li>
-            <li className="mb-2">
-              <strong>Attendance:</strong> Mandatory. Failure to present at your allotted time will exclude your paper from proceedings.
+            <li className="presentation-list-item">
+              Failing to present live during your assigned slot will result in your paper being <span className="highlight-text">excluded</span> from further processing and the conference proceedings.
             </li>
-            <li className="mb-2">
-              <strong>Duration:</strong> Each paper gets <strong>10 minutes</strong> (8 minutes presentation + 2 minutes Q&A).
+            <li className="presentation-list-item">
+              Each paper is allotted <span className="highlight-text">10 minutes total</span>: 8 minutes for presentation and 2 minutes for Q&A.
             </li>
-            <li className="mb-2">
-              After the presentation, the session chair will lead the interaction with the presenter.
+            <li className="presentation-list-item">
+              After your 10‑minute slot, the session chair will take over for live Q&A with the presenter.
             </li>
-            <li className="mb-2">
-              Keep your slides handy to answer questions from the audience and chair.
+            <li className="presentation-list-item">
+              Keep your slides open throughout the session to <span className="highlight-text">answer questions</span> from the audience and chairs.
             </li>
-            <li className="mb-2">
-              Other attendees will remain muted but may raise hands; the moderator will enable microphones in sequence.
+            <li className="presentation-list-item">
+              Except for the presenter, all other attendees will remain muted. They may use the “raise hand” feature, and the moderator will unmute them in sequence to ask questions.
             </li>
-            <li className="mb-2">
-              Follow any additional instructions from chairs, co-chairs, and moderators for smooth session conduct.
+            <li className="presentation-list-item">
+              Please follow any further instructions from the chairs, co‑chairs, and moderators for the <span className="highlight-text">smooth conduct</span> of the session.
             </li>
-            <li className="mb-2">
-              Google Drive session links will be updated soon.
+            <li className="presentation-list-item">
+              The specific Google Drive links for each session folder will be updated here as soon as they are available.
             </li>
           </ol>
+          <span className="presentation-note">
+            *Session schedule and connection details will be communicated soon.
+          </span>
         </div>
       </div>
     </>

@@ -6,7 +6,8 @@ const Brochure = () => {
   return (
     <>
       <div className="brochureCont">
-        <img src={brochureImg} alt="" className="brochureImg" />
+        {/* <img src={brochureImg} alt="" className="brochureImg" /> */}
+        To be updated soon
       </div>
     </>
   );

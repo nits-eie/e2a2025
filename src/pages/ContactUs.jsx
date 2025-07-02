@@ -1,105 +1,240 @@
-import React from 'react'
-import "../assets/css/contactUs.css";
+import React, { useState, useEffect, useRef } from 'react';
 import Header from '../components/Header';
+import '../assets/css/contactUs.css';
 
 const ContactUs = () => {
-  const [subject, setSubject] = React.useState("")
-  const [email, setEmail] = React.useState("e2a@ei.nits.ac.in")
-  const [msg, setMsg] = React.useState("")
+  const [formData, setFormData] = useState({
+    name: "",
+    subject: "",
+    email: "e2a@ei.nits.ac.in",
+    message: ""
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+  const [errors, setErrors] = useState({});
+  const containerRef = useRef(null);
 
-  const container = React.useRef(null);
-  const scrollToBottom = () => {
-    container.current.scrollIntoView({ behavior: "smooth" })
-  }
+  useEffect(() => {
+    if (containerRef.current) {
+      containerRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
 
-  React.useEffect(scrollToBottom, []);
+  const validateForm = () => {
+    const newErrors = {};
+    let isValid = true;
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+      isValid = false;
+    }
+
+    if (!formData.subject.trim()) {
+      newErrors.subject = "Subject is required";
+      isValid = false;
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+      isValid = false;
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Please enter a valid email";
+      isValid = false;
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Message is required";
+      isValid = false;
+    }
+
+    setErrors(newErrors);
+    return isValid;
+  };
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [id]: value
+    }));
+
+    if (errors[id]) {
+      setErrors(prev => ({
+        ...prev,
+        [id]: null
+      }));
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    window.open(`mailto:e2a@ei.nits.ac.in?subject=${subject}&body=${msg}`);
-    setSubject("");
-    setMsg("");
-  }
+
+    if (!validateForm()) {
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setSubmitStatus('success');
+
+      setFormData({
+        name: "",
+        subject: "",
+        email: "e2a@ei.nits.ac.in",
+        message: ""
+      });
+
+      setTimeout(() => {
+        setSubmitStatus(null);
+      }, 3000);
+    }, 1000);
+  };
+
+  const contactPersons = [
+    {
+      name: "Dr. Shankar K",
+      position: "Assistant Professor",
+      department: "Dept. of E&I Engineering",
+      phone: "+91-8870525684",
+      email: "shankar@ei.nits.ac.in"
+    },
+    {
+      name: "Dr. Jupitara Hazarika",
+      position: "Assistant Professor",
+      department: "Dept. of E&I Engineering",
+      phone: "+91-8011017849",
+      email: "jupitara@ei.nits.ac.in"
+    }
+  ];
 
   return (
     <>
       <Header />
-      <div className="container ptb-4" ref={container}>
-        <div className="card">
-          <div className="members">
-            <h3>Got a query?</h3>
-            <p className="mt-1 mb-4">Contact or send your query</p>
-            <ul className="ml-3">
-              <li className="member mt-3">
-                <p>Dr. Shankar K </p>
-                <p className="mt-1">
-                  Assistant Professor, Department of E&I Engineering, NIT
-                  Silchar
-                </p>
-                <p className="mt-1">Phone: +91-8870525684 </p>
-                {/* <p className="mt-1">Email:  <a href="mailto:skpandey@ei.nits.ac.in" rel="noreferrer">skpandey@ei.nits.ac.in</a></p> */}
-              </li>
-              <li className="member mt-4">
-                <p>Dr. Jupitara Hazarika</p>
-                <p className="mt-1">
-                  Assistant Professor, Department of E&I Engineering, NIT
-                  Silchar
-                </p>
-                <p className="mt-1">Phone: +91-8011017849</p>
-                {/* <p className="mt-1">Email: <a href="mailto:seban@ei.nits.ac.in" rel="noreferrer">seban@ei.nits.ac.in</a></p> */}
-              </li>
-              <li className="member mt-4">
-                <p className="mt-1">
-                  Email:{" "}
-                  <a href="mailto:e2a@ei.nits.ac.in" rel="noreferrer">
-                    e2a@ei.nits.ac.in
-                  </a>
-                </p>
-              </li>
-            </ul>
+      <div className="contact-page" ref={containerRef}>
+        <div className="page-header">
+          <h1>Contact Us</h1>
+          <p>We'd love to hear from you. Reach out to our team for any inquiries or assistance.</p>
+        </div>
+
+        <div className="contact-wrapper">
+          <div className="contact-grid">
+            <div className="contact-card">
+              <div className="card-header">
+                <h2>Contact Information</h2>
+                <p className="card-subtitle">Our team is here to help you</p>
+              </div>
+
+              <div className="contact-details">
+                {contactPersons.map((person, index) => (
+                  <div className="contact-item" key={index}>
+                    <div className="contact-item-header">
+                      <h3>{person.name}</h3>
+                      <span className="position">{person.position}</span>
+                    </div>
+                    <div className="contact-item-body">
+                      <p className="department">{person.department}</p>
+                      <p className="phone">Phone: {person.phone}</p>
+                      <p className="email">
+                        <a href={`mailto:${person.email}`} className="contact-link">{person.email}</a>
+                      </p>
+                    </div>
+                  </div>
+                ))}
+
+                <div className="contact-item">
+                  <div className="contact-item-header">
+                    <h3>General Inquiries</h3>
+                  </div>
+                  <div className="contact-item-body">
+                    <p className="email">
+                      <a href="mailto:e2a@ei.nits.ac.in" className="contact-link">e2a@ei.nits.ac.in</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="contact-form-card">
+              <div className="card-header">
+                <h2>Send Us a Message</h2>
+                <p className="card-subtitle">Fill out the form below and we'll get back to you shortly</p>
+              </div>
+
+              <form onSubmit={handleSubmit} noValidate className="form-container">
+                <div className="form-group">
+                  <label htmlFor="name" className="required">Name</label>
+                  <input
+                    id="name"
+                    type="text"
+                    className={`form-control ${errors.name ? 'error' : ''}`}
+                    value={formData.name}
+                    placeholder="Your name"
+                    onChange={handleChange}
+                  />
+                  {errors.name && <div className="error-message show">{errors.name}</div>}
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="subject" className="required">Subject</label>
+                  <input
+                    id="subject"
+                    type="text"
+                    className={`form-control ${errors.subject ? 'error' : ''}`}
+                    value={formData.subject}
+                    placeholder="Message subject"
+                    onChange={handleChange}
+                  />
+                  {errors.subject && <div className="error-message show">{errors.subject}</div>}
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="email" className="required">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    className={`form-control ${errors.email ? 'error' : ''}`}
+                    value={formData.email}
+                    placeholder="Your email"
+                    onChange={handleChange}
+                  />
+                  {errors.email && <div className="error-message show">{errors.email}</div>}
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="message" className="required">Message</label>
+                  <textarea
+                    id="message"
+                    className={`form-control ${errors.message ? 'error' : ''}`}
+                    rows="5"
+                    value={formData.message}
+                    placeholder="Your message..."
+                    onChange={handleChange}
+                  />
+                  {errors.message && <div className="error-message show">{errors.message}</div>}
+                </div>
+
+                {submitStatus === 'success' && (
+                  <div className="success-message show">
+                    Thank you! We'll get back to you soon.
+                  </div>
+                )}
+
+                <button
+                  type="submit"
+                  className="submit-btn"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                </button>
+              </form>
+            </div>
           </div>
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="subject" className="mb-1">
-              Subject/Query
-            </label>
-            <input
-              id="subject"
-              type="text"
-              value={subject}
-              placeholder="Enter subject"
-              onChange={(e) => setSubject(e.target.value)}
-            />
-            <div className="mtb-2" />
-            <label htmlFor="email" className="mb-1">
-              Mail
-            </label>
-            <input
-              id="email"
-              type="text"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <div className="mtb-2" />
-            <label htmlFor="message" className="mb-1">
-              Message
-            </label>
-            <textarea
-              rows="4"
-              id="message"
-              type="text"
-              placeholder="Email body..."
-              value={msg}
-              onChange={(e) => setMsg(e.target.value)}
-            />
-            <button className="mt-3_mb-1" type="submit">
-              Send
-            </button>
-          </form>
         </div>
       </div>
     </>
   );
 }
 
-export default ContactUs
+export default ContactUs;

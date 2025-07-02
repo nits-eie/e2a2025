@@ -51,52 +51,46 @@
 
 
 
+
+
+
+
 export default [
+  
+  
   {
     name: "To be updated soon",
-    img: "",
+    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",
     designation: "",
     college: "",
   },
   {
     name: "To be updated soon",
-    img: "",
+    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",
     designation: "",
     college: "",
   },
   {
     name: "To be updated soon",
-    img: "",
+    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",
     designation: "",
     college: "",
   },
   {
     name: "To be updated soon",
-    img: "",
+    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",
     designation: "",
     college: "",
   },
   {
     name: "To be updated soon",
-    img: "",
+    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",
     designation: "",
     college: "",
   },
   {
     name: "To be updated soon",
-    img: "",
-    designation: "",
-    college: "",
-  },
-  {
-    name: "To be updated soon",
-    img: "",
-    designation: "",
-    college: "",
-  },
-  {
-    name: "To be updated soon",
-    img: "",
+    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",
     designation: "",
     college: "",
   },
