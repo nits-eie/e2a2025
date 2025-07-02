@@ -199,7 +199,7 @@ const Home = () => {
                       <a
                         // href="https://cmt3.research.microsoft.com/E2A2024/Submission/Index"
                         href="."
-                        target="_blank"
+                        target="_self"
                         rel="noreferrer"
                         className="submission-link"
                       >
