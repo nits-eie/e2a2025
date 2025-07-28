@@ -76,14 +76,14 @@ const Home = () => {
                   <p className="body-text">
                     We are proud to share that the Department of EIE has successfully
                     organized four editions of E2A. The proceedings of the previous three editions
-                    are indexed in{" "}
+                    are published in{" "}
                     <a
                       href="https://www.springer.com/series/7818"
                       target="_blank"
                       rel="noreferrer"
                       className="text-link"
                     >
-                      Springer LNEE
+                      Springer LNEE (Scopus Indexed)
                     </a>
                     . The proceedings for the fourth edition are currently in progress.
                   </p>
@@ -147,17 +147,18 @@ const Home = () => {
                     <h4>Publication</h4>
                     <p>
                       All Accepted papers after peer review and successful presentation will be published 
-                      as proceedings with Springer in their prestigious{" "}
+                      as proceedings with Springer in their prestigious Scopus Indexed Series {" "}
                       <a
                         href="https://www.springer.com/series/7818"
                         target="_blank"
                         rel="noreferrer"
                         className="text-link"
                       >
-                        "Lecture Notes in Electrical Engineering" (Scopus Indexed) series
+                        "Lecture Notes in Electrical Engineering" 
                       </a>
-                      . Select papers will be published by Springer ( Approval Pending ) as a proceedings book volume.
-                      Springer Nature does not charge any money for publication of Non-Open Access content.
+                      {/* . Select papers will be published by Springer ( Approval Pending ) as a proceedings book volume.
+                      Springer Nature does not charge any money for publication of Non-Open Access content. */}
+                       (Approval Pending) .
                     </p>
                   </div>
                 </div>
@@ -240,7 +241,7 @@ const Home = () => {
                   </div> */}
 
                   {/* <div className="publication-item">
-                    <div className="pub-number">2nd Edition</div>
+                    <div className="pub-number">3rd Edition</div>
                     <div className="pub-details">
                       <p>Lecture Notes in Electrical Engineering</p>
                       <a
@@ -252,6 +253,57 @@ const Home = () => {
                       </a>
                     </div>
                   </div> */}
+
+
+                  <div class="publications-sidebar">
+  <h3>Previous Publications</h3>
+  <div class="publications-grid">
+    <div class="publication-item">
+      <div class="pub-number">1st Edition</div>
+      <div class="pub-details">
+        <p>Lecture Notes in Electrical Engineering</p>
+        <a href="https://www.springer.com/gp/book/9789811942990" target="_blank" rel="noreferrer">
+          ISBN 978-981-19-4299-0
+        </a>
+      </div>
+    </div>
+    <div class="publication-item">
+      <div class="pub-number">2nd Edition</div>
+      <div class="pub-details">
+        <p>Lecture Notes in Electrical Engineering</p>
+        <a href="https://link.springer.com/book/10.1007/978-981-99-6855-8" target="_blank" rel="noreferrer">
+          ISBN 978-981-99-6854-1
+        </a>
+      </div>
+    </div>
+    <div class="publication-item">
+      <div class="pub-number">3rd Edition</div>
+      <div class="pub-details">
+        <p>Lecture Notes in Electrical Engineering</p>
+        <a href="https://link.springer.com/book/10.1007/978-981-99-6855-8" target="_blank" rel="noreferrer">
+          ISBN 978-981-99-6854-1
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
               </div>
             </div>

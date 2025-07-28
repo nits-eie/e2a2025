@@ -67,7 +67,7 @@ export default [
   {
     name: "Ganesh Shankar ",
     
-    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1753625872/Screenshot_2025-07-27_194523_kgsvzd.png",
+    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1753704151/fluxen_nbwgbn.jpg",
     designation: "Founder and CEO ",
     college: "FluxGen Sustainable Technologies",
   },
@@ -78,17 +78,17 @@ export default [
     college: "IIT Roorkee",
   },
   {
-    name: "Dr. Santosh Das,",
+    name: "Dr. Santosh Das ",
     img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1753625891/Screenshot_2025-07-27_194536_vfg85o.png",
-    designation: "Associate Professor , NIT Rourkela",
+    designation: "Associate Professor , NIT Rourkela &",
     college: "Director at Ewarn System Pvt Ltd",
   },
-  // {
-  //   name: "To be updated soon",
-  //   img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",
-  //   designation: "",
-  //   college: "",
-  // },
+  {
+    name: "Prof. Ujjwal Kumar Kalla",
+    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1753703776/Prof.-Dr.-Ujjawal-Kalla_snz9cc.webp",
+    designation: "Professor",
+    college: "NIT Delhi",
+  },
   // {
   //   name: "To be updated soon",
   //   img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",

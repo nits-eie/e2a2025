@@ -17,9 +17,9 @@ const Footer = () => {
           <p className="footer__text">
             &copy; {year} E2A. All Rights Reserved.
           </p>
-          <p className="footer__text">
+          {/* <p className="footer__text">
             Designed by <a href="#" className="footer__link">Vivek Sharma</a>, 3rd Year, NITS
-          </p>
+          </p> */}
           <p className="footer__text">
             Photo Credits: <a href="#" className="footer__link">Obiettivo Photography Club</a>
           </p>

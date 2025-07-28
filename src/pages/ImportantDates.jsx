@@ -15,12 +15,12 @@ const ImportantDates = () => {
   }, []);
 
   const dates = [
-    { label: "Conference Dates:", value: "17–19 December 2025" },
-    { label: "Paper Submission Opens:", value: "15.07.2025" },
-    { label: "Paper Submission Deadline:", value: "08.09.2025" },
-    { label: "Acceptance Notification:", value: "08.10.2025" },
-    { label: "Last Date for Conference Registration:", value: "07.11.2025" },
-    { label: "Deadline for Camera Ready Paper:", value: "15.11.2025" },
+    { label: "Conference Dates:", value: "17th – 19th December 2025" },
+    { label: "Paper Submission Opens:", value: "4th August 2025" },
+    { label: "Paper Submission Deadline:", value: "22nd September 2025" },
+    { label: "Acceptance Notification:", value: "2nd October 2025" },
+    { label: "Last Date for Conference Registration:", value: "10th November 2025" },
+    { label: "Deadline for Camera‑Ready Paper:", value: "17th November 2025" },
   ];
 
   return (

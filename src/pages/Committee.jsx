@@ -65,10 +65,10 @@ const Committee = () => {
             />
             <ProfileCard
               style={{ maxWidth: "300px" }}
-              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png"
-              name="To be updated soon "
-              aff=""
-            />
+              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1753703774/josualee_xjmfm8.jpg"
+              name=" Joshua Lee"
+              aff=" Associate Professor , University of Technology Sydney"
+            />  
             <ProfileCard
               style={{ maxWidth: "300px" }}
               img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png"
@@ -138,10 +138,10 @@ const Committee = () => {
           <h3><strong>Control & Robotics: </strong>Dr. Koena Mukherjee</h3>
           <h3><strong>Signal Processing: </strong>Dr. A.K. Sunaniya</h3>
           <h3><strong>Communication System: </strong>Dr. Ranjay Hazra</h3>
-          <h3><strong>Sensors & Instrumentation: </strong>Dr. Anup Kumar Sharma</h3>
+          <h3><strong>Sensors & Instrumentation: </strong>Dr. Sudipta Chakraborty</h3>
           <h3><strong>MEMS & VLSI: </strong>Dr. S.K. Pandey</h3>
           <h3><strong>AI & Soft Computing: </strong>Dr. Lalu Seban</h3>
-          <h3><strong>Energy, Power Systems & Power Electronics: </strong>Dr. Vipin Chandra Pal</h3>
+          <h3><strong>Energy, Power Systems & Power Electronics: </strong> Prof. S.H. Laskar & Dr. Vipin Chandra Pal</h3>
         </div>
 
 
@@ -152,6 +152,8 @@ const Committee = () => {
           <h3>Dr. Anup Kumar Sharma</h3>
           <h3>Dr. Ranjay Hazra</h3>
           <h3>Dr. Sudipta Chakraborty</h3>
+          <h3>Dr. Vipin C. Pal </h3>
+          <h3>Dr. Shankar K </h3>
           <h3>Dr. Ripon Patgiri</h3>
           <h3>Dr. Sushant Negi</h3>
         </div>
@@ -159,6 +161,7 @@ const Committee = () => {
         <div className="list textNames">
           <h1>Publicity Chairs</h1>
           <h3>Dr. Shankar K.</h3>
+          <h3>Dr. Ranjay Hazra</h3>
           <h3>Dr. Jupitara Hazarika</h3>
           <h3>Dr. R. Murugan</h3>
           <h3>Dr. Biplab Das</h3>
@@ -174,12 +177,12 @@ const Committee = () => {
           <h3>Dr. Sudarsan Sahoo</h3>
         </div>
 
-        <div className="list textNames">
+        {/* <div className="list textNames">
           <h1>Developers</h1>
           <h3>Dhananjay Das</h3>
           <h3>Vivek Sharma</h3>
           
-        </div>
+        </div> */}
 
         {/* Other chairs and TPC remain as such; will update later */}
 

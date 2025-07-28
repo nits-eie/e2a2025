@@ -94,7 +94,7 @@ const Registration = () => {
                   <li>At least one of the authors of the accepted paper has to register for the conference.</li>
                   <li>The authors can register for a maximum of 3 accepted papers. For each extra paper, an additional fee of INR 3000 (USD 100) is to be paid.</li>
                   <li>Students can upload a maximum of 1 paper with a single registration.</li>
-                  <li>The final camera-ready paper should have a minimum of 6 pages and a maximum of 12 pages.</li>
+                  <li>The final camera-ready paper should have a maximum of 8 pages.</li>
                   <li className="highlight">
                     Registration Form Link: <span className="highlight-text">………………</span>
                   </li>

@@ -19,8 +19,7 @@ const RegularPaperSubmission = () => {
           <h3 className="paper-submission-heading">Paper Submission & Guidelines</h3>
           <ul className="paper-submission-list">
             <li className="paper-submission-list-item">
-              It is informed to all the authors that the peer-reviewed and selected papers of the conference will be published as proceedings with Springer in their prestigious
-              <a href="https://www.springer.com/series/7818" target="_blank" rel="noreferrer" className="paper-submission-link"> "Lecture Notes in Electrical Engineering" series</a>.
+All Accepted papers after peer review and successful presentation will be published as proceedings with Springer in their prestigious Scopus Indexed    <a href="https://www.springer.com/series/7818" target="_blank" rel="noreferrer" className="paper-submission-link"> "Lecture Notes in Electrical Engineering" series</a>.(Approval Pending) .           
             </li>
             <li className="paper-submission-list-item">
               Submissions should be made according to the Springer LNEE format (
@@ -39,11 +38,11 @@ const RegularPaperSubmission = () => {
                 CMT (E2A) platform
               </a>.
             </li>
-            <li className="paper-submission-list-item">
+            {/* <li className="paper-submission-list-item">
               Maximum size of the page must be 8 pages 
-            </li>
+            </li> */}
             <li className="paper-submission-list-item">
-              Papers should be in English. The maximum full-length size of the paper may be 12 pages.
+              Papers should be in English. The maximum full-length size of the paper may be 8 pages.
             </li>
             <li className="paper-submission-list-item">
               Any published work or submissions to any other conference/journal will be rejected in the preliminary stage.
