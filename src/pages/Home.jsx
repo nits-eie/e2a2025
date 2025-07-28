@@ -111,9 +111,9 @@ const Home = () => {
                         Emerging Electronics and Automation
                       </a>
                     </h3>
-                    <p className="publication-subtitle">
+                    {/* <p className="publication-subtitle">
                       Select Proceedings of E2A 2025
-                    </p>
+                    </p> */}
                     <ul className="publication-highlights">
                       <li>Constitutes proceedings of International Conference on Emerging Electronics and Automation</li>
                       <li>Presents cutting edge technologies in automation and advances in the allied domain</li>
@@ -134,7 +134,7 @@ const Home = () => {
                   <p className="body-text">
                     This conference focuses on trending research and product outcomes in the domain of 
                     control and robotics, signal processing, communication systems, sensors and instrumentation, 
-                    MEMS and VLSI, AI and soft computing. E2A 2025 provides a common platform for academicians, 
+                    MEMS and VLSI, AI and soft computing. E2A  provides a common platform for academicians, 
                     researchers, industrial players and budding research scholars to discuss their results, 
                     innovations, and challenges with peers while networking and presenting research progress.
                   </p>
@@ -146,7 +146,7 @@ const Home = () => {
                   <div className="info-content">
                     <h4>Publication</h4>
                     <p>
-                      Accepted papers after peer review and successful presentation will be published 
+                      All Accepted papers after peer review and successful presentation will be published 
                       as proceedings with Springer in their prestigious{" "}
                       <a
                         href="https://www.springer.com/series/7818"
@@ -154,9 +154,9 @@ const Home = () => {
                         rel="noreferrer"
                         className="text-link"
                       >
-                        "Lecture Notes in Electrical Engineering" series
+                        "Lecture Notes in Electrical Engineering" (Scopus Indexed) series
                       </a>
-                      . Select papers will be published by Springer as a proceedings book volume.
+                      . Select papers will be published by Springer ( Approval Pending ) as a proceedings book volume.
                       Springer Nature does not charge any money for publication of Non-Open Access content.
                     </p>
                   </div>
@@ -208,7 +208,7 @@ const Home = () => {
                     </div>
                   </div>
 
-                  <div className="info-item">
+                  {/* <div className="info-item">
                     <img src={website} alt="website" />
                     <div>
                       <h4>Previous Editions</h4>
@@ -218,11 +218,11 @@ const Home = () => {
                         <a href="https://e2a.nits.ac.in/" target="_blank" rel="noreferrer">E2A2024</a>
                       </div>
                     </div>
-                  </div>
-                </div>
+                  </div> */}
+                {/* </div> */}
 
                 {/* Previous Publications */}
-                <div className="publications-sidebar">
+                {/* <div className="publications-sidebar">
                   <h3>Previous Publications</h3>
                   
                   <div className="publication-item">
@@ -237,9 +237,9 @@ const Home = () => {
                         ISBN 978-981-19-4299-0
                       </a>
                     </div>
-                  </div>
+                  </div> */}
 
-                  <div className="publication-item">
+                  {/* <div className="publication-item">
                     <div className="pub-number">2nd Edition</div>
                     <div className="pub-details">
                       <p>Lecture Notes in Electrical Engineering</p>
@@ -251,7 +251,7 @@ const Home = () => {
                         ISBN 978-981-99-6854-1
                       </a>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

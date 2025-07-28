@@ -24,7 +24,7 @@ const Footer = () => {
             Photo Credits: <a href="#" className="footer__link">Obiettivo Photography Club</a>
           </p>
         </div>
-        <div className="footer__social">
+        {/* <div className="footer__social">
           <a href="#" className="footer__icon" aria-label="Twitter">
             <i className="fab fa-twitter"></i>
           </a>
@@ -34,7 +34,7 @@ const Footer = () => {
           <a href="#" className="footer__icon" aria-label="Instagram">
             <i className="fab fa-instagram"></i>
           </a>
-        </div>
+        </div> */}
       </div>
       <div className="footer__art"></div>
     </footer>

@@ -415,7 +415,7 @@ const Header = () => {
           {windowWidth <= 768 && (
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
               <div className="logo" style={{ display: 'block' }}>
-                <img src="e2a25.png" alt="Logo" style={{ height: '52px', objectFit: 'contain' }} />
+                <img src="e2a2025new.png" alt="Logo" style={{ height: '52px', objectFit: 'contain' }} />
               </div>
               <button
                 onClick={toggleMobileMenu}
@@ -534,7 +534,7 @@ const Header = () => {
               <span style={{ fontSize: '0.8em', color: '#f0f0f0', fontWeight: '500' }}>Assam, India - 788010</span>
             </div>
 
-            <div className="logoBox">
+            {/* <div className="logoBox">
               <h6 style={{
                 marginBottom: '1.5rem',
                 fontSize: 'clamp(0.9rem, 2vw, 1.1rem)',
@@ -577,7 +577,7 @@ const Header = () => {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

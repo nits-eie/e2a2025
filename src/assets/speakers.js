@@ -59,39 +59,40 @@ export default [
   
   
   {
-    name: "To be updated soon",
-    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",
-    designation: "",
-    college: "",
+    name: "Dr Anindya Nag",
+    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1753625866/Screenshot_2025-07-27_194514_l64oth.png",
+  designation: "Junior Professor ",
+  college: "Technische Universität Dresden, Germany",
+},
+  {
+    name: "Ganesh Shankar ",
+    
+    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1753625872/Screenshot_2025-07-27_194523_kgsvzd.png",
+    designation: "Founder and CEO ",
+    college: "FluxGen Sustainable Technologies",
   },
   {
-    name: "To be updated soon",
-    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",
-    designation: "",
-    college: "",
+    name: "Prof. Premalata Jena  ",
+    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1753625881/Screenshot_2025-07-27_194530_bpseqw.png",
+    designation: "Professor",
+    college: "IIT Roorkee",
   },
   {
-    name: "To be updated soon",
-    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",
-    designation: "",
-    college: "",
+    name: "Dr. Santosh Das,",
+    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1753625891/Screenshot_2025-07-27_194536_vfg85o.png",
+    designation: "Associate Professor , NIT Rourkela",
+    college: "Director at Ewarn System Pvt Ltd",
   },
-  {
-    name: "To be updated soon",
-    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",
-    designation: "",
-    college: "",
-  },
-  {
-    name: "To be updated soon",
-    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",
-    designation: "",
-    college: "",
-  },
-  {
-    name: "To be updated soon",
-    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",
-    designation: "",
-    college: "",
-  },
+  // {
+  //   name: "To be updated soon",
+  //   img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",
+  //   designation: "",
+  //   college: "",
+  // },
+  // {
+  //   name: "To be updated soon",
+  //   img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",
+  //   designation: "",
+  //   college: "",
+  // },
 ];

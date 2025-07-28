@@ -40,6 +40,9 @@ const RegularPaperSubmission = () => {
               </a>.
             </li>
             <li className="paper-submission-list-item">
+              Maximum size of the page must be 8 pages 
+            </li>
+            <li className="paper-submission-list-item">
               Papers should be in English. The maximum full-length size of the paper may be 12 pages.
             </li>
             <li className="paper-submission-list-item">
@@ -51,6 +54,7 @@ const RegularPaperSubmission = () => {
             <li className="paper-submission-list-item">
               The paper submissions must follow the Springer formatting guidelines.
             </li>
+            
           </ul>
         </div>
       </div>

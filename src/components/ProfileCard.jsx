@@ -12,7 +12,7 @@ const ProfileCard = ({ img, name, aff, link, designation }) => {
         <div className="profile-info">
           <h3 className="profile-name">{name}</h3>
           {designation && <p className="profile-designation">{designation}</p>}
-          {/* <p className="profile-affiliation">{aff}</p>
+          <p className="profile-affiliation">{aff}</p>
           {link && (
             <a
               className="profile-link"
@@ -23,7 +23,7 @@ const ProfileCard = ({ img, name, aff, link, designation }) => {
               <span className="link-text">View Profile</span>
               <span className="link-icon">→</span>
             </a>
-          )} */}
+          )}
         </div>
       </div>
 

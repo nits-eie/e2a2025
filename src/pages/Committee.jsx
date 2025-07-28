@@ -35,7 +35,7 @@ const Committee = () => {
           <ProfileCard
             img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751045933/Ramjee-_Prasad_cvsxhd.jpg"
             name="Prof. Ramjee Prasad"
-            aff="Founder, CTIF Global Capsule"
+            aff="Founder , CTIF Global Capsule"
             // link="https://ctifglobalcapsule.org/cgc-member/ramjee-prasad/"
           />
         </div>
@@ -55,13 +55,13 @@ const Committee = () => {
               style={{ maxWidth: "300px" }}
               img="/images/Sudarsan_Sahoo.png"
               name="Dr. Sudarsan Sahoo"
-              aff="NIT Silchar"
+              aff="Assistant Professor , NIT Silchar"
             />
             <ProfileCard
               style={{ maxWidth: "300px" }}
               img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751048779/anup_jagha4.jpg"
               name="Dr. Anup Kumar Sharma"
-              aff="NIT Silchar"
+              aff="Assistant Professor , NIT Silchar"
             />
             <ProfileCard
               style={{ maxWidth: "300px" }}
@@ -75,12 +75,12 @@ const Committee = () => {
               name="To be updated soon "
               aff=""
             />
-            <ProfileCard
+            {/* <ProfileCard
               style={{ maxWidth: "300px" }}
               img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png"
               name="To be updated soon "
               aff=""
-            />
+            /> */}
            
           
           </div>
@@ -91,7 +91,7 @@ const Committee = () => {
           <ProfileCard
             img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751048772/munmun_y0v4n2.jpg"
             name="Dr. Munmun Khanra"
-            aff="NIT Silchar"
+            aff="Head of Department , NIT Silchar"
           />
         </div>
 
@@ -110,25 +110,25 @@ const Committee = () => {
               style={{ maxWidth: "300px" }}
               img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401651/rajdeep_mr71fm.jpg"
               name="Dr. Rajdeep Dasgupta"
-              aff="NIT Silchar"
+              aff="Associate Professor , NIT Silchar"
             />
             <ProfileCard
               style={{ maxWidth: "300px" }}
               img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401688/jupitara_zwvtau.jpg"
               name="Dr. Jupitara Hazarika"
-              aff="NIT Silchar"
+              aff="Assistant Professor , NIT Silchar"
             />
             <ProfileCard
               style={{ maxWidth: "300px" }}
               img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751048765/shankar_zfkwbo.jpg"
               name="Dr. Shankar K.                                                                        "
-              aff="NIT Silchar"
+              aff="Assistant Professor , NIT Silchar"
             />
             <ProfileCard
               style={{ maxWidth: "300px" }}
               img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751048759/vipin_abnmht.jpg"
               name="Dr. Vipin Chandra Pal"
-              aff="NIT Silchar"
+              aff="Assistant Professor , NIT Silchar"
             />
           </div>
         </div>
@@ -143,6 +143,9 @@ const Committee = () => {
           <h3><strong>AI & Soft Computing: </strong>Dr. Lalu Seban</h3>
           <h3><strong>Energy, Power Systems & Power Electronics: </strong>Dr. Vipin Chandra Pal</h3>
         </div>
+
+
+        
 
         <div className="list textNames">
           <h1>Publication Chairs</h1>
@@ -169,6 +172,13 @@ const Committee = () => {
           <h3>Dr. Ujjal Chakraborty</h3>
           <h3>Dr. Chinmay Kumar Sahoo</h3>
           <h3>Dr. Sudarsan Sahoo</h3>
+        </div>
+
+        <div className="list textNames">
+          <h1>Developers</h1>
+          <h3>Dhananjay Das</h3>
+          <h3>Vivek Sharma</h3>
+          
         </div>
 
         {/* Other chairs and TPC remain as such; will update later */}
