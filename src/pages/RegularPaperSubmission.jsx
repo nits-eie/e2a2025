@@ -53,6 +53,13 @@ All Accepted papers after peer review and successful presentation will be publis
             <li className="paper-submission-list-item">
               The paper submissions must follow the Springer formatting guidelines.
             </li>
+
+            <li className="paper-submission-list-item">
+              Instruction guidelines for paper submission  : {" "}
+              <a href="https://docs.google.com/document/d/1A3cVyQ3nDunldy6CQ-L7TzYNEEPQXmfFA5kHfcSx-Do/edit?usp=sharing" target="_blank" rel="noreferrer" className="paper-submission-link">
+                Read Here
+              </a>.
+            </li>
             
           </ul>
         </div>

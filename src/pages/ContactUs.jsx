@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Header from '../components/Header';
+import emailjs from 'emailjs-com';
 import '../assets/css/contactUs.css';
 
 const ContactUs = () => {
@@ -9,6 +10,7 @@ const ContactUs = () => {
     email: "e2a@ei.nits.ac.in",
     message: ""
   });
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
   const [errors, setErrors] = useState({});
@@ -75,21 +77,26 @@ const ContactUs = () => {
 
     setIsSubmitting(true);
 
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus('success');
-
-      setFormData({
-        name: "",
-        subject: "",
-        email: "e2a@ei.nits.ac.in",
-        message: ""
+    // Replace 'your_service_id', 'your_template_id', and 'your_user_id' with actual values from EmailJS
+    emailjs.send('your_service_id', 'your_template_id', formData, 'your_user_id')
+      .then((result) => {
+        console.log(result.text);
+        setIsSubmitting(false);
+        setSubmitStatus('success');
+        setFormData({
+          name: "",
+          subject: "",
+          email: "e2a@ei.nits.ac.in",
+          message: ""
+        });
+        setTimeout(() => {
+          setSubmitStatus(null);
+        }, 3000);
+      }, (error) => {
+        console.log(error.text);
+        setIsSubmitting(false);
+        setSubmitStatus('error');
       });
-
-      setTimeout(() => {
-        setSubmitStatus(null);
-      }, 3000);
-    }, 1000);
   };
 
   const contactPersons = [
@@ -117,7 +124,6 @@ const ContactUs = () => {
           <h1>Contact Us</h1>
           <p>We'd love to hear from you. Reach out to our team for any inquiries or assistance.</p>
         </div>
-
         <div className="contact-wrapper">
           <div className="contact-grid">
             <div className="contact-card">
@@ -125,7 +131,6 @@ const ContactUs = () => {
                 <h2>Contact Information</h2>
                 <p className="card-subtitle">Our team is here to help you</p>
               </div>
-
               <div className="contact-details">
                 {contactPersons.map((person, index) => (
                   <div className="contact-item" key={index}>
@@ -142,7 +147,6 @@ const ContactUs = () => {
                     </div>
                   </div>
                 ))}
-
                 <div className="contact-item">
                   <div className="contact-item-header">
                     <h3>General Inquiries</h3>
@@ -155,13 +159,11 @@ const ContactUs = () => {
                 </div>
               </div>
             </div>
-
             <div className="contact-form-card">
               <div className="card-header">
                 <h2>Send Us a Message</h2>
                 <p className="card-subtitle">Fill out the form below and we'll get back to you shortly</p>
               </div>
-
               <form onSubmit={handleSubmit} noValidate className="form-container">
                 <div className="form-group">
                   <label htmlFor="name" className="required">Name</label>
@@ -175,7 +177,6 @@ const ContactUs = () => {
                   />
                   {errors.name && <div className="error-message show">{errors.name}</div>}
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="subject" className="required">Subject</label>
                   <input
@@ -188,7 +189,6 @@ const ContactUs = () => {
                   />
                   {errors.subject && <div className="error-message show">{errors.subject}</div>}
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="email" className="required">Email</label>
                   <input
@@ -201,7 +201,6 @@ const ContactUs = () => {
                   />
                   {errors.email && <div className="error-message show">{errors.email}</div>}
                 </div>
-
                 <div className="form-group">
                   <label htmlFor="message" className="required">Message</label>
                   <textarea
@@ -214,13 +213,16 @@ const ContactUs = () => {
                   />
                   {errors.message && <div className="error-message show">{errors.message}</div>}
                 </div>
-
                 {submitStatus === 'success' && (
                   <div className="success-message show">
                     Thank you! We'll get back to you soon.
                   </div>
                 )}
-
+                {submitStatus === 'error' && (
+                  <div className="error-message show">
+                    There was an error sending your message. Please try again later.
+                  </div>
+                )}
                 <button
                   type="submit"
                   className="submit-btn"

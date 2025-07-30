@@ -80,7 +80,6 @@ const Dropdown = ({ title, items }) => {
         {title}
         <span style={{ marginLeft: '6px', fontSize: '10px' }}>▼</span>
       </button>
-
       {isOpen && (
         <div
           style={{
@@ -102,6 +101,8 @@ const Dropdown = ({ title, items }) => {
             <a
               key={index}
               href={item.pathname}
+              target={item.external ? "_blank" : ""}
+              rel={item.external ? "noopener noreferrer" : ""}
               style={{
                 display: 'block',
                 padding: '12px 20px',
@@ -168,7 +169,6 @@ const MobileMenu = ({ navItems, isOpen, onClose }) => {
       >
         ×
       </button>
-
       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
         {navItems.map((item, i) => (
           <div key={i}>
@@ -199,13 +199,14 @@ const MobileMenu = ({ navItems, isOpen, onClose }) => {
                     {activeDropdown === i ? '−' : '+'}
                   </span>
                 </button>
-
                 {activeDropdown === i && (
                   <div style={{ paddingLeft: '15px' }}>
                     {item.subItems.map((subItem, subIndex) => (
                       <a
                         key={subIndex}
                         href={subItem.pathname}
+                        target={subItem.external ? "_blank" : ""}
+                        rel={subItem.external ? "noopener noreferrer" : ""}
                         style={{
                           display: 'block',
                           padding: '10px 0',
@@ -277,7 +278,7 @@ const navItems = [
   {
     name: "Program",
     subItems: [
-      { name: "Brochure", pathname: "/program-brochure" },
+      { name: "Brochure", pathname: "/program-brochure", external: true },
       { name: "Keynote Speakers", pathname: "/keynote-speakers" },
     ],
   },
@@ -332,7 +333,6 @@ const Header = () => {
     <div style={{ width: '100vw', minHeight: '100vh', overflow: 'hidden', position: 'relative' }}>
       <div className="header" id="header" style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden' }}>
         <ImageSlider interval={5000} transition={3000} images={images} />
-
         {/* Navigation Bar */}
         <nav style={{
           position: 'fixed',
@@ -354,7 +354,6 @@ const Header = () => {
           <div className="logo" style={{ display: windowWidth > 768 ? 'block' : 'none' }}>
             <img src="e2a25.png" alt="Logo" style={{ height: '60px', objectFit: 'contain' }} />
           </div>
-
           {/* Navigation Links - Desktop */}
           {windowWidth > 768 && (
             <div className="links" style={{
@@ -410,7 +409,6 @@ const Header = () => {
               )}
             </div>
           )}
-
           {/* Mobile Menu Button */}
           {windowWidth <= 768 && (
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
@@ -439,14 +437,12 @@ const Header = () => {
             </div>
           )}
         </nav>
-
         {/* Mobile Menu */}
         <MobileMenu
           navItems={navItems}
           isOpen={isMobileMenuOpen}
           onClose={() => setMobileMenuOpen(false)}
         />
-
         <div className="headerContent" style={{
           position: 'relative',
           zIndex: 10,
@@ -472,7 +468,6 @@ const Header = () => {
               }}
             />
           </div>
-
           <div className="content-container" style={{ maxWidth: '1200px', width: '100%' }}>
             <div className="heading" style={{
               fontSize: 'clamp(1.5rem, 4.2vw, 2.4rem)',
@@ -486,7 +481,6 @@ const Header = () => {
                 EMERGING ELECTRONICS AND AUTOMATION
               </span>
             </div>
-
             <div className="date" style={{
               fontSize: 'clamp(1.2rem, 2.8vw, 2rem)',
               marginBottom: '1.2rem',
@@ -495,7 +489,6 @@ const Header = () => {
             }}>
               17<sup style={{ fontSize: '0.7em' }}>th</sup> - 19<sup style={{ fontSize: '0.7em' }}>th</sup> Dec, <span style={{ color: '#F5F5DC' }}>2025</span>
             </div>
-
             <div className="hybridText" style={{
               fontSize: 'clamp(1rem, 2.2vw, 1.4rem)',
               marginBottom: '0.8rem',
@@ -510,7 +503,6 @@ const Header = () => {
             }}>
               HYBRID
             </div>
-
             <div className="organised-by" style={{
               fontSize: 'clamp(0.9rem, 2vw, 1.2rem)',
               marginBottom: '1.8rem',
@@ -519,7 +511,6 @@ const Header = () => {
               <span style={{ fontSize: '0.9em', color: '#f0f0f0', fontWeight: '500' }}>Organised by</span> <br />
               <span style={{ fontWeight: '600', textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)' }}>Department of Electronics and Instrumentation Engineering</span>
             </div>
-
             <div className="college-name" style={{
               fontSize: 'clamp(1rem, 2.4vw, 1.5rem)',
               marginBottom: '2rem',
@@ -533,51 +524,6 @@ const Header = () => {
               }}>NATIONAL INSTITUTE OF TECHNOLOGY SILCHAR</span> <br />
               <span style={{ fontSize: '0.8em', color: '#f0f0f0', fontWeight: '500' }}>Assam, India - 788010</span>
             </div>
-
-            {/* <div className="logoBox">
-              <h6 style={{
-                marginBottom: '1.5rem',
-                fontSize: 'clamp(0.9rem, 2vw, 1.1rem)',
-                color: '#f0f0f0',
-                fontWeight: '600',
-                textAlign: 'center'
-              }}>
-                Technically Co-Sponsored by:
-              </h6>
-              <div style={{
-                display: 'flex',
-                flexWrap: 'wrap',
-                justifyContent: 'center',
-                gap: '1.5rem',
-                marginTop: '1rem'
-              }}>
-                {[
-                  "/logos/logo_springer.jpg",
-                ].map((src, index) => (
-                  <div key={index} style={{ textAlign: 'center' }}>
-                    <img
-                      src={src}
-                      alt={`Sponsor ${index + 1}`}
-                      style={{
-                        height: '60px',
-                        maxWidth: '120px',
-                        objectFit: 'contain',
-                        transition: 'all 0.3s ease',
-                        filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2))'
-                      }}
-                      onMouseEnter={(e) => {
-                        e.target.style.transform = 'scale(1.05)';
-                        e.target.style.filter = 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3))';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.target.style.transform = 'scale(1)';
-                        e.target.style.filter = 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2))';
-                      }}
-                    />
-                  </div>
-                ))}
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

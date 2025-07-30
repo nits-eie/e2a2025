@@ -1,11 +1,21 @@
-.brochureCont{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 22rem auto ;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: auto;
 }
-.brochureImg{
-    position: relative;
-    width: 100%;
+
+.brochureCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #f4f4f9;
+}
+
+.brochureImage {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
