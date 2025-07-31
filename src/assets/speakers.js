@@ -59,7 +59,7 @@ export default [
   
   
   {
-    name: "Dr Anindya Nag",
+    name: "Dr. Anindya Nag",
     img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1753625866/Screenshot_2025-07-27_194514_l64oth.png",
   designation: "Junior Professor ",
   college: "Technische Universität Dresden, Germany",
@@ -89,10 +89,10 @@ export default [
     designation: "Professor",
     college: "NIT Delhi",
   },
-  // {
-  //   name: "To be updated soon",
-  //   img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png",
-  //   designation: "",
-  //   college: "",
-  // },
+  {
+    name: "Prof. Indra Narayan Kar",
+    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1753936436/indra_obsrcx.jpg",
+    designation: "Professor",
+    college: "IIT Delhi",
+  },
 ];

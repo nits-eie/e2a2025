@@ -71,17 +71,17 @@ const Committee = () => {
             />  
             <ProfileCard
               style={{ maxWidth: "300px" }}
-              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png"
-              name="To be updated soon "
-              aff=""
+              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1753936331/balaji_i9bdf5.jpg"
+              name="Prof. Balaji Ramakrishnan  "
+              aff="Director,National Institute of Ocean Technology, Chennai"
             />
             {/* <ProfileCard
               style={{ maxWidth: "300px" }}
               img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png"
-              name="To be updated soon "
+              name="Prof. Ramkrishnan "
               aff=""
-            /> */}
-           
+            />
+            */}
           
           </div>
         </div>

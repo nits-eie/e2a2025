@@ -1,19 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import Header from '../components/Header';
-import emailjs from 'emailjs-com';
 import '../assets/css/contactUs.css';
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    subject: "",
-    email: "e2a@ei.nits.ac.in",
-    message: ""
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
-  const [errors, setErrors] = useState({});
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -21,83 +10,6 @@ const ContactUs = () => {
       containerRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, []);
-
-  const validateForm = () => {
-    const newErrors = {};
-    let isValid = true;
-
-    if (!formData.name.trim()) {
-      newErrors.name = "Name is required";
-      isValid = false;
-    }
-
-    if (!formData.subject.trim()) {
-      newErrors.subject = "Subject is required";
-      isValid = false;
-    }
-
-    if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
-      isValid = false;
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = "Please enter a valid email";
-      isValid = false;
-    }
-
-    if (!formData.message.trim()) {
-      newErrors.message = "Message is required";
-      isValid = false;
-    }
-
-    setErrors(newErrors);
-    return isValid;
-  };
-
-  const handleChange = (e) => {
-    const { id, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [id]: value
-    }));
-
-    if (errors[id]) {
-      setErrors(prev => ({
-        ...prev,
-        [id]: null
-      }));
-    }
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (!validateForm()) {
-      return;
-    }
-
-    setIsSubmitting(true);
-
-    // Replace 'your_service_id', 'your_template_id', and 'your_user_id' with actual values from EmailJS
-    emailjs.send('your_service_id', 'your_template_id', formData, 'your_user_id')
-      .then((result) => {
-        console.log(result.text);
-        setIsSubmitting(false);
-        setSubmitStatus('success');
-        setFormData({
-          name: "",
-          subject: "",
-          email: "e2a@ei.nits.ac.in",
-          message: ""
-        });
-        setTimeout(() => {
-          setSubmitStatus(null);
-        }, 3000);
-      }, (error) => {
-        console.log(error.text);
-        setIsSubmitting(false);
-        setSubmitStatus('error');
-      });
-  };
 
   const contactPersons = [
     {
@@ -159,78 +71,31 @@ const ContactUs = () => {
                 </div>
               </div>
             </div>
-            <div className="contact-form-card">
+            <div className="contact-info-card">
               <div className="card-header">
-                <h2>Send Us a Message</h2>
-                <p className="card-subtitle">Fill out the form below and we'll get back to you shortly</p>
+                <h2>Location and Directions</h2>
+                <p className="card-subtitle">Find us easily with the map and directions below</p>
               </div>
-              <form onSubmit={handleSubmit} noValidate className="form-container">
-                <div className="form-group">
-                  <label htmlFor="name" className="required">Name</label>
-                  <input
-                    id="name"
-                    type="text"
-                    className={`form-control ${errors.name ? 'error' : ''}`}
-                    value={formData.name}
-                    placeholder="Your name"
-                    onChange={handleChange}
-                  />
-                  {errors.name && <div className="error-message show">{errors.name}</div>}
-                </div>
-                <div className="form-group">
-                  <label htmlFor="subject" className="required">Subject</label>
-                  <input
-                    id="subject"
-                    type="text"
-                    className={`form-control ${errors.subject ? 'error' : ''}`}
-                    value={formData.subject}
-                    placeholder="Message subject"
-                    onChange={handleChange}
-                  />
-                  {errors.subject && <div className="error-message show">{errors.subject}</div>}
-                </div>
-                <div className="form-group">
-                  <label htmlFor="email" className="required">Email</label>
-                  <input
-                    id="email"
-                    type="email"
-                    className={`form-control ${errors.email ? 'error' : ''}`}
-                    value={formData.email}
-                    placeholder="Your email"
-                    onChange={handleChange}
-                  />
-                  {errors.email && <div className="error-message show">{errors.email}</div>}
-                </div>
-                <div className="form-group">
-                  <label htmlFor="message" className="required">Message</label>
-                  <textarea
-                    id="message"
-                    className={`form-control ${errors.message ? 'error' : ''}`}
-                    rows="5"
-                    value={formData.message}
-                    placeholder="Your message..."
-                    onChange={handleChange}
-                  />
-                  {errors.message && <div className="error-message show">{errors.message}</div>}
-                </div>
-                {submitStatus === 'success' && (
-                  <div className="success-message show">
-                    Thank you! We'll get back to you soon.
-                  </div>
-                )}
-                {submitStatus === 'error' && (
-                  <div className="error-message show">
-                    There was an error sending your message. Please try again later.
-                  </div>
-                )}
-                <button
-                  type="submit"
-                  className="submit-btn"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
-                </button>
-              </form>
+              <div className="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.10133795199!2d92.78971797541078!3d24.75771437799644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x374e49dcb63bae9b%3A0x81efa836714a289b!2sNational%20Institute%20of%20Technology%2C%20Silchar!5e0!3m2!1sen!2sin!4v1753938678946!5m2!1sen!2sin"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  title="Location Map">
+                </iframe>
+              </div>
+              <div className="directions-container">
+                <h3>Directions to NIT Silchar</h3>
+                <p>NIT Silchar is located in Silchar, Assam. Here are the directions to reach our campus:</p>
+                <ul>
+                  <li><strong>By Air:</strong> The nearest airport is Kumbhirgram Airport, Silchar. From the airport, you can take a taxi to reach NIT Silchar.</li>
+                  <li><strong>By Train:</strong> Silchar Railway Station is well-connected to major cities. From the railway station, you can take a taxi or a bus to reach NIT Silchar.</li>
+                  <li><strong>By Road:</strong> Silchar is connected by road to various parts of the region. You can take a bus or drive to Silchar and then follow the local directions to NIT Silchar.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

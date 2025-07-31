@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+Reset and Base Styles
 * {
   box-sizing: border-box;
   margin: 0;
@@ -371,4 +371,60 @@ body {
   .contact-wrapper {
     padding: 1rem;
   }
+}
+
+
+/* Contact Info Card */
+.contact-info-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.contact-info-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* Map Container */
+.map-container {
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Directions Container */
+.directions-container {
+  font-size: 1rem;
+  color: var(--medium-color);
+}
+
+.directions-container h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.directions-container ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.directions-container li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.directions-container li:before {
+  content: "•";
+  color: var(--secondary-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.directions-container li strong {
+  color: var(--primary-color);
 }
