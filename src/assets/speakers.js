@@ -95,4 +95,11 @@ export default [
     designation: "Professor",
     college: "IIT Delhi",
   },
+
+  {
+    name: "Mr. Joseph James",
+    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1753966230/JOSEPHJAMES_pomxxn.jpg",
+    designation: "SubSystem Subsea Controls Expert",
+    college: "TechnipFMC, Malaysia",
+  },
 ];
