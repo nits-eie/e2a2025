@@ -19,7 +19,11 @@ const RegularPaperSubmission = () => {
           <h3 className="paper-submission-heading">Paper Submission & Guidelines</h3>
           <ul className="paper-submission-list">
             <li className="paper-submission-list-item">
-All Accepted papers after peer review and successful presentation will be published as proceedings with Springer in their prestigious Scopus Indexed    <a href="https://www.springer.com/series/7818" target="_blank" rel="noreferrer" className="paper-submission-link"> "Lecture Notes in Electrical Engineering" series</a>.(Approval Pending) .           
+              All Accepted papers after peer review and successful presentation will be published as proceedings with Springer in their prestigious Scopus Indexed{" "}
+              <a href="https://www.springer.com/series/7818" target="_blank" rel="noreferrer" className="paper-submission-link">
+                "Lecture Notes in Electrical Engineering" series
+              </a>
+              . (Approval Pending)
             </li>
             <li className="paper-submission-list-item">
               Submissions should be made according to the Springer LNEE format (
@@ -38,9 +42,6 @@ All Accepted papers after peer review and successful presentation will be publis
                 CMT (E2A) platform
               </a>.
             </li>
-            {/* <li className="paper-submission-list-item">
-              Maximum size of the page must be 8 pages 
-            </li> */}
             <li className="paper-submission-list-item">
               Papers should be in English. The maximum full-length size of the paper may be 8 pages.
             </li>
@@ -53,15 +54,18 @@ All Accepted papers after peer review and successful presentation will be publis
             <li className="paper-submission-list-item">
               The paper submissions must follow the Springer formatting guidelines.
             </li>
-
             <li className="paper-submission-list-item">
-              Instruction guidelines for paper submission  : {" "}
+              Instruction guidelines for paper submission:{" "}
               <a href="https://docs.google.com/document/d/1A3cVyQ3nDunldy6CQ-L7TzYNEEPQXmfFA5kHfcSx-Do/edit?usp=sharing" target="_blank" rel="noreferrer" className="paper-submission-link">
                 Read Here
               </a>.
             </li>
-            
           </ul>
+          <p className="paper-submission-note">
+  <span className="note-label">Note:</span>
+  <span className="note-content"> The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</span>
+</p>
+
         </div>
       </div>
     </>
