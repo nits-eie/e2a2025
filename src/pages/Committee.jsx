@@ -51,6 +51,21 @@ const Committee = () => {
               width: "100%",
             }}
           >
+
+             <ProfileCard
+              style={{ maxWidth: "300px" }}
+              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1753703774/josualee_xjmfm8.jpg"
+              name=" Joshua Lee"
+              aff=" Associate Professor , University of Technology Sydney"
+            />  
+
+            <ProfileCard
+              style={{ maxWidth: "300px" }}
+              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1753936331/balaji_i9bdf5.jpg"
+              name="Prof. Balaji Ramakrishnan  "
+              aff="Director,National Institute of Ocean Technology, Chennai"
+            />
+
             <ProfileCard
               style={{ maxWidth: "300px" }}
               img="/images/Sudarsan_Sahoo.png"
@@ -63,18 +78,8 @@ const Committee = () => {
               name="Dr. Anup Kumar Sharma"
               aff="Assistant Professor , NIT Silchar"
             />
-            <ProfileCard
-              style={{ maxWidth: "300px" }}
-              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1753703774/josualee_xjmfm8.jpg"
-              name=" Joshua Lee"
-              aff=" Associate Professor , University of Technology Sydney"
-            />  
-            <ProfileCard
-              style={{ maxWidth: "300px" }}
-              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1753936331/balaji_i9bdf5.jpg"
-              name="Prof. Balaji Ramakrishnan  "
-              aff="Director,National Institute of Ocean Technology, Chennai"
-            />
+           
+            
             {/* <ProfileCard
               style={{ maxWidth: "300px" }}
               img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751401569/person_uekpm3.png"

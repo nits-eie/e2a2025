@@ -149,39 +149,36 @@ body {
 .paper-submission-list-item:nth-child(7) { animation-delay: 0.7s; }
 .paper-submission-list-item:nth-child(8) { animation-delay: 0.8s; }
 
-
 .paper-submission-container .paper-submission-note {
   font-size: 15px;
   line-height: 20px;
   margin-top: 1.5rem;
-  font-weight: bold;
-  background-color: #f9f9f9; /* Light gray background for the note */
-  padding: 15px; /* Add some padding inside the note */
-  border-left: 4px solid #d35400; /* Orange left border for emphasis */
-  border-radius: 4px; /* Rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: all 0.3s ease; /* Smooth transition for all properties */
+  /* background-color: #f9f9f9; */
+  padding: 15px;
+  /* border-left: 4px solid #d35400;
+  border-radius: 4px; */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; */
 }
-
+/* 
 .paper-submission-container .paper-submission-note .note-label {
-  color: #d35400; /* Orange color for the "Note:" label */
+  color: #d35400;
 }
 
 .paper-submission-container .paper-submission-note .note-content {
-  color: #2c3e50; /* Dark blue-gray color for the note content */
+  color: #2c3e50;
 }
 
-/* Hover effects */
 .paper-submission-container .paper-submission-note:hover {
-  background-color: #e8f4fc; /* Light blue background on hover */
-  border-left: 4px solid #3498db; /* Blue left border on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+  background-color: #e8f4fc;
+  border-left: 4px solid #3498db;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .paper-submission-container .paper-submission-note:hover .note-label {
-  color: #2980b9; /* Blue color on hover for the "Note:" label */
+  color: #2980b9;
 }
 
 .paper-submission-container .paper-submission-note:hover .note-content {
-  color: #1a5276; /* Darker blue color on hover for the note content */
-}
+  color: #1a5276;
+} */

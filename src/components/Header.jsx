@@ -413,7 +413,7 @@ const Header = () => {
           {windowWidth <= 768 && (
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
               <div className="logo" style={{ display: 'block' }}>
-                <img src="e2a2025new.png" alt="Logo" style={{ height: '52px', objectFit: 'contain' }} />
+                <img src="https://res.cloudinary.com/dprjiwgfo/image/upload/v1754194518/xxxx_ihljjj.jpg" alt="Logo" style={{ height: '52px', objectFit: 'contain' }} />
               </div>
               <button
                 onClick={toggleMobileMenu}
