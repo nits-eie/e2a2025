@@ -37,9 +37,13 @@ const RegularPaperSubmission = () => {
               </a>.
             </li>
             <li className="paper-submission-list-item">
-              Papers should be submitted through the{" "}
-              <a href="https://cmt3.research.microsoft.com/E2A2024/Submission/Index" target="_blank" rel="noreferrer" className="paper-submission-link">
-                CMT (E2A) platform
+              Papers should be submitted through the <span className='paper-submission-link'>CMT (E2A) platform</span>
+              
+            </li>
+            <li className="paper-submission-list-item">
+              For Paper Submission {" "}
+              <a href="https://cmt3.research.microsoft.com/EEA2025/Track/1/Submission/Create" target="_blank" rel="noreferrer" className="paper-submission-link">
+                Click Here 
               </a>.
             </li>
             <li className="paper-submission-list-item">

@@ -101,8 +101,8 @@ const Dropdown = ({ title, items }) => {
             <a
               key={index}
               href={item.pathname}
-              target={item.external ? "_blank" : ""}
-              rel={item.external ? "noopener noreferrer" : ""}
+              target={item.external ? "_blank" : undefined}
+              rel={item.external ? "noopener noreferrer" : undefined}
               style={{
                 display: 'block',
                 padding: '12px 20px',
@@ -115,12 +115,12 @@ const Dropdown = ({ title, items }) => {
                 lineHeight: '1.4'
               }}
               onMouseEnter={(e) => {
-                e.target.style.backgroundColor = '#f8f9fa';
-                e.target.style.color = '#0056b3';
+                e.currentTarget.style.backgroundColor = '#f8f9fa';
+                e.currentTarget.style.color = '#0056b3';
               }}
               onMouseLeave={(e) => {
-                e.target.style.backgroundColor = 'transparent';
-                e.target.style.color = '#333333';
+                e.currentTarget.style.backgroundColor = 'transparent';
+                e.currentTarget.style.color = '#333333';
               }}
             >
               {item.name}
@@ -205,8 +205,8 @@ const MobileMenu = ({ navItems, isOpen, onClose }) => {
                       <a
                         key={subIndex}
                         href={subItem.pathname}
-                        target={subItem.external ? "_blank" : ""}
-                        rel={subItem.external ? "noopener noreferrer" : ""}
+                        target={subItem.external ? "_blank" : undefined}
+                        rel={subItem.external ? "noopener noreferrer" : undefined}
                         style={{
                           display: 'block',
                           padding: '10px 0',
@@ -216,12 +216,8 @@ const MobileMenu = ({ navItems, isOpen, onClose }) => {
                           transition: 'all 0.2s ease',
                           borderBottom: subIndex < item.subItems.length - 1 ? '1px solid #f5f5f5' : 'none'
                         }}
-                        onMouseEnter={(e) => {
-                          e.target.style.color = '#0056b3';
-                        }}
-                        onMouseLeave={(e) => {
-                          e.target.style.color = '#555';
-                        }}
+                        onMouseEnter={(e) => { e.currentTarget.style.color = '#0056b3'; }}
+                        onMouseLeave={(e) => { e.currentTarget.style.color = '#555'; }}
                       >
                         {subItem.name}
                       </a>
@@ -242,12 +238,8 @@ const MobileMenu = ({ navItems, isOpen, onClose }) => {
                   borderBottom: '1px solid #f0f0f0',
                   transition: 'all 0.2s ease'
                 }}
-                onMouseEnter={(e) => {
-                  e.target.style.color = '#0056b3';
-                }}
-                onMouseLeave={(e) => {
-                  e.target.style.color = '#333';
-                }}
+                onMouseEnter={(e) => { e.currentTarget.style.color = '#0056b3'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.color = '#333'; }}
               >
                 {item.name}
                 {item.name === "Important Dates" && (
@@ -288,35 +280,94 @@ const navItems = [
   { pathname: "/contact-us", name: "Contact us" },
 ];
 
+/* ======= Inline Ticker (single message + deadline) ======= */
+const InlineTicker = () => {
+  const css = `
+    @keyframes eea-inline-marquee {
+      from { transform: translateX(100%); }   /* start offscreen right */
+      to   { transform: translateX(-100%); }  /* end offscreen left */
+    }
+    .eea-inline-track {
+      display: inline-block;
+      white-space: nowrap;
+      will-change: transform;
+      transform: translateX(100%);
+      animation: eea-inline-marquee 18s linear infinite;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .eea-inline-track { animation: none; transform: translateX(0); }
+    }
+  `;
+
+  const link = "https://cmt3.research.microsoft.com/EEA2025/Track/1/Submission/Create";
+
+  return (
+    <>
+      <style>{css}</style>
+      <div
+        style={{
+          marginTop: '1rem',
+          width: '100%',
+          overflow: 'hidden',
+          height: 40,
+          display: 'flex',
+          alignItems: 'center',
+          borderRadius: '8px',
+          background: 'rgba(255,255,255,0.12)',
+          border: '1px solid rgba(255,255,255,0.25)',
+          backdropFilter: 'blur(2px)',
+          color: '#ffffff',
+        }}
+      >
+        <div className="eea-inline-track" style={{ padding: '0 1rem', fontSize: 14 }}>
+          <span style={{ fontWeight: 600 }}>
+            For paper submission:&nbsp;
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'underline', color: '#F5F5DC' }}
+            >
+              click here →
+            </a>
+            &nbsp;•&nbsp;Last date for paper submission is&nbsp;22/09/25
+          </span>
+        </div>
+      </div>
+    </>
+  );
+};
+/* ======= End Inline Ticker ======= */
+
 const Header = () => {
   const [isScrolled, setScrolled] = React.useState(false);
   const [isMobileMenuOpen, setMobileMenuOpen] = React.useState(false);
-  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = React.useState(0); // SSR-safe
 
   const handleScroll = () => {
-    if (window.scrollY > 80) setScrolled(true);
+    if (typeof window !== 'undefined' && window.scrollY > 80) setScrolled(true);
     else setScrolled(false);
   };
 
   const handleResize = () => {
-    setWindowWidth(window.innerWidth);
-    if (window.innerWidth > 768 && isMobileMenuOpen) {
-      setMobileMenuOpen(false);
+    if (typeof window !== 'undefined') {
+      setWindowWidth(window.innerWidth);
+      if (window.innerWidth > 768 && isMobileMenuOpen) setMobileMenuOpen(false);
     }
   };
 
   React.useEffect(() => {
+    if (typeof window === 'undefined') return;
+    setWindowWidth(window.innerWidth);
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [isMobileMenuOpen]);
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
-  };
+  const toggleMobileMenu = () => setMobileMenuOpen(!isMobileMenuOpen);
 
   const images = [
     "/images/homeImg_d.jpg",
@@ -366,11 +417,7 @@ const Header = () => {
             }}>
               {navItems.map((item, i) =>
                 item.subItems ? (
-                  <Dropdown
-                    key={i}
-                    title={item.name}
-                    items={item.subItems}
-                  />
+                  <Dropdown key={i} title={item.name} items={item.subItems} />
                 ) : (
                   <div key={i}>
                     <a
@@ -391,14 +438,10 @@ const Header = () => {
                         whiteSpace: 'nowrap'
                       }}
                       onMouseEnter={(e) => {
-                        if (item.pathname !== "/") {
-                          e.target.style.color = '#0056b3';
-                        }
+                        if (item.pathname !== "/") e.currentTarget.style.color = '#0056b3';
                       }}
                       onMouseLeave={(e) => {
-                        if (item.pathname !== "/") {
-                          e.target.style.color = '#333333';
-                        }
+                        if (item.pathname !== "/") e.currentTarget.style.color = '#333333';
                       }}
                     >
                       {item.name}
@@ -438,11 +481,7 @@ const Header = () => {
           )}
         </nav>
         {/* Mobile Menu */}
-        <MobileMenu
-          navItems={navItems}
-          isOpen={isMobileMenuOpen}
-          onClose={() => setMobileMenuOpen(false)}
-        />
+        <MobileMenu navItems={navItems} isOpen={isMobileMenuOpen} onClose={() => setMobileMenuOpen(false)} />
         <div className="headerContent" style={{
           position: 'relative',
           zIndex: 10,
@@ -505,15 +544,19 @@ const Header = () => {
             </div>
             <div className="organised-by" style={{
               fontSize: 'clamp(0.9rem, 2vw, 1.2rem)',
-              marginBottom: '1.8rem',
+              marginBottom: '1rem',
               lineHeight: '1.5'
             }}>
               <span style={{ fontSize: '0.9em', color: '#f0f0f0', fontWeight: '500' }}>Organised by</span> <br />
               <span style={{ fontWeight: '600', textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)' }}>Department of Electronics and Instrumentation Engineering</span>
             </div>
+
+            {/* Inline horizontal scroll (single instance with deadline) */}
+            <InlineTicker />
+
             <div className="college-name" style={{
               fontSize: 'clamp(1rem, 2.4vw, 1.5rem)',
-              marginBottom: '2rem',
+              marginTop: '1.2rem',
               fontWeight: '600',
               lineHeight: '1.4'
             }}>
