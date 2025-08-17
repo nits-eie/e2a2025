@@ -656,3 +656,17 @@
 .ml-1 {
   margin-left: 0.5rem;
 }
+
+
+/* === Fix extra space above the notice in #about and anchor offset === */
+#about { scroll-margin-top: 72px; }                    /* adjust if your fixed navbar is taller */
+
+#about.about-section { padding-top: 8px !important; }  /* replace large top padding with a small one */
+#about .container { padding-top: 8px; }                /* internal spacing */
+#about .container > :first-child { margin-top: 0 !important; }  /* prevent first-child top-margin pushing the section */
+
+/* Mobile: prevent media rule from re-adding large top padding */
+@media (max-width: 768px) {
+  #about.about-section { padding-top: 10px !important; }
+  #about .container { padding-top: 10px; }
+}

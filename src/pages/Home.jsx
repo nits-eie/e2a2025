@@ -15,48 +15,39 @@ const Home = () => {
   return (
     <>
       <Header />
-      
-      {/* Hero Section */}
-      {/* <section className="hero-section">
-        <div className="hero-content">
-          <div className="hero-badge">5th Annual International Conference</div>
-          <h1 className="hero-title">
-            Emerging Electronics and Automation
-            <span className="hero-year">E2A 2025</span>
-          </h1>
-          <div className="hero-details">
-            <div className="hero-detail-item">
-              <img src={time} alt="date" />
-              <span>17th - 19th December 2025</span>
-            </div>
-            <div className="hero-detail-item">
-              <img src={location} alt="location" />
-              <span>NIT Silchar, Assam</span>
-            </div>
-            <div className="hero-detail-item">
-              <img src={meetingRoom} alt="mode" />
-              <span>Hybrid Mode</span>
-            </div>
-          </div>
-          <div className="hero-actions">
-            <a 
-              href="https://cmt3.research.microsoft.com/E2A2024/Submission/Index" 
-              target="_blank" 
-              rel="noreferrer"
-              className="btn-primary"
-            >
-              Submit Paper
-            </a>
-            <a href="#about" className="btn-secondary">Learn More</a>
-          </div>
-        </div>
-      </section> */}
 
       {/* Main Content */}
       <div className="main-content">
         {/* About Section */}
-        <section id="about" className="about-section">
+        <section id="about" className="about-section" style={{ scrollMarginTop: 90 }}>
           <div className="container">
+
+            {/* ===== Static IMPORTANT notice now inside #about (first element) ===== */}
+            <div style={{ marginBottom: 16, display: 'flex', justifyContent: 'center', padding: '0 16px' }}>
+              <div style={{
+                maxWidth: 980, width: '100%', background: '#FFFFFF', border: '1px solid #E5E7EB',
+                borderRadius: 10, padding: '16px', position: 'relative', boxShadow: '0 4px 14px rgba(0,0,0,0.06)'
+              }}>
+                <div style={{
+                  position: 'absolute', top: 0, left: 0, right: 0, height: 4,
+                  background: 'linear-gradient(90deg,#2563EB,#0EA5E9)', borderTopLeftRadius: 10, borderTopRightRadius: 10
+                }} />
+                <p style={{ margin: 0, textAlign: 'center', color: '#0F172A', fontSize: 17, fontWeight: 600 }}>
+                  For paper submission:&nbsp;
+                  <a
+                    href="https://cmt3.research.microsoft.com/EEA2025/Track/1/Submission/Create"
+                    target="_blank" rel="noopener noreferrer"
+                    style={{ color: '#0A66C2', textDecoration: 'underline', fontWeight: 700 }}
+                  >
+                    click here →
+                  </a>
+                  &nbsp;•&nbsp;Last date for paper submission is&nbsp;
+                  <time dateTime="2025-09-22" style={{ color: '#B91C1C', fontWeight: 800 }}>22/09/25</time>
+                </p>
+              </div>
+            </div>
+            {/* ===== End notice ===== */}
+
             <div className="content-grid">
               {/* Main Content */}
               <div className="main-column">
@@ -156,8 +147,6 @@ const Home = () => {
                       >
                         "Lecture Notes in Electrical Engineering" 
                       </a>
-                      {/* . Select papers will be published by Springer ( Approval Pending ) as a proceedings book volume.
-                      Springer Nature does not charge any money for publication of Non-Open Access content. */}
                        (Approval Pending) .
                     </p>
                   </div>
@@ -209,100 +198,39 @@ const Home = () => {
                     </div>
                   </div>
 
-                  {/* <div className="info-item">
-                    <img src={website} alt="website" />
-                    <div>
-                      <h4>Previous Editions</h4>
-                      <div className="previous-links">
-                        <a href="http://e2a2022.nits.ac.in" target="_blank" rel="noreferrer">E2A2022</a>
-                        <a href="http://e2a2023.nits.ac.in" target="_blank" rel="noreferrer">E2A2023</a>
-                        <a href="https://e2a.nits.ac.in/" target="_blank" rel="noreferrer">E2A2024</a>
+                  {/* leave the rest unchanged */}
+                  <div class="publications-sidebar">
+                    <h3>Previous Publications</h3>
+                    <div class="publications-grid">
+                      <div class="publication-item">
+                        <div class="pub-number">1st Edition</div>
+                        <div class="pub-details">
+                          <p>Lecture Notes in Electrical Engineering</p>
+                          <a href="https://www.springer.com/gp/book/9789811942990" target="_blank" rel="noreferrer">
+                            ISBN 978-981-19-4299-0
+                          </a>
+                        </div>
+                      </div>
+                      <div class="publication-item">
+                        <div class="pub-number">2nd Edition</div>
+                        <div class="pub-details">
+                          <p>Lecture Notes in Electrical Engineering</p>
+                          <a href="https://link.springer.com/book/10.1007/978-981-99-6855-8" target="_blank" rel="noreferrer">
+                            ISBN 978-981-99-6854-1
+                          </a>
+                        </div>
+                      </div>
+                      <div class="publication-item">
+                        <div class="pub-number">3rd Edition</div>
+                        <div class="pub-details">
+                          <p>Lecture Notes in Electrical Engineering</p>
+                          <a href="https://link.springer.com/book/10.1007/978-981-99-6855-8" target="_blank" rel="noreferrer">
+                            ISBN 978-981-99-6854-1
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </div> */}
-                {/* </div> */}
-
-                {/* Previous Publications */}
-                {/* <div className="publications-sidebar">
-                  <h3>Previous Publications</h3>
-                  
-                  <div className="publication-item">
-                    <div className="pub-number">1st Edition</div>
-                    <div className="pub-details">
-                      <p>Lecture Notes in Electrical Engineering</p>
-                      <a
-                        href="https://www.springer.com/gp/book/978-981-19-4299-0"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        ISBN 978-981-19-4299-0
-                      </a>
-                    </div>
-                  </div> */}
-
-                  {/* <div className="publication-item">
-                    <div className="pub-number">3rd Edition</div>
-                    <div className="pub-details">
-                      <p>Lecture Notes in Electrical Engineering</p>
-                      <a
-                        href="https://link.springer.com/book/10.1007/978-981-99-6855-8"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        ISBN 978-981-99-6854-1
-                      </a>
-                    </div>
-                  </div> */}
-
-
-                  <div class="publications-sidebar">
-  <h3>Previous Publications</h3>
-  <div class="publications-grid">
-    <div class="publication-item">
-      <div class="pub-number">1st Edition</div>
-      <div class="pub-details">
-        <p>Lecture Notes in Electrical Engineering</p>
-        <a href="https://www.springer.com/gp/book/9789811942990" target="_blank" rel="noreferrer">
-          ISBN 978-981-19-4299-0
-        </a>
-      </div>
-    </div>
-    <div class="publication-item">
-      <div class="pub-number">2nd Edition</div>
-      <div class="pub-details">
-        <p>Lecture Notes in Electrical Engineering</p>
-        <a href="https://link.springer.com/book/10.1007/978-981-99-6855-8" target="_blank" rel="noreferrer">
-          ISBN 978-981-99-6854-1
-        </a>
-      </div>
-    </div>
-    <div class="publication-item">
-      <div class="pub-number">3rd Edition</div>
-      <div class="pub-details">
-        <p>Lecture Notes in Electrical Engineering</p>
-        <a href="https://link.springer.com/book/10.1007/978-981-99-6855-8" target="_blank" rel="noreferrer">
-          ISBN 978-981-99-6854-1
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                  </div>
 
                 </div>
               </div>

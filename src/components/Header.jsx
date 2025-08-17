@@ -284,8 +284,8 @@ const navItems = [
 const InlineTicker = () => {
   const css = `
     @keyframes eea-inline-marquee {
-      from { transform: translateX(100%); }   /* start offscreen right */
-      to   { transform: translateX(-100%); }  /* end offscreen left */
+      from { transform: translateX(100%); }
+      to   { transform: translateX(-100%); }
     }
     .eea-inline-track {
       display: inline-block;
@@ -551,8 +551,7 @@ const Header = () => {
               <span style={{ fontWeight: '600', textShadow: '1px 1px 3px rgba(0, 0, 0, 0.5)' }}>Department of Electronics and Instrumentation Engineering</span>
             </div>
 
-            {/* Inline horizontal scroll (single instance with deadline) */}
-            <InlineTicker />
+            {/* Removed moving ticker */}
 
             <div className="college-name" style={{
               fontSize: 'clamp(1rem, 2.4vw, 1.5rem)',
