@@ -271,6 +271,7 @@ const navItems = [
     name: "Program",
     subItems: [
       { name: "Brochure", pathname: "/program-brochure", external: true },
+      { name: "Program Schedule", pathname: "/program-schedule", external: true },
       { name: "Keynote Speakers", pathname: "/keynote-speakers" },
     ],
   },

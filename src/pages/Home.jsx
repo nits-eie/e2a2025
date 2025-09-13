@@ -23,29 +23,23 @@ const Home = () => {
           <div className="container">
 
             {/* ===== Static IMPORTANT notice now inside #about (first element) ===== */}
-            <div style={{ marginBottom: 16, display: 'flex', justifyContent: 'center', padding: '0 16px' }}>
-              <div style={{
-                maxWidth: 980, width: '100%', background: '#FFFFFF', border: '1px solid #E5E7EB',
-                borderRadius: 10, padding: '16px', position: 'relative', boxShadow: '0 4px 14px rgba(0,0,0,0.06)'
-              }}>
-                <div style={{
-                  position: 'absolute', top: 0, left: 0, right: 0, height: 4,
-                  background: 'linear-gradient(90deg,#2563EB,#0EA5E9)', borderTopLeftRadius: 10, borderTopRightRadius: 10
-                }} />
-                <p style={{ margin: 0, textAlign: 'center', color: '#0F172A', fontSize: 17, fontWeight: 600 }}>
-                  For paper submission:&nbsp;
-                  <a
-                    href="https://cmt3.research.microsoft.com/EEA2025/Track/1/Submission/Create"
-                    target="_blank" rel="noopener noreferrer"
-                    style={{ color: '#0A66C2', textDecoration: 'underline', fontWeight: 700 }}
-                  >
-                    click here →
-                  </a>
-                  &nbsp;•&nbsp;Last date for paper submission is&nbsp;
-                  <time dateTime="2025-09-22" style={{ color: '#B91C1C', fontWeight: 800 }}>22/09/25</time>
-                </p>
-              </div>
-            </div>
+           <div className="notice-viewport" style={{ padding: '10px 0' }}>
+  <div className="notice-track" style={{ fontSize: 17, fontWeight: 600, color: '#0F172A' }}>
+    For paper submission:&nbsp;
+    <a
+      href="https://cmt3.research.microsoft.com/EEA2025/Track/1/Submission/Create"
+      target="_blank" rel="noopener noreferrer"
+      style={{ color: '#0A66C2', textDecoration: 'underline', fontWeight: 700 }}
+    >
+      click here →
+    </a>
+    &nbsp;•&nbsp;Last date for paper submission is : &nbsp;
+    <time dateTime="2025-09-22" style={{ color: '#B91C1C', fontWeight: 800 }}>
+      22/09/25
+    </time>
+  </div>
+</div>
+
             {/* ===== End notice ===== */}
 
             <div className="content-grid">
@@ -136,19 +130,34 @@ const Home = () => {
                   <div className="info-icon">📚</div>
                   <div className="info-content">
                     <h4>Publication</h4>
-                    <p>
-                      All Accepted papers after peer review and successful presentation will be published 
-                      as proceedings with Springer in their prestigious Scopus Indexed Series {" "}
-                      <a
-                        href="https://www.springer.com/series/7818"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-link"
-                      >
-                        "Lecture Notes in Electrical Engineering" 
-                      </a>
-                       (Approval Pending) .
-                    </p>
+                     <p style={{ color: "orange" }}>
+      It is planned to publish the peer reviewed and selected papers of the
+      conference as proceedings with Springer in their prestigious{" "}
+      <a
+        href="https://link.springer.com/series/7818"
+        target="_blank"
+        rel="noreferrer"
+        className="text-link"
+      >
+        Lecture Notes in Electrical Engineering
+      </a>{" "}
+      series.<br/> <br/> For detailed instructions for authors and editors of conference
+      proceedings, kindly visit the following link:{" "}
+      <a
+        href="https://www.springer.com/us/authors-editors/conference-proceedings"
+        target="_blank"
+        rel="noreferrer"
+        className="text-link"
+      >
+        Springer Conference Proceedings Guidelines
+      </a>
+      . Select papers from the conference will be published by Springer as a
+      proceedings book volume. Springer will conduct quality checks on the
+      accepted papers and only papers that pass these checks will be published.
+      Springer Nature does not charge any money for publication of Non-Open
+      Access content. Abstracts/extended abstracts and short papers (less than 4
+      pages) are not considered for publication.
+    </p>
                   </div>
                 </div>
               </div>

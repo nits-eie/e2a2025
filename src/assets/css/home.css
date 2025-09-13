@@ -670,3 +670,25 @@
   #about.about-section { padding-top: 10px !important; }
   #about .container { padding-top: 10px; }
 }
+
+
+/* Moving notice text (marquee) */
+@keyframes eea-notice-marquee {
+  from { transform: translateX(100%); }   /* start offscreen right */
+  to   { transform: translateX(-100%); }  /* end offscreen left */
+}
+.notice-viewport {
+  overflow: hidden;        /* hides the overflow while it scrolls */
+  width: 100%;
+}
+.notice-track {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+  animation: eea-notice-marquee 18s linear infinite;
+}
+/* pause on hover and respect reduced motion */
+.notice-track:hover { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .notice-track { animation: none; transform: translateX(0); }
+}
