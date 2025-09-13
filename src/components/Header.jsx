@@ -566,6 +566,21 @@ const Header = () => {
                 textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'
               }}>NATIONAL INSTITUTE OF TECHNOLOGY SILCHAR</span> <br />
               <span style={{ fontSize: '0.8em', color: '#f0f0f0', fontWeight: '500' }}>Assam, India - 788010</span>
+
+              <img
+  src="https://res.cloudinary.com/dprjiwgfo/image/upload/v1757753189/spring_l6to9z.jpg"
+  alt="spring"
+  style={{
+    maxHeight: "90px",
+    maxWidth: "100px",
+    width: "auto",
+    height: "auto",
+    display: "block",
+    margin: "2px auto" ,
+    borderRadius: "20px"
+  }}
+/>
+
             </div>
           </div>
         </div>
