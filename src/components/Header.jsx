@@ -571,8 +571,8 @@ const Header = () => {
   src="https://res.cloudinary.com/dprjiwgfo/image/upload/v1757753189/spring_l6to9z.jpg"
   alt="spring"
   style={{
-    maxHeight: "90px",
-    maxWidth: "100px",
+    maxHeight: "60px",
+    maxWidth: "120px",
     width: "auto",
     height: "auto",
     display: "block",

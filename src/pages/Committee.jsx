@@ -61,7 +61,7 @@ const Committee = () => {
 
             <ProfileCard
               style={{ maxWidth: "300px" }}
-              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1753936331/balaji_i9bdf5.jpg"
+              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1757754375/balaji_ih9h1c.jpg"
               name="Prof. Balaji Ramakrishnan  "
               aff="Director,National Institute of Ocean Technology, Chennai"
             />

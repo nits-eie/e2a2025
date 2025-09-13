@@ -99,7 +99,21 @@ export default [
   {
     name: "Mr. Joseph James",
     img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1754822224/IMG-20250810-WA0033_qxjnij.jpg",
+    designation: " Associate Professor ",
+    college: "University of Technology Sydney",
+  },
+
+  {
+    name: "Joshua Lee",
+    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1753703774/josualee_xjmfm8.jpg",
     designation: "SubSystem Subsea Controls Expert",
     college: "TechnipFMC, Malaysia",
+  },
+
+  {
+    name: "Prof. Balaji Ramakrishnan ",
+    img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1757754375/balaji_ih9h1c.jpg",
+    designation: "Director",
+    college: "National Institute of Ocean Technology, Chennai",
   },
 ];

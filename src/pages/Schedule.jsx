@@ -5,7 +5,7 @@ import Header from "../components/Header";
 const Schedule = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="bg-white ptb-4 schedule mb-2">
         {/* Image row with three uploads */}
         <div className="imageRow">

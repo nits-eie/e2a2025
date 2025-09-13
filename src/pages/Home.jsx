@@ -106,7 +106,7 @@ const Home = () => {
                     </ul>
                     <p className="publication-description">
                       This book constitutes peer-reviewed proceedings of the International Conference on
-                      Emerging Electronics and Automation (E2A) 2025. The book presents new ideas, research
+                      Emerging Electronics and Automation (E2A) . The book presents new ideas, research
                       findings, and novel techniques in the fields of sensors and instrumentation, automation
                       and control, artificial intelligence, MEMS sensors, soft computing, signal processing,
                       and communication.
@@ -151,7 +151,7 @@ const Home = () => {
       >
         Springer Conference Proceedings Guidelines
       </a>
-      . Select papers from the conference will be published by Springer as a
+      . Selected papers from the conference will be published by Springer as a
       proceedings book volume. Springer will conduct quality checks on the
       accepted papers and only papers that pass these checks will be published.
       Springer Nature does not charge any money for publication of Non-Open
