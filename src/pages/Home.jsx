@@ -146,19 +146,23 @@ const Home = () => {
                   <div className="info-content">
                     <h4>Publication</h4>
                     <p>
-                      All Accepted papers after peer review and successful presentation will be published 
-                      as proceedings with Springer in their prestigious Scopus Indexed Series {" "}
-                      <a
+                      {/* All Accepted papers after peer review and successful presentation will be published 
+                      as proceedings with Springer in their prestigious Scopus Indexed Series {" "} */}
+                      The peer reviewed and accepted papers of the conference will be published (subject to satisfying the Springer's publication terms) as proceedings with Springer in their prestigious Lecture Notes in Electrical Engineering series
+                      {/* <a
                         href="https://www.springer.com/series/7818"
                         target="_blank"
                         rel="noreferrer"
                         className="text-link"
                       >
                         "Lecture Notes in Electrical Engineering" 
-                      </a>
+                      </a> */}
                       {/* . Select papers will be published by Springer ( Approval Pending ) as a proceedings book volume.
                       Springer Nature does not charge any money for publication of Non-Open Access content. */}
-                       (Approval Pending) .
+                       {/* (Approval Pending) . */}
+                        <br /> <br />
+                        <br />
+                       For detailed instructions for authors and editors of conference proceedings, kindly visit the following link: Springer Conference Proceedings Guidelines. Selected papers from the conference will be published by Springer as a proceedings book volume. Springer will conduct quality checks on the accepted papers and only papers that pass these checks will be published. Springer Nature does not charge any money for publication of Non-Open Access content. Abstracts/extended abstracts and short papers (less than 4 pages) are not considered for publication.
                     </p>
                   </div>
                 </div>
