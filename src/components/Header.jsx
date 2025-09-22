@@ -332,6 +332,8 @@ const InlineTicker = () => {
               click here →
             </a>
             &nbsp;•&nbsp;Last date for paper submission is&nbsp;22/09/25
+
+            
           </span>
         </div>
       </div>

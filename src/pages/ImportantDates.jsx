@@ -15,12 +15,24 @@ const ImportantDates = () => {
   }, []);
 
   const dates = [
-    { label: "Conference Dates:", value: "17th – 19th December 2025" },
-    { label: "Paper Submission Opens:", value: "4th August 2025" },
-    { label: "Paper Submission Deadline:", value: "22nd September 2025" },
-    { label: "Acceptance Notification:", value: "2nd October 2025" },
-    { label: "Last Date for Conference Registration:", value: "10th November 2025" },
-    { label: "Deadline for Camera‑Ready Paper:", value: "17th November 2025" },
+    { label: "Conference Dates:", value: "17th – 19th December 2025" },
+    { label: "Paper Submission Opens:", value: "4th August 2025" },
+    {
+      label: "Paper Submission Deadline:",
+      value: (
+        <>
+          <span style={{ textDecoration: "line-through", color: "#888" }}>
+            22nd September 2025
+          </span>{" "}
+          <span style={{ marginLeft: "0.5rem", color: "#e74c3c", fontWeight: 600 }}>
+            8th October 2025
+          </span>
+        </>
+      ),
+    },
+    { label: "Acceptance Notification:", value: "2nd October 2025" },
+    { label: "Last Date for Conference Registration:", value: "10th November 2025" },
+    { label: "Deadline for Camera-Ready Paper:", value: "17th November 2025" },
   ];
 
   return (
@@ -145,7 +157,6 @@ const ImportantDates = () => {
 
         .date-value {
           font-size: 1.2rem;
-          color: #f39c12;
           font-weight: 600;
           margin-left: 1rem;
           background-color: rgba(243, 156, 18, 0.1);

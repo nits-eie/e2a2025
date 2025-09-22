@@ -23,22 +23,39 @@ const Home = () => {
           <div className="container">
 
             {/* ===== Static IMPORTANT notice now inside #about (first element) ===== */}
-           <div className="notice-viewport" style={{ padding: '10px 0' }}>
-  <div className="notice-track" style={{ fontSize: 17, fontWeight: 600, color: '#0F172A' }}>
+           
+
+<div className="notice-viewport" style={{ padding: '10px 0' }}>
+  <div
+    className="notice-track"
+    style={{ fontSize: 17, fontWeight: 600, color: '#0F172A' }}
+  >
     For paper submission:&nbsp;
     <a
       href="https://cmt3.research.microsoft.com/EEA2025/Track/1/Submission/Create"
-      target="_blank" rel="noopener noreferrer"
+      target="_blank"
+      rel="noopener noreferrer"
       style={{ color: '#0A66C2', textDecoration: 'underline', fontWeight: 700 }}
     >
       click here →
     </a>
-    &nbsp;•&nbsp;Last date for paper submission is : &nbsp;
-    <time dateTime="2025-09-22" style={{ color: '#B91C1C', fontWeight: 800 }}>
+    &nbsp;•&nbsp;Last date for paper submission is&nbsp;
+    <span style={{ textDecoration: 'line-through', color: '#888' }}>
       22/09/25
-    </time>
+    </span>
+    &nbsp;
+    <span
+      style={{
+        color: '#e74c3c',
+        fontWeight: 600,
+        whiteSpace: 'nowrap',
+      }}
+    >
+      8th October 2025
+    </span>
   </div>
 </div>
+
 
             {/* ===== End notice ===== */}
 
