@@ -1,33 +1,35 @@
-.flexCenter{
-    display: flex; justify-content: center;
+/* Reset & helpers */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; padding: 0; }
+
+/* Outer container */
+.schedule {
+  width: 100%;
+  background: #ffffff;
 }
-.timeBox{
-    text-align: center; min-width: 120px;
+
+/* Stack slides vertically, one after another */
+.imageRow {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: stretch;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
-.center{
-    text-align: center;
+
+/* Each program image: full-width, block-level, no cropping */
+.programImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
 }
-.blueText{
-    color: blue;
-}
-.boldText{
-    font-weight: bold;
-}
-.boldCenter{
-    font-weight: bold; text-align: center;
-}
-.boldCenterGreen{
-    font-weight: bold; text-align: center; color: green;
-}
-.boldCenterRed{
-    font-weight: bold; text-align: center; color: red;
-}
-.boldCenterBlue{
-    font-weight: bold; text-align: center; color: rgb(0, 176, 240);
-}
-.boldCenterPurple{
-    font-weight: bold; text-align: center; color: rgb(112, 48, 160);
-}
-.writingStyle{
-    writing-mode: vertical-lr; transform: rotate(180deg); text-align: center;
+
+/* Optional: focus styles for accessibility */
+.programImg:focus {
+  outline: 3px solid rgba(0, 123, 255, 0.35);
 }

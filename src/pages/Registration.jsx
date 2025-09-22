@@ -98,6 +98,18 @@ const Registration = () => {
                   <li className="highlight">
                     Registration Form Link: <span className="highlight-text">………………</span>
                   </li>
+                  {/* <li className="highlight">
+  Registration Form Link:{" "}
+  <span className="highlight-text">
+    <a
+      href="https://cmt3.research.microsoft.com/EEA2025/Track/1/Submission/Create"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Click Here
+    </a>
+  </span>
+</li> */}
                 </ul>
               </div>
             </div>

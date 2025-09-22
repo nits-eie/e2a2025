@@ -54,9 +54,10 @@ const App = () => {
           <Route path="/program" exact element={<Program />} />
           <Route path="/keynote-speakers" exact element={<KeynoteSpeakers />} />
           <Route path="/sponsorship" exact element={<Sponsorship />} />
-          <Route path="/program-schedule" exact element={<DownloadDocument/>} />
+          <Route path="/program-schedule" exact element={<Schedule/>} />
           <Route path="/program-brochure" exact element={<Brochure />} />
           <Route path="/gallary" exact element={<PhotoGallary />} />
+          
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -15,48 +15,50 @@ const Home = () => {
   return (
     <>
       <Header />
-      
-      {/* Hero Section */}
-      {/* <section className="hero-section">
-        <div className="hero-content">
-          <div className="hero-badge">5th Annual International Conference</div>
-          <h1 className="hero-title">
-            Emerging Electronics and Automation
-            <span className="hero-year">E2A 2025</span>
-          </h1>
-          <div className="hero-details">
-            <div className="hero-detail-item">
-              <img src={time} alt="date" />
-              <span>17th - 19th December 2025</span>
-            </div>
-            <div className="hero-detail-item">
-              <img src={location} alt="location" />
-              <span>NIT Silchar, Assam</span>
-            </div>
-            <div className="hero-detail-item">
-              <img src={meetingRoom} alt="mode" />
-              <span>Hybrid Mode</span>
-            </div>
-          </div>
-          <div className="hero-actions">
-            <a 
-              href="https://cmt3.research.microsoft.com/E2A2024/Submission/Index" 
-              target="_blank" 
-              rel="noreferrer"
-              className="btn-primary"
-            >
-              Submit Paper
-            </a>
-            <a href="#about" className="btn-secondary">Learn More</a>
-          </div>
-        </div>
-      </section> */}
 
       {/* Main Content */}
       <div className="main-content">
         {/* About Section */}
-        <section id="about" className="about-section">
+        <section id="about" className="about-section" style={{ scrollMarginTop: 90 }}>
           <div className="container">
+
+            {/* ===== Static IMPORTANT notice now inside #about (first element) ===== */}
+           
+
+<div className="notice-viewport" style={{ padding: '10px 0' }}>
+  <div
+    className="notice-track"
+    style={{ fontSize: 17, fontWeight: 600, color: '#0F172A' }}
+  >
+    For paper submission:&nbsp;
+    <a
+      href="https://cmt3.research.microsoft.com/EEA2025/Track/1/Submission/Create"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ color: '#0A66C2', textDecoration: 'underline', fontWeight: 700 }}
+    >
+      click here →
+    </a>
+    &nbsp;•&nbsp;Last date for paper submission is&nbsp;
+    <span style={{ textDecoration: 'line-through', color: '#888' }}>
+      22/09/25
+    </span>
+    &nbsp;
+    <span
+      style={{
+        color: '#e74c3c',
+        fontWeight: 600,
+        whiteSpace: 'nowrap',
+      }}
+    >
+      8th October 2025
+    </span>
+  </div>
+</div>
+
+
+            {/* ===== End notice ===== */}
+
             <div className="content-grid">
               {/* Main Content */}
               <div className="main-column">
@@ -121,7 +123,7 @@ const Home = () => {
                     </ul>
                     <p className="publication-description">
                       This book constitutes peer-reviewed proceedings of the International Conference on
-                      Emerging Electronics and Automation (E2A) 2025. The book presents new ideas, research
+                      Emerging Electronics and Automation (E2A) . The book presents new ideas, research
                       findings, and novel techniques in the fields of sensors and instrumentation, automation
                       and control, artificial intelligence, MEMS sensors, soft computing, signal processing,
                       and communication.
@@ -145,25 +147,34 @@ const Home = () => {
                   <div className="info-icon">📚</div>
                   <div className="info-content">
                     <h4>Publication</h4>
-                    <p>
-                      {/* All Accepted papers after peer review and successful presentation will be published 
-                      as proceedings with Springer in their prestigious Scopus Indexed Series {" "} */}
-                      The peer reviewed and accepted papers of the conference will be published (subject to satisfying the Springer's publication terms) as proceedings with Springer in their prestigious Lecture Notes in Electrical Engineering series
-                      {/* <a
-                        href="https://www.springer.com/series/7818"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-link"
-                      >
-                        "Lecture Notes in Electrical Engineering" 
-                      </a> */}
-                      {/* . Select papers will be published by Springer ( Approval Pending ) as a proceedings book volume.
-                      Springer Nature does not charge any money for publication of Non-Open Access content. */}
-                       {/* (Approval Pending) . */}
-                        <br /> <br />
-                        <br />
-                       For detailed instructions for authors and editors of conference proceedings, kindly visit the following link: Springer Conference Proceedings Guidelines. Selected papers from the conference will be published by Springer as a proceedings book volume. Springer will conduct quality checks on the accepted papers and only papers that pass these checks will be published. Springer Nature does not charge any money for publication of Non-Open Access content. Abstracts/extended abstracts and short papers (less than 4 pages) are not considered for publication.
-                    </p>
+                     <p style={{ color: "orange" }}>
+      It is planned to publish the peer reviewed and selected papers of the
+      conference as proceedings with Springer in their prestigious{" "}
+      <a
+        href="https://link.springer.com/series/7818"
+        target="_blank"
+        rel="noreferrer"
+        className="text-link"
+      >
+        Lecture Notes in Electrical Engineering
+      </a>{" "}
+      series.<br/> <br/> For detailed instructions for authors and editors of conference
+      proceedings, kindly visit the following link:{" "}
+      <a
+        href="https://www.springer.com/us/authors-editors/conference-proceedings"
+        target="_blank"
+        rel="noreferrer"
+        className="text-link"
+      >
+        Springer Conference Proceedings Guidelines
+      </a>
+      . Selected papers from the conference will be published by Springer as a
+      proceedings book volume. Springer will conduct quality checks on the
+      accepted papers and only papers that pass these checks will be published.
+      Springer Nature does not charge any money for publication of Non-Open
+      Access content. Abstracts/extended abstracts and short papers (less than 4
+      pages) are not considered for publication.
+    </p>
                   </div>
                 </div>
               </div>
@@ -203,110 +214,49 @@ const Home = () => {
                       <h4>Submit Your Paper</h4>
                       <a
                         // href="https://cmt3.research.microsoft.com/E2A2024/Submission/Index"
-                        href="."
-                        target="_self"
+                        href="https://cmt3.research.microsoft.com/EEA2025/Track/1/Submission/Create"
+                        target="_blank"
                         rel="noreferrer"
                         className="submission-link"
                       >
-                        Updated Soon
+                        Click Here 
                       </a>
                     </div>
                   </div>
 
-                  {/* <div className="info-item">
-                    <img src={website} alt="website" />
-                    <div>
-                      <h4>Previous Editions</h4>
-                      <div className="previous-links">
-                        <a href="http://e2a2022.nits.ac.in" target="_blank" rel="noreferrer">E2A2022</a>
-                        <a href="http://e2a2023.nits.ac.in" target="_blank" rel="noreferrer">E2A2023</a>
-                        <a href="https://e2a.nits.ac.in/" target="_blank" rel="noreferrer">E2A2024</a>
+                  {/* leave the rest unchanged */}
+                  <div class="publications-sidebar">
+                    <h3>Previous Publications</h3>
+                    <div class="publications-grid">
+                      <div class="publication-item">
+                        <div class="pub-number">1st Edition</div>
+                        <div class="pub-details">
+                          <p>Lecture Notes in Electrical Engineering</p>
+                          <a href="https://www.springer.com/gp/book/9789811942990" target="_blank" rel="noreferrer">
+                            ISBN 978-981-19-4299-0
+                          </a>
+                        </div>
+                      </div>
+                      <div class="publication-item">
+                        <div class="pub-number">2nd Edition</div>
+                        <div class="pub-details">
+                          <p>Lecture Notes in Electrical Engineering</p>
+                          <a href="https://link.springer.com/book/10.1007/978-981-99-6855-8" target="_blank" rel="noreferrer">
+                            ISBN 978-981-99-6854-1
+                          </a>
+                        </div>
+                      </div>
+                      <div class="publication-item">
+                        <div class="pub-number">3rd Edition</div>
+                        <div class="pub-details">
+                          <p>Lecture Notes in Electrical Engineering</p>
+                          <a href="https://link.springer.com/book/10.1007/978-981-99-6855-8" target="_blank" rel="noreferrer">
+                            ISBN 978-981-99-6854-1
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </div> */}
-                {/* </div> */}
-
-                {/* Previous Publications */}
-                {/* <div className="publications-sidebar">
-                  <h3>Previous Publications</h3>
-                  
-                  <div className="publication-item">
-                    <div className="pub-number">1st Edition</div>
-                    <div className="pub-details">
-                      <p>Lecture Notes in Electrical Engineering</p>
-                      <a
-                        href="https://www.springer.com/gp/book/978-981-19-4299-0"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        ISBN 978-981-19-4299-0
-                      </a>
-                    </div>
-                  </div> */}
-
-                  {/* <div className="publication-item">
-                    <div className="pub-number">3rd Edition</div>
-                    <div className="pub-details">
-                      <p>Lecture Notes in Electrical Engineering</p>
-                      <a
-                        href="https://link.springer.com/book/10.1007/978-981-99-6855-8"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        ISBN 978-981-99-6854-1
-                      </a>
-                    </div>
-                  </div> */}
-
-
-                  <div class="publications-sidebar">
-  <h3>Previous Publications</h3>
-  <div class="publications-grid">
-    <div class="publication-item">
-      <div class="pub-number">1st Edition</div>
-      <div class="pub-details">
-        <p>Lecture Notes in Electrical Engineering</p>
-        <a href="https://www.springer.com/gp/book/9789811942990" target="_blank" rel="noreferrer">
-          ISBN 978-981-19-4299-0
-        </a>
-      </div>
-    </div>
-    <div class="publication-item">
-      <div class="pub-number">2nd Edition</div>
-      <div class="pub-details">
-        <p>Lecture Notes in Electrical Engineering</p>
-        <a href="https://link.springer.com/book/10.1007/978-981-99-6855-8" target="_blank" rel="noreferrer">
-          ISBN 978-981-99-6854-1
-        </a>
-      </div>
-    </div>
-    <div class="publication-item">
-      <div class="pub-number">3rd Edition</div>
-      <div class="pub-details">
-        <p>Lecture Notes in Electrical Engineering</p>
-        <a href="https://link.springer.com/book/10.1007/978-981-99-6855-8" target="_blank" rel="noreferrer">
-          ISBN 978-981-99-6854-1
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                  </div>
 
                 </div>
               </div>
