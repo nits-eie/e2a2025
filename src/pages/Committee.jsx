@@ -125,7 +125,7 @@ const Committee = () => {
             />
             <ProfileCard
               style={{ maxWidth: "300px" }}
-              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1751048765/shankar_zfkwbo.jpg"
+              img="https://res.cloudinary.com/dprjiwgfo/image/upload/v1759294600/shankarsir_bdgaqi.jpg"
               name="Dr. Shankar K.                                                                        "
               aff="Assistant Professor , NIT Silchar"
             />

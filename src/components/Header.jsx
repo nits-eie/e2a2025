@@ -276,7 +276,7 @@ const navItems = [
     subItems: [
      
        { name: "Call for Papers", pathname: "/call-for-papers" }, 
-        { name: "Best Awards", pathname: "/best-awards" }, // child route
+        { name: "Best Presentation Award", pathname: "/best-awards" }, // child route
     ],
   },
 

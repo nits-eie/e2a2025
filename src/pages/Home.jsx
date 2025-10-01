@@ -204,7 +204,7 @@ const Home = () => {
 
           {/* 3) Best Presentation Award (links to Call for Papers) */}
           <a
-            href="/call-for-papers"
+            href="/best-awards"
             style={{
               fontSize: 16,
               fontWeight: 700,
@@ -433,7 +433,7 @@ const Home = () => {
 
 
                     <p style={{ color: "orange" }}>
-  The peer reviewed and accepted papers of the conference will be published
+  All the peer-reviewed, accepted and presented papers of the conference will be published
   (subject to satisfying the Springer's publication terms) as proceedings with
   Springer in their prestigious{" "}
   <a
