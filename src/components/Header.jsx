@@ -271,11 +271,11 @@ const navItems = [
 
 
   {
-    name: " Papers",
+    name: " Call for Papers",
     pathname: "/call-for-papers",        // parent remains a route
     subItems: [
      
-       { name: "Call for Papers", pathname: "/call-for-papers" }, 
+       { name: "Conference Tracks", pathname: "/call-for-papers" }, 
         { name: "Best Presentation Award", pathname: "/best-awards" }, // child route
     ],
   },
