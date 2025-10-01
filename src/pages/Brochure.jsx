@@ -2,8 +2,8 @@ import React from "react";
 import "../assets/css/brochurePage.css";
 
 const Brochure = () => {
-  const firstImageUrl = "https://res.cloudinary.com/dprjiwgfo/image/upload/v1758812257/1_latest-min_l6tfbf.png";
-  const secondImageUrl = "https://res.cloudinary.com/dprjiwgfo/image/upload/v1758812180/2_latest_guvzho.png";
+  const firstImageUrl = "https://res.cloudinary.com/dprjiwgfo/image/upload/v1759296812/Broc_page-0001-min_wwozdx.jpg";
+  const secondImageUrl = "https://res.cloudinary.com/dprjiwgfo/image/upload/v1759296286/Broc_page-0002_s8agvd.jpg";
 
   return (
     <div className="brochureCont">
