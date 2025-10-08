@@ -264,9 +264,27 @@ const navItems = [
       { name: "Regular Paper Submission", pathname: "/author-regular-paper-submission" },
       { name: "Instructions for Online Presentation", pathname: "/author-instructions-online" },
       { name: "Instructions for Offline Presentation", pathname: "/author-instructions-offline" },
+      { name: "Travel Support ", pathname: "/travelsupport" , external: true},
     ],
   },
-  { pathname: "/call-for-papers", name: "Call for Papers" },
+  // { pathname: "/call-for-papers", name: "Call for Papers" },
+
+
+  {
+    name: " Call for Papers",
+    pathname: "/call-for-papers",        // parent remains a route
+    subItems: [
+     
+       { name: "Conference Tracks", pathname: "/call-for-papers" }, 
+        { name: "Best Presentation Award", pathname: "/best-awards" }, // child route
+    ],
+  },
+
+
+
+
+
+
   {
     name: "Program",
     subItems: [

@@ -22,6 +22,8 @@ import OnlinePresentation from "./pages/OnlinePresentation";
 import OfflinePresentation from "./pages/OfflinePresentation";
 import programSchedule from "/documents/ConferenceSchedule_E2A2023.pdf"
 import { useNavigate } from "react-router-dom";
+import Travel from "./pages/Travel";
+import Awards from "./pages/Awards";
 
 
 const DownloadDocument = () => {
@@ -57,6 +59,9 @@ const App = () => {
           <Route path="/program-schedule" exact element={<Schedule/>} />
           <Route path="/program-brochure" exact element={<Brochure />} />
           <Route path="/gallary" exact element={<PhotoGallary />} />
+          <Route path="/travelsupport" exact element={<Travel />} />
+          <Route path="/best-awards" exact element={<Awards />} />
+          
           
         </Routes>
         <Footer />

@@ -30,7 +30,7 @@ const ImportantDates = () => {
         </>
       ),
     },
-    { label: "Acceptance Notification:", value: "2nd October 2025" },
+    { label: "Acceptance Notification:", value: "22nd October 2025" },
     { label: "Last Date for Conference Registration:", value: "10th November 2025" },
     { label: "Deadline for Camera-Ready Paper:", value: "17th November 2025" },
   ];
