@@ -188,6 +188,12 @@ input:focus, textarea:focus, select:focus {
   border-left: 4px solid var(--grey-300);
   border-radius: 4px;
 }
+.highlight-text {
+  background-color: rgb(176, 206, 86);
+  border-radius: 4px;
+  padding: 0.6rem;
+}
+
 
 /* Tables */
 table {

@@ -264,7 +264,7 @@ const navItems = [
       { name: "Regular Paper Submission", pathname: "/author-regular-paper-submission" },
       { name: "Instructions for Online Presentation", pathname: "/author-instructions-online" },
       { name: "Instructions for Offline Presentation", pathname: "/author-instructions-offline" },
-      { name: "Travel Support ", pathname: "/travelsupport" , external: true},
+      { name: "Travel Support ", pathname: "/travelsupport", external: true },
     ],
   },
   // { pathname: "/call-for-papers", name: "Call for Papers" },
@@ -274,9 +274,9 @@ const navItems = [
     name: " Call for Papers",
     pathname: "/call-for-papers",        // parent remains a route
     subItems: [
-     
-       { name: "Conference Tracks", pathname: "/call-for-papers" }, 
-        { name: "Best Presentation Award", pathname: "/best-awards" }, // child route
+
+      { name: "Conference Tracks", pathname: "/call-for-papers" },
+      { name: "Best Presentation Award", pathname: "/best-awards" }, // child route
     ],
   },
 
@@ -351,7 +351,7 @@ const InlineTicker = () => {
             </a>
             &nbsp;•&nbsp;Last date for paper submission is&nbsp;22/09/25
 
-            
+
           </span>
         </div>
       </div>
@@ -537,7 +537,7 @@ const Header = () => {
               textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'
             }}>
               5<sup style={{ fontSize: '0.6em' }}>th</sup> INTERNATIONAL CONFERENCE ON <br />
-              <span className="highlight-text" style={{ color: '#C5A880', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
+              <span className="highlight-texts" style={{ color: '#C5A880', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>
                 EMERGING ELECTRONICS AND AUTOMATION
               </span>
             </div>
@@ -587,20 +587,40 @@ const Header = () => {
               }}>NATIONAL INSTITUTE OF TECHNOLOGY SILCHAR</span> <br />
               <span style={{ fontSize: '0.8em', color: '#f0f0f0', fontWeight: '500' }}>Assam, India - 788010</span>
 
-              <img
-  src="https://res.cloudinary.com/dprjiwgfo/image/upload/v1757753189/spring_l6to9z.jpg"
-  alt="spring"
-  style={{
-    maxHeight: "60px",
-    maxWidth: "120px",
-    width: "auto",
-    height: "auto",
-    display: "block",
-    margin: "2px auto" ,
-    borderRadius: "20px"
-  }}
-/>
+              <div style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+              }}>
+                <img
+                  src="https://res.cloudinary.com/dprjiwgfo/image/upload/v1757753189/spring_l6to9z.jpg"
+                  alt="spring"
+                  style={{
+                    maxHeight: "60px",
+                    maxWidth: "120px",
+                    width: "auto",
+                    height: "auto",
+                    // display: "block",
+                    margin: "2px auto",
+                    borderRadius: "20px"
+                  }}
+                />
+                <img
+                  src="https://res.cloudinary.com/dffke2hbp/image/upload/v1762065440/pamtrons_logo_2_e7fwwc.jpg"
+                  alt="spring"
+                  style={{
+                    maxHeight: "60px",
+                    maxWidth: "120px",
+                    width: "auto",
+                    height: "auto",
+                    display: "block",
+                    margin: "2px auto",
+                    borderRadius: "20px"
+                  }}
+                />
 
+              </div>
             </div>
           </div>
         </div>

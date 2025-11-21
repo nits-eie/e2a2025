@@ -143,7 +143,7 @@ const Committee = () => {
           <h3><strong>Control & Robotics: </strong>Dr. Koena Mukherjee</h3>
           <h3><strong>Signal Processing: </strong>Dr. A.K. Sunaniya</h3>
           <h3><strong>Communication System: </strong>Dr. Ranjay Hazra</h3>
-          <h3><strong>Sensors & Instrumentation: </strong>Dr. Sudipta Chakraborty</h3>
+          <h3><strong>Sensors & Instrumentation: </strong>Dr. Anup Kumar Sharma</h3>
           <h3><strong>MEMS & VLSI: </strong>Dr. S.K. Pandey</h3>
           <h3><strong>AI & Soft Computing: </strong>Dr. Lalu Seban</h3>
           <h3><strong>Energy, Power Systems & Power Electronics: </strong> Prof. S.H. Laskar & Dr. Vipin Chandra Pal</h3>

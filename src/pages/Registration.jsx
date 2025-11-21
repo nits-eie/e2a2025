@@ -41,7 +41,7 @@ const Registration = () => {
                     Check the table below for registration fee details of different categories. Deposit your respective category fee in the conference bank account – please note down the transaction reference number and take a screenshot of the payment receipt.
                   </li>
                   <li>
-                    Fill out the registration form with all the required details. Registration Form Link: <span className="highlight-text">………………</span>
+                    Fill out the registration form with all the required details. Registration Form Link: <span className="highlight-text"><a href="https://forms.gle/ikB2LChc1CqZnByx7">Click here to Register</a></span>
                   </li>
                   <li>
                     Please have the following ready before you start filling the registration form:
@@ -96,7 +96,7 @@ const Registration = () => {
                   <li>Students can upload a maximum of 1 paper with a single registration.</li>
                   <li>The final camera-ready paper should have a maximum of 8 pages.</li>
                   <li className="highlight">
-                    Registration Form Link: <span className="highlight-text">………………</span>
+                    Registration Form Link: <span className="highlight-text"><a target="_blank" href="https://forms.gle/ikB2LChc1CqZnByx7">Click here to Register</a></span>
                   </li>
                   {/* <li className="highlight">
   Registration Form Link:{" "}

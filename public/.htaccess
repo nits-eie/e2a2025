@@ -1,0 +1,31 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Don't rewrite index.html
+  RewriteRule ^index\.html$ - [L]
+
+  # Don't rewrite existing files or folders
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # Redirect all other routes to index.html (React Router SPA)
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# ✅ Enable CORS for Cloudinary (optional but helpful)
+<IfModule mod_headers.c>
+  Header always set Access-Control-Allow-Origin "*"
+</IfModule>
+
+# ✅ Allow loading images from Cloudinary using Content-Security-Policy
+# Note: added style-src 'self' 'unsafe-inline' to permit inline CSS and <style> blocks.
+<IfModule mod_headers.c>
+  Header set Content-Security-Policy "default-src 'self'; img-src 'self' https://res.cloudinary.com data:; style-src 'self' 'unsafe-inline';"
+</IfModule>
+
+# ✅ Add MIME types for images (optional safety net)
+AddType image/webp .webp
+AddType image/jpeg .jpg .jpeg
+AddType image/png .png
+AddType image/svg+xml .svg

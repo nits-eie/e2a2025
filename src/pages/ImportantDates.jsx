@@ -21,18 +21,86 @@ const ImportantDates = () => {
       label: "Paper Submission Deadline:",
       value: (
         <>
-          <span style={{ textDecoration: "line-through", color: "#888" }}>
-            22nd September 2025
+          <span
+            style={{
+              textDecoration: "line-through",
+              textDecorationColor: "red", // strike line in red
+              color: "black", // text color in black
+            }}
+          >
+            22nd September 2025 8th October 2025 21st October 2025
           </span>{" "}
-          <span style={{ marginLeft: "0.5rem", color: "#e74c3c", fontWeight: 600 }}>
-            8th October 2025
+          <span
+            style={{
+              marginLeft: "0.5rem",
+              color: "#e74c3c",
+              fontWeight: 600,
+            }}
+          >
+           (Closed)
+          </span>
+        </>
+
+      ),
+    },
+    {
+      label: "Acceptance Notification:",
+      value: (
+        <>
+          <span
+            style={{
+              textDecoration: "line-through",
+              textDecorationColor: "red",
+              color: "black",
+            }}
+          >
+            22nd October 2025
+          </span>{" "}
+          <span style={{ color: "#e74c3c", fontWeight: 600 }}>
+            Phase 1: 31st October 2025 | Phase 2: 7th November 2025
           </span>
         </>
       ),
     },
-    { label: "Acceptance Notification:", value: "22nd October 2025" },
-    { label: "Last Date for Conference Registration:", value: "10th November 2025" },
-    { label: "Deadline for Camera-Ready Paper:", value: "17th November 2025" },
+    {
+      label: "Last Date for Conference Registration:",
+      value: (
+        <>
+          <span
+            style={{
+              textDecoration: "line-through",
+              textDecorationColor: "red",
+              color: "black",
+            }}
+          >
+            10th November 2025
+          </span>{" "}
+          <span style={{ color: "#e74c3c", fontWeight: 600 }}>
+            21st November 2025
+          </span>
+        </>
+      ),
+    },
+    {
+      label: "Deadline for Camera-Ready Paper:",
+      value: (
+        <>
+          <span
+            style={{
+              textDecoration: "line-through",
+              textDecorationColor: "red",
+              color: "black",
+            }}
+          >
+            17th November 2025
+          </span>{" "}
+          <span style={{ color: "#e74c3c", fontWeight: 600 }}>
+            21st November 2025
+          </span>
+        </>
+      ),
+    },
+
   ];
 
   return (

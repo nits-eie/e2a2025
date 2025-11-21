@@ -23,8 +23,8 @@ const Home = () => {
           <div className="container">
 
             {/* ===== Static IMPORTANT notice now inside #about (first element) ===== */}
-           
-{/* 
+
+            {/* 
 <div className="notice-viewport" style={{ padding: '10px 0' }}>
   <div
     className="notice-track"
@@ -97,8 +97,8 @@ const Home = () => {
   </div>
 </div> */}
 
-<div style={{ width: "100%", overflow: "hidden", boxSizing: "border-box" }}>
-  <style>{`
+            <div style={{ width: "100%", overflow: "hidden", boxSizing: "border-box" }}>
+              <style>{`
     /* marquee movement */
     @keyframes marquee {
       0%   { transform: translateX(0%); }
@@ -122,221 +122,261 @@ const Home = () => {
     .notice-viewport:hover .notice-scroller { animation-play-state: paused; }
   `}</style>
 
-  <div
-    className="notice-viewport"
-    style={{
-      padding: "10px 0",
-      background: "linear-gradient(90deg, rgba(250,250,252,1) 0%, rgba(245,247,252,1) 100%)",
-      borderTop: "1px solid rgba(15,23,42,0.04)",
-      boxShadow: "inset 0 -1px 0 rgba(15,23,42,0.02)",
-    }}
-  >
-    <div
-      style={{
-        width: "100%",
-        overflow: "hidden",
-      }}
-    >
-      {/* scroller: duplicated content makes a seamless loop */}
-      <div
-        className="notice-scroller"
-        style={{
-          display: "inline-flex",
-          alignItems: "center",
-          gap: "48px",
-          padding: "8px 2rem",
-          whiteSpace: "nowrap",     // force single line
-          animation: "marquee 22s linear infinite",
-          willChange: "transform",
-          fontFamily: "Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
-        }}
-        role="marquee"
-        aria-label="Conference notices"
-      >
-        {/* ---------- block (will be repeated) ---------- */}
-        <div style={{ display: "inline-flex", gap: "48px", alignItems: "center" }}>
-          {/* 1) Paper submission */}
-          <span style={{ display: "inline-flex", gap: 8, alignItems: "center", color: "#0F172A", fontWeight: 600, fontSize: 16 }}>
-            <span>For paper submission:</span>
-            <a
-              href="https://cmt3.research.microsoft.com/EEA2025/Track/1/Submission/Create"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: "#0A66C2",
-                textDecoration: "underline",
-                fontWeight: 700,
-                padding: "6px 8px",
-                borderRadius: 6,
-                background: "rgba(10,102,194,0.04)",
-                display: "inline-block",
-                transition: "transform .18s ease, box-shadow .18s ease",
-              }}
-              className="notice-link"
-            >
-              click here →
-            </a>
-          </span>
+              <div
+                className="notice-viewport"
+                style={{
+                  padding: "10px 0",
+                  background: "linear-gradient(90deg, rgba(250,250,252,1) 0%, rgba(245,247,252,1) 100%)",
+                  borderTop: "1px solid rgba(15,23,42,0.04)",
+                  boxShadow: "inset 0 -1px 0 rgba(15,23,42,0.02)",
+                }}
+              >
+                <div
+                  style={{
+                    width: "100%",
+                    overflow: "hidden",
+                  }}
+                >
+                  {/* scroller: duplicated content makes a seamless loop */}
+                  <div
+                    className="notice-scroller"
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: "48px",
+                      padding: "8px 2rem",
+                      whiteSpace: "nowrap",     // force single line
+                      animation: "marquee 22s linear infinite",
+                      willChange: "transform",
+                      fontFamily: "Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial",
+                    }}
+                    role="marquee"
+                    aria-label="Conference notices"
+                  >
+                    {/* ---------- block (will be repeated) ---------- */}
+                    <div style={{ display: "inline-flex", gap: "48px", alignItems: "center" }}>
+                      {/* 1) Paper submission */}
+                      <span style={{ display: "inline-flex", gap: 8, alignItems: "center", color: "#0F172A", fontWeight: 600, fontSize: 16 }}>
+                        <span>For paper submission:</span>
+                        <a
+                          href="https://cmt3.research.microsoft.com/EEA2025/Track/1/Submission/Create"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            color: "#0A66C2",
+                            textDecoration: "underline",
+                            fontWeight: 700,
+                            padding: "6px 8px",
+                            borderRadius: 6,
+                            background: "rgba(10,102,194,0.04)",
+                            display: "inline-block",
+                            transition: "transform .18s ease, box-shadow .18s ease",
+                          }}
+                          className="notice-link"
+                        >
+                          click here →
+                        </a>
+                      </span>
 
-          {/* 2) Dates */}
-          <span style={{ display: "inline-flex", gap: 8, alignItems: "center", color: "#0F172A", fontWeight: 600, fontSize: 16 }}>
-            <span>Last date for paper submission is</span>
-            <span style={{ textDecoration: "line-through", color: "#888", fontWeight: 600 }}>22.09.2025</span>
-            <a
-              href="/important-dates"
-              style={{
-                color: "#e74c3c",
-                textDecoration: "underline",
-                fontWeight: 700,
-                padding: "6px 8px",
-                borderRadius: 6,
-                background: "rgba(231,76,60,0.06)",
-                whiteSpace: "nowrap",
-                display: "inline-block",
-                transition: "transform .2s ease, box-shadow .2s ease",
-                animation: "softPulse 6s ease-in-out infinite",
-              }}
-              className="notice-link"
-            >
-              08.10.2025
-            </a>
-          </span>
+                      {/* 2) Dates */}
+                      <span
+                        style={{
+                          display: "inline-flex",
+                          gap: 8,
+                          alignItems: "center",
+                          color: "#0F172A",
+                          fontWeight: 600,
+                          fontSize: 16,
+                        }}
+                      >
+                        <span>Last date for paper submission is (Closed)</span>
+                        <span
+                          style={{
+                            textDecoration: "line-through",
+                            textDecorationColor: "red", // strike line in red
+                            color: "black",
+                            fontWeight: 600,
+                          }}
+                        >
+                          22.09.2025&nbsp;&nbsp;08.10.2025&nbsp;&nbsp;21.10.2025
+                        </span>
+                        <a
+                          href="/important-dates"
+                          style={{
+                            color: "#e74c3c",
+                            textDecoration: "underline",
+                            fontWeight: 700,
+                            padding: "6px 8px",
+                            borderRadius: 6,
+                            background: "rgba(231,76,60,0.06)",
+                            whiteSpace: "nowrap",
+                            display: "inline-block",
+                            transition: "transform .2s ease, box-shadow .2s ease",
+                            animation: "softPulse 6s ease-in-out infinite",
+                          }}
+                          className="notice-link"
+                        >
+                          Closed
+                        </a>
+                      </span>
 
-          {/* 3) Best Presentation Award (links to Call for Papers) */}
-          <a
-            href="/best-awards"
-            style={{
-              fontSize: 16,
-              fontWeight: 700,
-              color: "#0A66C2",
-              textDecoration: "underline",
-              padding: "6px 10px",
-              borderRadius: 8,
-              background: "rgba(10,102,194,0.03)",
-              display: "inline-flex",
-              alignItems: "center",
-              transition: "transform .18s ease, box-shadow .18s ease",
-              animation: "softPulse 7s ease-in-out infinite",
-            }}
-            className="notice-link"
-            aria-label="Best Presentation Award - Call for Papers"
-          >
-            Best Presentation Award →
-          </a>
 
-          {/* 4) Travel Support */}
-          <a
-            href="/travelsupport"
-            style={{
-              fontSize: 16,
-              fontWeight: 700,
-              color: "#0A66C2",
-              textDecoration: "underline",
-              padding: "6px 10px",
-              borderRadius: 8,
-              background: "rgba(10,102,194,0.03)",
-              display: "inline-flex",
-              alignItems: "center",
-              transition: "transform .18s ease, box-shadow .18s ease",
-              animation: "softPulse 8s ease-in-out infinite",
-            }}
-            className="notice-link"
-            aria-label="Travel Support - For Authors"
-          >
-            Travel Support →
-          </a>
-        </div>
+                      {/* 3) Best Presentation Award (links to Call for Papers) */}
+                      <a
+                        href="/best-awards"
+                        style={{
+                          fontSize: 16,
+                          fontWeight: 700,
+                          color: "#0A66C2",
+                          textDecoration: "underline",
+                          padding: "6px 10px",
+                          borderRadius: 8,
+                          background: "rgba(10,102,194,0.03)",
+                          display: "inline-flex",
+                          alignItems: "center",
+                          transition: "transform .18s ease, box-shadow .18s ease",
+                          animation: "softPulse 7s ease-in-out infinite",
+                        }}
+                        className="notice-link"
+                        aria-label="Best Presentation Award - Call for Papers"
+                      >
+                        Best Presentation Award →
+                      </a>
 
-        {/* ---------- duplicated block for seamless loop ---------- */}
-        <div style={{ display: "inline-flex", gap: "48px", alignItems: "center" }}>
-          <span style={{ display: "inline-flex", gap: 8, alignItems: "center", color: "#0F172A", fontWeight: 600, fontSize: 16 }}>
-            <span>For paper submission:</span>
-            <a
-              href="https://cmt3.research.microsoft.com/EEA2025/Track/1/Submission/Create"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: "#0A66C2",
-                textDecoration: "underline",
-                fontWeight: 700,
-                padding: "6px 8px",
-                borderRadius: 6,
-                background: "rgba(10,102,194,0.04)",
-                display: "inline-block",
-                transition: "transform .18s ease, box-shadow .18s ease",
-              }}
-              className="notice-link"
-            >
-              click here →
-            </a>
-          </span>
+                      {/* 4) Travel Support */}
+                      <a
+                        href="/travelsupport"
+                        style={{
+                          fontSize: 16,
+                          fontWeight: 700,
+                          color: "#0A66C2",
+                          textDecoration: "underline",
+                          padding: "6px 10px",
+                          borderRadius: 8,
+                          background: "rgba(10,102,194,0.03)",
+                          display: "inline-flex",
+                          alignItems: "center",
+                          transition: "transform .18s ease, box-shadow .18s ease",
+                          animation: "softPulse 8s ease-in-out infinite",
+                        }}
+                        className="notice-link"
+                        aria-label="Travel Support - For Authors"
+                      >
+                        Travel Support →
+                      </a>
+                    </div>
 
-          <span style={{ display: "inline-flex", gap: 8, alignItems: "center", color: "#0F172A", fontWeight: 600, fontSize: 16 }}>
-            <span>Last date for paper submission is</span>
-            <span style={{ textDecoration: "line-through", color: "#888", fontWeight: 600 }}>22.09.2025</span>
-            <a
-              href="/important-dates"
-              style={{
-                color: "#e74c3c",
-                textDecoration: "underline",
-                fontWeight: 700,
-                padding: "6px 8px",
-                borderRadius: 6,
-                background: "rgba(231,76,60,0.06)",
-                whiteSpace: "nowrap",
-                display: "inline-block",
-                animation: "softPulse 6s ease-in-out infinite",
-              }}
-              className="notice-link"
-            >
-              08.10.2025
-            </a>
-          </span>
+                    {/* ---------- duplicated block for seamless loop ---------- */}
+                    <div style={{ display: "inline-flex", gap: "48px", alignItems: "center" }}>
+                      <span style={{ display: "inline-flex", gap: 8, alignItems: "center", color: "#0F172A", fontWeight: 600, fontSize: 16 }}>
+                        <span>For paper submission:</span>
+                        <a
+                          href="https://cmt3.research.microsoft.com/EEA2025/Track/1/Submission/Create"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{
+                            color: "#0A66C2",
+                            textDecoration: "underline",
+                            fontWeight: 700,
+                            padding: "6px 8px",
+                            borderRadius: 6,
+                            background: "rgba(10,102,194,0.04)",
+                            display: "inline-block",
+                            transition: "transform .18s ease, box-shadow .18s ease",
+                          }}
+                          className="notice-link"
+                        >
+                          click here →
+                        </a>
+                      </span>
 
-          <a
-            href="/call-for-papers"
-            style={{
-              fontSize: 16,
-              fontWeight: 700,
-              color: "#0A66C2",
-              textDecoration: "underline",
-              padding: "6px 10px",
-              borderRadius: 8,
-              background: "rgba(10,102,194,0.03)",
-              display: "inline-flex",
-              alignItems: "center",
-              animation: "softPulse 7s ease-in-out infinite",
-            }}
-            className="notice-link"
-            aria-label="Best Presentation Award - Call for Papers"
-          >
-            Best Presentation Award →
-          </a>
+                      <span
+                        style={{
+                          display: "inline-flex",
+                          gap: 8,
+                          alignItems: "center",
+                          color: "#0F172A",
+                          fontWeight: 600,
+                          fontSize: 16,
+                        }}
+                      >
+                        <span>Last date for paper submission is (Closed)</span>
+                        <span
+                          style={{
+                            textDecoration: "line-through",
+                            textDecorationColor: "red", // strike line in red
+                            color: "black",
+                            fontWeight: 600,
+                          }}
+                        >
+                          22.09.2025&nbsp;&nbsp;08.10.2025&nbsp;&nbsp;21.10.2025
+                        </span>
+                        <a
+                          href="/important-dates"
+                          style={{
+                            color: "#e74c3c",
+                            textDecoration: "underline",
+                            fontWeight: 700,
+                            padding: "6px 8px",
+                            borderRadius: 6,
+                            background: "rgba(231,76,60,0.06)",
+                            whiteSpace: "nowrap",
+                            display: "inline-block",
+                            transition: "transform .2s ease, box-shadow .2s ease",
+                            animation: "softPulse 6s ease-in-out infinite",
+                          }}
+                          className="notice-link"
+                        >
+                          Closed
+                        </a>
+                      </span>
 
-          <a
-            href="/travelsupport"
-            style={{
-              fontSize: 16,
-              fontWeight: 700,
-              color: "#0A66C2",
-              textDecoration: "underline",
-              padding: "6px 10px",
-              borderRadius: 8,
-              background: "rgba(10,102,194,0.03)",
-              display: "inline-flex",
-              alignItems: "center",
-              animation: "softPulse 8s ease-in-out infinite",
-            }}
-            className="notice-link"
-            aria-label="Travel Support - For Authors"
-          >
-            Travel Support →
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
+
+                      <a
+                        href="/call-for-papers"
+                        style={{
+                          fontSize: 16,
+                          fontWeight: 700,
+                          color: "#0A66C2",
+                          textDecoration: "underline",
+                          padding: "6px 10px",
+                          borderRadius: 8,
+                          background: "rgba(10,102,194,0.03)",
+                          display: "inline-flex",
+                          alignItems: "center",
+                          animation: "softPulse 7s ease-in-out infinite",
+                        }}
+                        className="notice-link"
+                        aria-label="Best Presentation Award - Call for Papers"
+                      >
+                        Best Presentation Award →
+                      </a>
+
+                      <a
+                        href="/travelsupport"
+                        style={{
+                          fontSize: 16,
+                          fontWeight: 700,
+                          color: "#0A66C2",
+                          textDecoration: "underline",
+                          padding: "6px 10px",
+                          borderRadius: 8,
+                          background: "rgba(10,102,194,0.03)",
+                          display: "inline-flex",
+                          alignItems: "center",
+                          animation: "softPulse 8s ease-in-out infinite",
+                        }}
+                        className="notice-link"
+                        aria-label="Travel Support - For Authors"
+                      >
+                        Travel Support →
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
 
 
@@ -354,10 +394,10 @@ const Home = () => {
                   <p className="lead-text">
                     Emerging Electronics and Automation (E2A) 2025 is the 5<sup>th</sup> Annual
                     International Conference organized by the Department of Electronics and
-                    Instrumentation Engineering at NIT Silchar, Assam. The conference is scheduled 
+                    Instrumentation Engineering at NIT Silchar, Assam. The conference is scheduled
                     in hybrid mode between 17th and 19th December 2025.
                   </p>
-                  
+
                   <p className="body-text">
                     We are proud to share that the Department of EIE has successfully
                     organized four editions of E2A. The proceedings of the previous three editions
@@ -417,10 +457,10 @@ const Home = () => {
                 {/* Conference Focus */}
                 <div className="content-card">
                   <p className="body-text">
-                    This conference focuses on trending research and product outcomes in the domain of 
-                    control and robotics, signal processing, communication systems, sensors and instrumentation, 
-                    MEMS and VLSI, AI and soft computing. E2A  provides a common platform for academicians, 
-                    researchers, industrial players and budding research scholars to discuss their results, 
+                    This conference focuses on trending research and product outcomes in the domain of
+                    control and robotics, signal processing, communication systems, sensors and instrumentation,
+                    MEMS and VLSI, AI and soft computing. E2A  provides a common platform for academicians,
+                    researchers, industrial players and budding research scholars to discuss their results,
                     innovations, and challenges with peers while networking and presenting research progress.
                   </p>
                 </div>
@@ -433,38 +473,38 @@ const Home = () => {
 
 
                     <p style={{ color: "orange" }}>
-  All the peer-reviewed, accepted and presented papers of the conference will be published
-  (subject to satisfying the Springer's publication terms) as proceedings with
-  Springer in their prestigious{" "}
-  <a
-    href="https://link.springer.com/series/7818"
-    target="_blank"
-    rel="noreferrer"
-    className="text-link"
-  >
-    Lecture Notes in Electrical Engineering
-  </a>{" "}
-  series.
-  <br /> <br />
-  For detailed instructions for authors and editors of conference proceedings,
-  kindly visit the following link:{" "}
-  <a
-    href="https://www.springer.com/us/authors-editors/conference-proceedings"
-    target="_blank"
-    rel="noreferrer"
-    className="text-link"
-  >
-    Springer Conference Proceedings Guidelines
-  </a>
-  . Selected papers from the conference will be published by Springer as a
-  proceedings book volume. Springer will conduct quality checks on the accepted
-  papers and only papers that pass these checks will be published. Springer
-  Nature does not charge any money for publication of Non-Open Access content.
-  Abstracts/extended abstracts and short papers (less than 4 pages) are not
-  considered for publication.
-</p>
+                      All the peer-reviewed, accepted and presented papers of the conference will be published
+                      (subject to satisfying the Springer's publication terms) as proceedings with
+                      Springer in their prestigious{" "}
+                      <a
+                        href="https://link.springer.com/series/7818"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-link"
+                      >
+                        Lecture Notes in Electrical Engineering
+                      </a>{" "}
+                      series.
+                      <br /> <br />
+                      For detailed instructions for authors and editors of conference proceedings,
+                      kindly visit the following link:{" "}
+                      <a
+                        href="https://www.springer.com/us/authors-editors/conference-proceedings"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-link"
+                      >
+                        Springer Conference Proceedings Guidelines
+                      </a>
+                      . Selected papers from the conference will be published by Springer as a
+                      proceedings book volume. Springer will conduct quality checks on the accepted
+                      papers and only papers that pass these checks will be published. Springer
+                      Nature does not charge any money for publication of Non-Open Access content.
+                      Abstracts/extended abstracts and short papers (less than 4 pages) are not
+                      considered for publication.
+                    </p>
 
-                     {/* <p style={{ color: "orange" }}>
+                    {/* <p style={{ color: "orange" }}>
 
 
       
@@ -503,7 +543,7 @@ const Home = () => {
               <div className="sidebar">
                 <div className="quick-info-card">
                   <h3>Conference Details</h3>
-                  
+
                   <div className="info-item">
                     <img src={location} alt="location" />
                     <div>
@@ -539,7 +579,7 @@ const Home = () => {
                         rel="noreferrer"
                         className="submission-link"
                       >
-                        Click Here 
+                        Click Here
                       </a>
                     </div>
                   </div>
@@ -592,7 +632,7 @@ const Home = () => {
               <div className="section-underline"></div>
               <p className="section-subtitle">Distinguished experts sharing cutting-edge insights</p>
             </div>
-            
+
             <div className="speakers-grid">
               {speakers.map((speaker, i) => (
                 <SpeakerCard
