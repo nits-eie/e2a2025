@@ -73,10 +73,10 @@ const ImportantDates = () => {
               color: "black",
             }}
           >
-            10th November 2025
+            21st November 2025
           </span>{" "}
           <span style={{ color: "#e74c3c", fontWeight: 600 }}>
-            21st November 2025
+            28th November 2025
           </span>
         </>
       ),
@@ -92,10 +92,10 @@ const ImportantDates = () => {
               color: "black",
             }}
           >
-            17th November 2025
+            21st November 2025
           </span>{" "}
           <span style={{ color: "#e74c3c", fontWeight: 600 }}>
-            21st November 2025
+            28th November 2025
           </span>
         </>
       ),
