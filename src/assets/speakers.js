@@ -56,22 +56,22 @@
 
 
 export default [
-   {
+  {
     name: "Prof. Balaji Ramakrishnan ",
     img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1757754375/balaji_ih9h1c.jpg",
     designation: "Director",
     college: "National Institute of Ocean Technology, Chennai",
   },
-  
+
   {
     name: "Dr. Anindya Nag",
     img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1753625866/Screenshot_2025-07-27_194514_l64oth.png",
-  designation: "Junior Professor ",
-  college: "Technische Universität Dresden, Germany",
-},
+    designation: "Junior Professor ",
+    college: "Technische Universität Dresden, Germany",
+  },
   {
     name: "Ganesh Shankar ",
-    
+
     img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1753704151/fluxen_nbwgbn.jpg",
     designation: "Founder and CEO ",
     college: "FluxGen Sustainable Technologies",
@@ -106,7 +106,7 @@ export default [
     img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1754822224/IMG-20250810-WA0033_qxjnij.jpg",
     designation: "SubSystem Subsea Controls Expert",
     college: "TechnipFMC, Malaysia",
-    
+
   },
 
   {
@@ -114,8 +114,15 @@ export default [
     img: "https://res.cloudinary.com/dprjiwgfo/image/upload/v1753703774/josualee_xjmfm8.jpg",
     designation: " Associate Professor ",
     college: "University of Technology Sydney",
-    
+
+  },
+  {
+    name: "Dr.Rajeev Kumar",
+    img: "https://res.cloudinary.com/dffke2hbp/image/upload/v1765115823/WhatsApp_Image_2025-12-07_at_00.05.13_2d9da93b_xst2nl.jpg",
+    designation: " Scientist and Head of Dr. S. Krishnamurthi Centre for Research & Education in Cancer Research ",
+    college: "Cachar Cancer Hospital & Research Centre, Silchar, Assam.",
+
   },
 
- 
+
 ];

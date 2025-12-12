@@ -57,7 +57,7 @@ const ImportantDates = () => {
             22nd October 2025
           </span>{" "}
           <span style={{ color: "#e74c3c", fontWeight: 600 }}>
-            Phase 1: 31st October 2025 | Phase 2: 7th November 2025
+            Phase 1: 31st October 2025 | Phase 2: 7th November 2025 (Closed)
           </span>
         </>
       ),
@@ -73,10 +73,10 @@ const ImportantDates = () => {
               color: "black",
             }}
           >
-            21st November 2025
+            28th November 2025
           </span>{" "}
           <span style={{ color: "#e74c3c", fontWeight: 600 }}>
-            28th November 2025
+            8th December 2025
           </span>
         </>
       ),
@@ -92,10 +92,10 @@ const ImportantDates = () => {
               color: "black",
             }}
           >
-            21st November 2025
+            28th November 2025
           </span>{" "}
           <span style={{ color: "#e74c3c", fontWeight: 600 }}>
-            28th November 2025
+            8th December 2025
           </span>
         </>
       ),

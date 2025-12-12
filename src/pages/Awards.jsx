@@ -32,7 +32,10 @@ const Awards = () => {
       <p style={{ margin: "0 0 12px 0", fontSize: "16px" }}>
         To encourage high-quality presentations and active participation, the
         conference will recognize one presenter in each track with the{" "}
-        <strong>Best Presentation Award</strong>.
+        <strong>Best Presentation Award</strong>.<br />
+        This Award will be presented in the memory of Major. Ashish Kumar Roy by the Maj. Ashish Kumar Roy Foundation (MAKRF).
+        The Award will constitute (i) Award plaque; (ii) T-Shirt with emblem depicting the award; (iii) Cash of Rs. 2,500/- in an envelope and (iv) a Certificate.
+
       </p>
 
       <p style={{ margin: "0 0 12px 0", fontSize: "16px" }}>
@@ -57,6 +60,11 @@ const Awards = () => {
           <li>Effectiveness in engaging and responding to the audience</li>
         </ul>
       </div>
+        <p>
+          <h3>A micro note on the Major Ashish Kumar Roy Foundation:
+          </h3>
+          Major Ashish Kumar Roy served the 19th Engineers regiment, Indian Army and was killed in action in 2012.  His school friends from Kendriya Vidyalaya constituted the Major Ashish Kumar Roy Foundation in his memory and honour.  Major Ashish Kumar Roy Foundation organizes cancer awareness, health promotion, badminton championship, sports promotion, telemedicine as well as support research scholars and nation building activities. The Indian Army Chief General Upendra Dwivedi has recognized the efforts of the Major Ashish Kumar Roy Foundation in nation building!
+        </p>
     </div>
   );
 };

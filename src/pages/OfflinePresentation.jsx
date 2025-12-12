@@ -28,10 +28,10 @@ const OfflinePresentation = () => {
               You are requested to upload your <span className="highlight-text">PPT slide file (in PDF format)</span> to the following Google Drive link –{" "}
               <a
                 className="offline-presentation-link"
-                href="#"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc0GbSFp6dk5HfiHRcNWs9gBEiU3ffYG_51s2zUAUlgEfayhA/viewform?usp=publish-editor"
                 title="Link will be updated soon"
               >
-                [Drive Upload Link]
+                Click Here
               </a>
             </li>
             <li className="offline-presentation-list-item">
@@ -41,7 +41,7 @@ const OfflinePresentation = () => {
             </li>
             <li className="offline-presentation-list-item">
               The last date for uploading these files is{" "}
-              <span className="highlight-text">(date will be updated)</span>.
+              <span className="highlight-text">5 December 2025</span>.
             </li>
             <li className="offline-presentation-list-item">
               Please be aware that failing to present your work during your assigned slot will result in your paper being <span className="highlight-text">excluded</span> from further processing and the conference proceedings.

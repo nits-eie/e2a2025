@@ -587,12 +587,16 @@ const Header = () => {
               }}>NATIONAL INSTITUTE OF TECHNOLOGY SILCHAR</span> <br />
               <span style={{ fontSize: '0.8em', color: '#f0f0f0', fontWeight: '500' }}>Assam, India - 788010</span>
 
-              <div style={{
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "center",
-                alignItems: "center",
-              }}>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  gap: "30px", // <-- adds proper spacing
+                }}
+              >
+                {/* Springer Logo */}
                 <img
                   src="https://res.cloudinary.com/dprjiwgfo/image/upload/v1757753189/spring_l6to9z.jpg"
                   alt="spring"
@@ -601,26 +605,80 @@ const Header = () => {
                     maxWidth: "120px",
                     width: "auto",
                     height: "auto",
-                    // display: "block",
-                    margin: "2px auto",
-                    borderRadius: "20px"
-                  }}
-                />
-                <img
-                  src="https://res.cloudinary.com/dffke2hbp/image/upload/v1762065440/pamtrons_logo_2_e7fwwc.jpg"
-                  alt="spring"
-                  style={{
-                    maxHeight: "60px",
-                    maxWidth: "120px",
-                    width: "auto",
-                    height: "auto",
-                    display: "block",
-                    margin: "2px auto",
-                    borderRadius: "20px"
+                    borderRadius: "20px",
                   }}
                 />
 
+                {/* Pamtrons Logo */}
+                <a
+                  href="https://pamtrons.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://res.cloudinary.com/dffke2hbp/image/upload/v1762065440/pamtrons_logo_2_e7fwwc.jpg"
+                    alt="pamtrons"
+                    style={{
+                      maxHeight: "60px",
+                      maxWidth: "120px",
+                      width: "auto",
+                      height: "auto",
+                      borderRadius: "20px",
+                    }}
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://res.cloudinary.com/dffke2hbp/image/upload/v1765114657/WhatsApp_Image_2025-12-06_at_23.40.43_3dd4cfde_zrtccb.jpg"
+                    alt="Maverick"
+                    style={{
+                      maxHeight: "60px",
+                      maxWidth: "120px",
+                      width: "auto",
+                      height: "auto",
+                      borderRadius: "20px",
+                    }}
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100063651499588"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://res.cloudinary.com/dffke2hbp/image/upload/v1765116290/Maj._Ashish_Foundation_Logo_es5zlv.jpg"
+                    alt="Maj. Ashish Kumar Roy Foundation"
+                    style={{
+                      maxHeight: "60px",
+                      maxWidth: "120px",
+                      width: "auto",
+                      height: "auto",
+                      borderRadius: "20px",
+                    }}
+                  />
+                </a>
+                <a
+                  href="https://www.cbspd.com/?srsltid=AfmBOopas-mSTrO1Z1lwcXV10DkI69pT6ou5jjZDwPDz6JW04icxPRUS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="https://res.cloudinary.com/dffke2hbp/image/upload/v1765115306/WhatsApp_Image_2025-12-06_at_23.54.09_d590f360_jodoqz.jpg"
+                    alt="CBS"
+                    style={{
+                      maxHeight: "60px",
+                      maxWidth: "120px",
+                      width: "auto",
+                      height: "auto",
+                      borderRadius: "20px",
+                    }}
+                  />
+                </a>
               </div>
+
             </div>
           </div>
         </div>

@@ -24,18 +24,19 @@ const OnlinePresentation = () => {
           </p>
           <ol className="presentation-list">
             <li className="presentation-list-item">
-              You are required to prepare a video (<span className="highlight-text">.mp4 format</span>) of your presentation strictly for 8 minutes and upload it <strong>along with</strong> your PPT slides (PDF format) to the Google Drive folder for your session:
+              You are required to prepare a video (<span className="highlight-text">.mp4 format</span>) of your presentation strictly for 8 minutes and submit it <strong>along with</strong> your PPT slides (PDF format)  in the following G-form: 
+
               <br />
               <a
                 className="presentation-link"
-                href="#"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc0GbSFp6dk5HfiHRcNWs9gBEiU3ffYG_51s2zUAUlgEfayhA/viewform?usp=publish-editor"
                 title="Link will be updated soon"
               >
-                [Session Drive Folder Link]
+                Click Here
               </a>
             </li>
             <li className="presentation-list-item">
-              Make sure you upload both your <span className="highlight-text">video file</span> AND your <span className="highlight-text">presentation slides</span> into the correct session folder.
+              Make sure that you have submitted the above G-form with <span className="highlight-text">video file</span> AND  <span className="highlight-text">presentation slides</span>
             </li>
             <li className="presentation-list-item">
               Name your files as follows:
@@ -47,7 +48,7 @@ const OnlinePresentation = () => {
               e.g. for paper ID 179 in session 2B: <code>Video_179_2B.mp4</code> and <code>PPT_179_2B.pdf</code>.
             </li>
             <li className="presentation-list-item">
-              The last date for uploading these files will be <span className="highlight-text">(date will be updated)</span>.
+              The last date for uploading these files will be <span className="highlight-text"> 5 December 2025</span>.
             </li>
             <li className="presentation-list-item">
               During your allotted time slot, you must share your screen with your camera <span className="highlight-text">ON</span> and present live using your slides. In case of any technical issue, we will play your pre‑recorded video.
@@ -70,9 +71,9 @@ const OnlinePresentation = () => {
             <li className="presentation-list-item">
               Please follow any further instructions from the chairs, co‑chairs, and moderators for the <span className="highlight-text">smooth conduct</span> of the session.
             </li>
-            <li className="presentation-list-item">
+            {/* <li className="presentation-list-item">
               The specific Google Drive links for each session folder will be updated here as soon as they are available.
-            </li>
+            </li> */}
           </ol>
           <span className="presentation-note">
             *Session schedule and connection details will be communicated soon.
