@@ -1,0 +1,350 @@
+/* Footer Styles - Elegant Gradient */
+.footer {
+  padding: 0.5rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1A2980, #26D0CE);
+  color: #FFFFFF;
+}
+
+.footer--home {
+  background: linear-gradient(135deg, #1A2980, #26D0CE);
+}
+
+.footer--inner {
+  background: linear-gradient(135deg, #1A2980, #26D0CE);
+}
+
+.footer__wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%231A2980" fill-opacity="1" d="M0,256L48,250.7C96,245,192,235,288,224C384,213,480,203,576,213.3C672,224,768,256,864,250.7C960,245,1056,203,1152,192C1248,181,1344,203,1392,213.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>');
+  background-size: cover;
+}
+
+.footer__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.footer__brand {
+  text-align: left;
+}
+
+.footer__logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: #FFFFFF;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.footer__tagline {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 0.3rem;
+}
+
+.footer__info {
+  text-align: center;
+}
+
+.footer__text {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer__link {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.footer__link:hover {
+  color: #26D0CE;
+}
+
+.footer__link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #26D0CE;
+  transition: width 0.3s ease;
+}
+
+.footer__link:hover::after {
+  width: 100%;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.footer__icon {
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer__icon:hover {
+  transform: scale(1.1);
+  color: #26D0CE;
+  box-shadow: 0 0 10px rgba(38, 208, 206, 0.5);
+}
+
+.footer__art {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle at center, rgba(38, 208, 206, 0.1) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.footer__floating-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.footer__shape {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(38, 208, 206, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(38, 208, 206, 0.2);
+  animation: float 10s linear infinite;
+}
+
+.footer__shape--1 {
+  width: 50px;
+  height: 50px;
+  top: 20%;
+  left: 10%;
+}
+
+.footer__shape--2 {
+  width: 70px;
+  height: 70px;
+  top: 60%;
+  left: 70%;
+}
+
+.footer__shape--3 {
+  width: 40px;
+  height: 40px;
+  top: 80%;
+  left: 30%;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-20px) translateX(20px);
+  }
+}
+
+/* Animation for wave */
+@keyframes wave {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.footer__wave {
+  animation: wave 10s linear infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer__content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+    .footer{
+        padding:0.2rem ;
+    }
+  .footer__brand, .footer__info, .footer__social {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footer__social {
+    justify-content: center;
+  }
+
+  .footer__art {
+    display: none;
+  }
+}
+
+/*
+ * Alternative Professional Gradient Options
+ * Uncomment one of these to replace the default gradient
+ */
+
+/* Option 1: Deep Ocean */
+/*
+.footer, .footer--home, .footer--inner {
+  background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);
+}
+.footer__wave {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%230F2027" fill-opacity="1" d="M0,256L48,250.7C96,245,192,235,288,224C384,213,480,203,576,213.3C672,224,768,256,864,250.7C960,245,1056,203,1152,192C1248,181,1344,203,1392,213.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>');
+}
+.footer__link:hover, .footer__icon:hover {
+  color: #2C5364;
+}
+.footer__link::after {
+  background-color: #2C5364;
+}
+.footer__icon:hover {
+  box-shadow: 0 0 10px rgba(44, 83, 100, 0.5);
+}
+.footer__art {
+  background: radial-gradient(circle at center, rgba(44, 83, 100, 0.1) 0%, transparent 70%);
+}
+.footer__shape {
+  background: rgba(44, 83, 100, 0.1);
+  border: 1px solid rgba(44, 83, 100, 0.2);
+}
+*/
+
+/* Option 2: Corporate Blue */
+/*
+.footer, .footer--home, .footer--inner {
+  background: linear-gradient(135deg, #0052D9, #4364F7, #6FB1FC);
+}
+.footer__wave {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%230052D9" fill-opacity="1" d="M0,256L48,250.7C96,245,192,235,288,224C384,213,480,203,576,213.3C672,224,768,256,864,250.7C960,245,1056,203,1152,192C1248,181,1344,203,1392,213.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>');
+}
+.footer__link:hover, .footer__icon:hover {
+  color: #6FB1FC;
+}
+.footer__link::after {
+  background-color: #6FB1FC;
+}
+.footer__icon:hover {
+  box-shadow: 0 0 10px rgba(111, 177, 252, 0.5);
+}
+.footer__art {
+  background: radial-gradient(circle at center, rgba(111, 177, 252, 0.1) 0%, transparent 70%);
+}
+.footer__shape {
+  background: rgba(111, 177, 252, 0.1);
+  border: 1px solid rgba(111, 177, 252, 0.2);
+}
+*/
+
+/* Option 3: Elegant Purple */
+
+.footer, .footer--home, .footer--inner {
+  background: linear-gradient(135deg, #654ea3, #eaafc8);
+}
+.footer__wave {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23654ea3" fill-opacity="1" d="M0,256L48,250.7C96,245,192,235,288,224C384,213,480,203,576,213.3C672,224,768,256,864,250.7C960,245,1056,203,1152,192C1248,181,1344,203,1392,213.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>');
+}
+.footer__link:hover, .footer__icon:hover {
+  color: #eaafc8;
+}
+.footer__link::after {
+  background-color: #eaafc8;
+}
+.footer__icon:hover {
+  box-shadow: 0 0 10px rgba(234, 175, 200, 0.5);
+}
+.footer__art {
+  background: radial-gradient(circle at center, rgba(234, 175, 200, 0.1) 0%, transparent 70%);
+}
+.footer__shape {
+  background: rgba(234, 175, 200, 0.1);
+  border: 1px solid rgba(234, 175, 200, 0.2);
+}
+
+
+/* Option 4: Professional Green */
+/*
+.footer, .footer--home, .footer--inner {
+  background: linear-gradient(135deg, #1E8449, #34D05C);
+}
+.footer__wave {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%231E8449" fill-opacity="1" d="M0,256L48,250.7C96,245,192,235,288,224C384,213,480,203,576,213.3C672,224,768,256,864,250.7C960,245,1056,203,1152,192C1248,181,1344,203,1392,213.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>');
+}
+.footer__link:hover, .footer__icon:hover {
+  color: #34D05C;
+}
+.footer__link::after {
+  background-color: #34D05C;
+}
+.footer__icon:hover {
+  box-shadow: 0 0 10px rgba(52, 208, 92, 0.5);
+}
+.footer__art {
+  background: radial-gradient(circle at center, rgba(52, 208, 92, 0.1) 0%, transparent 70%);
+}
+.footer__shape {
+  background: rgba(52, 208, 92, 0.1);
+  border: 1px solid rgba(52, 208, 92, 0.2);
+}
+*/
+
+/* Option 5: Minimalist Gray-Blue */
+/* 
+.footer, .footer--home, .footer--inner {
+  background: linear-gradient(135deg, #2C3E50, #4CA1AF);
+}
+.footer__wave {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%232C3E50" fill-opacity="1" d="M0,256L48,250.7C96,245,192,235,288,224C384,213,480,203,576,213.3C672,224,768,256,864,250.7C960,245,1056,203,1152,192C1248,181,1344,203,1392,213.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>');
+}
+.footer__link:hover, .footer__icon:hover {
+  color: #4CA1AF;
+}
+.footer__link::after {
+  background-color: #4CA1AF;
+}
+.footer__icon:hover {
+  box-shadow: 0 0 10px rgba(76, 161, 175, 0.5);
+}
+.footer__art {
+  background: radial-gradient(circle at center, rgba(76, 161, 175, 0.1) 0%, transparent 70%);
+}
+.footer__shape {
+  background: rgba(76, 161, 175, 0.1);
+  border: 1px solid rgba(76, 161, 175, 0.2);
+}
+ */

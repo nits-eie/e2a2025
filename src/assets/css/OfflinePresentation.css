@@ -1,0 +1,207 @@
+/* offlinePresentation.css */
+
+/* Base Styles */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --light-text-color: #777;
+  --background-color: #f9f9f9;
+  --border-color: #ddd;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Offline Presentation Container */
+.offline-presentation-container {
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  margin: 2rem auto;
+  max-width: 900px;
+  transition: all 0.3s ease;
+}
+
+.offline-presentation-container:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Offline Presentation Content */
+.offline-presentation-content {
+  margin-top: 1rem;
+}
+
+/* Offline Presentation Heading */
+.offline-presentation-heading {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.offline-presentation-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+/* Offline Presentation Text */
+.offline-presentation-text {
+  color: var(--light-text-color);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Offline Presentation List */
+.offline-presentation-list {
+  margin-top: 1.5rem;
+  padding-left: 0;
+  list-style-type: none;
+  counter-reset: offline-presentation-counter;
+}
+
+.offline-presentation-list-item {
+  font-weight: 500;
+  margin-top: 1rem;
+  color: var(--text-color);
+  line-height: 1.8;
+  position: relative;
+  padding-left: 3rem;
+  transition: all 0.2s ease;
+}
+
+.offline-presentation-list-item:hover {
+  color: var(--primary-color);
+}
+
+.offline-presentation-list-item::before {
+  counter-increment: offline-presentation-counter;
+  content: counter(offline-presentation-counter);
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+}
+
+.offline-presentation-list-item:hover::before {
+  background-color: var(--accent-color);
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Highlight Text */
+.highlight-text {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+/* Offline Presentation Link */
+.offline-presentation-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.offline-presentation-link:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* Offline Presentation Note */
+.offline-presentation-note {
+  color: var(--light-text-color);
+  font-style: italic;
+  display: block;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .offline-presentation-container {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+
+  .offline-presentation-heading {
+    font-size: 1.5rem;
+  }
+
+  .offline-presentation-text {
+    font-size: 1rem;
+  }
+
+  .offline-presentation-list-item {
+    font-size: 0.9rem;
+    padding-left: 2.5rem;
+  }
+
+  .offline-presentation-list-item::before {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .offline-presentation-container {
+    padding: 1rem;
+  }
+
+  .offline-presentation-heading {
+    font-size: 1.2rem;
+  }
+
+  .offline-presentation-list-item {
+    padding-left: 2rem;
+  }
+
+  .offline-presentation-list-item::before {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Animation for list items */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.offline-presentation-list-item {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.offline-presentation-list-item:nth-child(1) { animation-delay: 0.1s; }
+.offline-presentation-list-item:nth-child(2) { animation-delay: 0.2s; }
+.offline-presentation-list-item:nth-child(3) { animation-delay: 0.3s; }
+.offline-presentation-list-item:nth-child(4) { animation-delay: 0.4s; }
+.offline-presentation-list-item:nth-child(5) { animation-delay: 0.5s; }
+.offline-presentation-list-item:nth-child(6) { animation-delay: 0.6s; }
+.offline-presentation-list-item:nth-child(7) { animation-delay: 0.7s; }

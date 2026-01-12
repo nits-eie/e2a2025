@@ -1,0 +1,694 @@
+/* Reset and Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 0rem;
+}
+
+/* Main Content */
+.main-content {
+  background: #fdfeff;
+}
+
+/* Section Styles */
+.about-section {
+  padding: 2rem 0;
+  background: white;
+}
+
+/* Modified: Better balanced grid - wider main content, keep sidebar */
+.content-grid {
+  display: grid;
+  grid-template-columns: 3fr 1.3fr;
+  gap: 4rem;
+}
+
+/* Ensure the main content and sidebar are aligned properly */
+.main-column {
+  width: 100%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Align text in the main content and sidebar */
+.main-column p,
+.main-column ul,
+.sidebar p,
+.sidebar ul {
+  text-align: justify;
+}
+
+.section-header {
+  margin-bottom: 3rem;
+}
+
+.section-header.centered {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #1a202c;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-underline {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 2px;
+}
+
+.section-header.centered .section-underline {
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  color: #718096;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+/* Content Cards */
+.content-card {
+  background: rgb(255, 255, 255);
+  padding: 3rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.lead-text {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.body-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #4a5568;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.text-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.text-link:hover {
+  border-bottom-color: #667eea;
+}
+
+/* Modified: Publication Showcase - Changed to vertical layout with text below image */
+.publication-showcase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  max-width: 100%;
+}
+
+.publication-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+.book-cover {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.publication-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  text-align: justify;
+}
+
+.authors {
+  color: #718096;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.publication-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.publication-title a {
+  color: #667eea;
+  text-decoration: none;
+}
+
+.publication-title a:hover {
+  text-decoration: underline;
+}
+
+.publication-subtitle {
+  color: #718096;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.publication-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 600px;
+}
+
+.publication-highlights li {
+  color: #667eea;
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+  text-align: left;
+  width: 100%;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+/* Publications Sidebar */
+.publications-sidebar {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.publications-sidebar h3 {
+  color: #1a202c;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+/* Use grid layout for publication items */
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.2rem;
+}
+
+.publication-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0.2rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.publication-item .pub-number {
+  background: #667eea;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  align-self: center;
+  margin-bottom: 0.2rem;
+}
+
+.publication-item .pub-details p {
+  color: #718096;
+  font-size: 0.9rem;
+  margin-bottom: 0.1rem;
+}
+
+.publication-item .pub-details a {
+  color: #667eea;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 0.1rem;
+}
+
+.publication-item .pub-details a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+/* .publication-highlights li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #48bb78;
+  font-weight: bold;
+} */
+
+.publication-description {
+  color: #4a5568;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 2rem;
+  max-width: 700px;
+}
+
+/* Publication Info */
+.publication-info {
+  display: flex;
+  gap: 1rem;
+  background: #f7fafc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+  margin: 2rem 0;
+}
+
+.info-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.info-content h4 {
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.info-content p {
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+  text-align: justify;
+}
+
+/* Restored: Sidebar elements are back and visible */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Keep conference details in sidebar with original styling */
+.quick-info-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  position: sticky;
+  top: 2rem;
+}
+
+.quick-info-card h3 {
+  color: #1a202c;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+/* Restore original info-item styling */
+.info-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.info-item img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.info-item h4 {
+  color: #1a202c;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-item p {
+  color: #4a5568;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.submission-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.submission-link:hover {
+  text-decoration: underline;
+}
+
+.previous-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.previous-links a {
+  color: #667eea;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.previous-links a:hover {
+  text-decoration: underline;
+}
+
+/* Publications Sidebar */
+.publications-sidebar {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.publications-sidebar h3 {
+  color: #1a202c;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.publication-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.publication-item:last-child {
+  margin-bottom: 0;
+}
+
+.pub-number {
+  background: #667eea;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.pub-details p {
+  color: #718096;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.pub-details a {
+  color: #667eea;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.pub-details a:hover {
+  text-decoration: underline;
+}
+
+/* Speakers Section */
+.speakers-section {
+  padding: 1rem 0;
+  background-color: rgb(252, 252, 252);
+}
+
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+/* Enhanced Speaker Cards */
+.speaker-card-container {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: auto;
+}
+
+.speaker-card-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.speaker-upper-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  height: 80px;
+  position: relative;
+}
+
+.image-container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.lower-container {
+  padding: 80px 1.5rem 1.5rem;
+  text-align: center;
+}
+
+.speaker-name {
+  color: #1a202c;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.committeeName {
+  color: #667eea;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1400px;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .publication-showcase {
+    padding: 2rem;
+  }
+
+  .quick-info-card {
+    position: static;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about-section,
+  .speakers-section {
+    padding: 4rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .content-card {
+    padding: 1.5rem;
+  }
+
+  .publication-showcase {
+    padding: 1.5rem;
+  }
+
+  .speakers-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .book-cover {
+    max-width: 220px;
+  }
+
+  .publication-highlights {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .book-cover {
+    max-width: 200px;
+  }
+
+  .publication-title {
+    font-size: 1.5rem;
+  }
+
+  .publication-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Additional utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.ml-1 {
+  margin-left: 0.5rem;
+}
+
+
+/* === Fix extra space above the notice in #about and anchor offset === */
+#about { scroll-margin-top: 72px; }                    /* adjust if your fixed navbar is taller */
+
+#about.about-section { padding-top: 8px !important; }  /* replace large top padding with a small one */
+#about .container { padding-top: 8px; }                /* internal spacing */
+#about .container > :first-child { margin-top: 0 !important; }  /* prevent first-child top-margin pushing the section */
+
+/* Mobile: prevent media rule from re-adding large top padding */
+@media (max-width: 768px) {
+  #about.about-section { padding-top: 10px !important; }
+  #about .container { padding-top: 10px; }
+}
+
+
+/* Moving notice text (marquee) */
+@keyframes eea-notice-marquee {
+  from { transform: translateX(100%); }   /* start offscreen right */
+  to   { transform: translateX(-100%); }  /* end offscreen left */
+}
+.notice-viewport {
+  overflow: hidden;        /* hides the overflow while it scrolls */
+  width: 100%;
+}
+.notice-track {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+  animation: eea-notice-marquee 18s linear infinite;
+}
+/* pause on hover and respect reduced motion */
+.notice-track:hover { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .notice-track { animation: none; transform: translateX(0); }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./logos/logo2.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emerging Electronics and Automation || 2025</title>
+    
+  </head>
+  <body>
+       <p id="cmt-text" style="opacity: 0; transition: opacity 0.5s;">
+      CMT Acknowledgement: The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.
+    </p>
+
+    <!-- ✅ Script to make it fade in once DOM is ready -->
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('cmt-text').style.opacity = '1';
+      });
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

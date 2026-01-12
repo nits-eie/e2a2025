@@ -1,0 +1,22 @@
+.regular-papers {
+  width: 80%;
+  background-color: #fff;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+ul li {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 1ch;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}

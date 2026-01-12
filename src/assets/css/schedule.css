@@ -1,0 +1,35 @@
+/* Reset & helpers */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; padding: 0; }
+
+/* Outer container */
+.schedule {
+  width: 100%;
+  background: #ffffff;
+}
+
+/* Stack slides vertically, one after another */
+.imageRow {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: stretch;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each program image: full-width, block-level, no cropping */
+.programImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Optional: focus styles for accessibility */
+.programImg:focus {
+  outline: 3px solid rgba(0, 123, 255, 0.35);
+}
