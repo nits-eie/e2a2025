@@ -222,26 +222,46 @@ const Home = () => {
 
 
                       {/* 3) Best Presentation Award (links to Call for Papers) */}
-                      <a
-                        href="/best-awards"
-                        style={{
-                          fontSize: 16,
-                          fontWeight: 700,
-                          color: "#0A66C2",
-                          textDecoration: "underline",
-                          padding: "6px 10px",
-                          borderRadius: 8,
-                          background: "rgba(10,102,194,0.03)",
-                          display: "inline-flex",
-                          alignItems: "center",
-                          transition: "transform .18s ease, box-shadow .18s ease",
-                          animation: "softPulse 7s ease-in-out infinite",
-                        }}
-                        className="notice-link"
-                        aria-label="Best Presentation Award - Call for Papers"
-                      >
-                        Best Presentation Award →
-                      </a>
+                     <a
+  href="/best-awards"
+  style={{
+    fontSize: "16px",
+    fontWeight: "700",
+    color: "#ffffff",
+    textDecoration: "none",
+    padding: "8px 16px",
+    borderRadius: "999px",
+    background: "linear-gradient(90deg, #0A66C2, #0047ab)",
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
+    animation: "blinkBlue 1s infinite",
+  }}
+>
+  Best Presentation Award : Results Announced →
+
+  <style>
+    {`
+      @keyframes blinkBlue {
+        0% {
+          opacity: 1;
+          transform: scale(1);
+          box-shadow: 0 0 0px rgba(10,102,194,0.6);
+        }
+        50% {
+          opacity: 0.4;
+          transform: scale(1.08);
+          box-shadow: 0 0 18px rgba(10,102,194,0.9);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+          box-shadow: 0 0 0px rgba(10,102,194,0.6);
+        }
+      }
+    `}
+  </style>
+</a>
 
                       {/* 4) Travel Support */}
                       <a
